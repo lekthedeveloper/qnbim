@@ -1,3 +1,4 @@
+import React, { Suspense } from 'react';
 import TopBar from '@/components/TopBar';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -13,7 +14,9 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <QuickBulkAdd />
+        <Suspense fallback={<div className="h-20 bg-slate-50 animate-pulse m-10 rounded-sm" />}>
+          <QuickBulkAdd />
+        </Suspense>
         <ProductGrid />
         <Features />
       </main>
