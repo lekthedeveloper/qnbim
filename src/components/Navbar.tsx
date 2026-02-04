@@ -18,6 +18,13 @@ interface NavbarProps {
     customLinks?: NavLink[];
 }
 
+const defaultLinks = [
+    { name: 'Catalog', href: '/catalog' },
+    { name: 'Wholesale Application', href: '/wholesale-application' },
+    { name: 'Warehouses', href: '/warehouse-locations' },
+    { name: 'LTL Rates', href: '/ltl-rates' },
+];
+
 const Navbar: React.FC<NavbarProps> = ({
     padding = 'px-6 md:px-10',
     showAccountManager = false,
@@ -26,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({
 }) => {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const { searchQuery, setSearchQuery, isAuthenticated } = useCart();
+    const { searchQuery, setSearchQuery } = useCart();
     const router = useRouter();
 
     const handleSearchKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -36,13 +43,6 @@ const Navbar: React.FC<NavbarProps> = ({
             }
         }
     };
-
-    const defaultLinks = [
-        { name: 'Catalog', href: '/catalog' },
-        { name: 'Wholesale Application', href: '/wholesale-application' },
-        { name: 'Warehouses', href: '/warehouse-locations' },
-        { name: 'LTL Rates', href: '/ltl-rates' },
-    ];
 
     const links = customLinks || defaultLinks;
 

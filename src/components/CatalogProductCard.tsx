@@ -29,7 +29,7 @@ const CatalogProductCard: React.FC<Product> = (product) => {
                     className="w-full h-full bg-contain bg-center bg-no-repeat grayscale group-hover:grayscale-0 transition-all duration-500"
                     style={{ backgroundImage: `url('${product.image}')` }}
                 ></div>
-                <div className="absolute top-2 left-2 bg-primary text-white text-[8px] md:text-[9px] font-black px-1.5 py-0.5 rounded-sm tracking-widest uppercase">
+                <div className="absolute top-2 left-2 bg-primary text-white text-[8px] md:text-[9px] font-mono font-bold px-1.5 py-0.5 rounded-sm tracking-widest uppercase">
                     SKU: {product.sku}
                 </div>
             </div>
@@ -46,13 +46,13 @@ const CatalogProductCard: React.FC<Product> = (product) => {
                 <div className="mt-auto space-y-2 md:space-y-3">
                     <div className="flex items-baseline justify-between">
                         <div>
-                            <div className="text-[11px] md:text-sm font-black text-slate-900 leading-none italic">
+                            <div className="text-sm md:text-lg font-black text-slate-900 leading-none">
                                 ${product.casePrice.toFixed(2)}
                             </div>
                             <div className="text-[8px] md:text-[10px] text-slate-500 font-bold mt-1 uppercase">({product.unitPrice.toFixed(2)} / unit)</div>
                         </div>
                     </div>
-                    <div className="text-[8px] md:text-[10px] font-black text-teal-accent uppercase bg-teal-50 px-1.5 py-0.5 inline-block border border-teal-100 italic">
+                    <div className="text-[8px] md:text-[10px] font-black text-teal-accent uppercase bg-teal-50 px-1.5 py-0.5 inline-block border border-teal-100">
                         MIN: {product.minOrderQty}
                     </div>
                     <div className="flex flex-col gap-1.5 pt-1 md:pt-2">

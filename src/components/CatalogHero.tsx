@@ -10,7 +10,7 @@ const CatalogHero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
             <div className="relative h-full flex flex-col justify-center px-6 md:px-12">
                 <div className="max-w-2xl">
-                    <h1 className="text-white text-3xl font-black leading-none tracking-tight mb-2 uppercase italic">
+                    <h1 className="text-white text-3xl font-black leading-none tracking-tight mb-2 uppercase">
                         Industrial Wholesale Solutions
                     </h1>
                     <p className="text-slate-300 text-sm mb-6 max-w-lg">

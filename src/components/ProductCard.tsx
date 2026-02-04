@@ -29,7 +29,7 @@ const ProductCard: React.FC<Product> = (product) => {
                     className="w-full h-full bg-contain bg-center bg-no-repeat grayscale group-hover:grayscale-0 transition-all duration-500"
                     style={{ backgroundImage: `url('${product.image}')` }}
                 ></div>
-                <div className="absolute top-2 left-2 bg-slate-900 text-white text-[8px] font-black px-1.5 py-0.5 tracking-tighter uppercase">
+                <div className="absolute top-2 left-2 bg-slate-900 text-white text-[8px] font-mono font-bold px-1.5 py-0.5 tracking-tighter uppercase">
                     SKU: {product.sku}
                 </div>
             </div>
@@ -42,7 +42,7 @@ const ProductCard: React.FC<Product> = (product) => {
                     {product.name}
                 </h3>
                 <div className="mt-auto">
-                    <div className="text-sm font-black text-slate-900 italic leading-none">
+                    <div className="text-[18px] font-black text-slate-900 leading-none">
                         ${product.casePrice.toFixed(2)}
                     </div>
                     <div className="text-[10px] text-slate-500 font-bold mb-1 mt-1 uppercase">({product.unitPrice.toFixed(2)} / unit)</div>
