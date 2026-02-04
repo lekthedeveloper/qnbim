@@ -36,7 +36,7 @@ const CatalogProductCard: React.FC<Product> = (product) => {
             <div className="p-2.5 md:p-4 flex flex-col flex-1">
                 <div className="flex items-center gap-1.5 mb-1 md:mb-1.5">
                     <span className="w-1 md:w-1.5 h-1 md:h-1.5 rounded-full bg-teal-accent"></span>
-                    <span className="text-[8px] md:text-[9px] text-[#4B5563] font-black uppercase tracking-widest truncate">
+                    <span className="text-[8px] md:text-[9px] text-[#001A2C] font-black uppercase tracking-widest truncate">
                         {product.category}
                     </span>
                 </div>
@@ -49,7 +49,7 @@ const CatalogProductCard: React.FC<Product> = (product) => {
                             <div className="text-sm md:text-lg font-black text-[#008B8B] leading-none">
                                 ${product.casePrice.toFixed(2)}
                             </div>
-                            <div className="text-[8px] md:text-[10px] text-[#4B5563] font-bold mt-1 uppercase">({product.unitPrice.toFixed(2)} / unit)</div>
+                            <div className="text-[8px] md:text-[10px] text-[#001A2C] font-bold mt-1 uppercase">({product.unitPrice.toFixed(2)} / unit)</div>
                         </div>
                     </div>
                     <div className="text-[8px] md:text-[10px] font-black text-teal-accent uppercase bg-teal-50 px-1.5 py-0.5 inline-block border border-teal-100">

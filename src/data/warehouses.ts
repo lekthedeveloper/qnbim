@@ -15,14 +15,14 @@ export interface Warehouse {
 export const warehouses: Warehouse[] = [
     {
         id: '1',
-        code: 'E1-NJ',
-        name: 'Jersey City Hub',
-        address: '888 Industrial Way',
-        city: 'Jersey City',
+        code: 'HQ-NJ',
+        name: 'Berkeley HQ Hub',
+        address: '5 Fedornak Fwy',
+        city: 'Berkeley Township',
         state: 'NJ',
-        zip: '07302',
-        phone: '(201) 555-0192',
-        hours: 'Mon-Fri: 06:00 - 20:00, Sat: 08:00 - 14:00',
+        zip: '08757',
+        phone: '(732) 555-0100',
+        hours: 'Mon-Fri: 07:00 - 19:00, Sat: 09:00 - 15:00',
         dockPickup: true,
         mapCoordinates: { x: 88, y: 32 }
     },

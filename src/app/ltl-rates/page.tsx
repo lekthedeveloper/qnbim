@@ -207,7 +207,7 @@ export default function LtlRatesPage() {
                             <div>
                                 <p className="text-[11px] font-black uppercase text-white mb-2 tracking-widest">Origin Details (Fixed Center)</p>
                                 <p className="text-[11px] leading-relaxed font-medium">
-                                    All shipments currently originate from <span className="text-teal-accent font-bold">DevBusinc Main Distribution Center, GA 30301</span>. To request quotes from our West Coast or Midwest hubs, please contact your account manager.
+                                    All shipments currently originate from <span className="text-teal-accent font-bold">DevBusinc Main Distribution Center, NJ 08757</span>. To request quotes from our West Coast or Midwest hubs, please contact your account manager.
                                 </p>
                             </div>
                         </div>

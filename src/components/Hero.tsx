@@ -62,12 +62,12 @@ const Hero = () => {
                     <motion.div variants={itemVariants} className="flex flex-col md:flex-row gap-2.5 w-full md:w-auto">
                         <Link
                             href="/wholesale-application"
-                            className="w-full md:w-auto bg-teal-accent text-white px-8 py-2.5 min-h-[44px] flex items-center justify-center font-semibold text-[13px] uppercase tracking-widest hover:bg-teal-600 active:brightness-90 transition-all text-center rounded-[8px] leading-none"
+                            className="w-full md:w-auto bg-teal-accent text-white px-8 py-2.5 min-h-[44px] flex items-center justify-center font-black text-[13px] uppercase tracking-widest hover:bg-teal-600 active:brightness-90 transition-all text-center rounded-[8px] leading-none"
                         >
-                            Open a Wholesale Account
+                            OPEN ACCOUNT
                         </Link>
-                        <button className="w-full md:w-auto bg-transparent border-2 border-white text-white px-8 py-2.5 min-h-[44px] flex items-center justify-center font-semibold text-[13px] uppercase tracking-widest hover:bg-white/10 active:brightness-90 transition-all gap-2 rounded-[8px] leading-none">
-                            <span className="material-symbols-outlined text-base">grid_view</span> Order by SKU
+                        <button className="w-full md:w-auto bg-transparent border-2 border-white text-white px-8 py-2.5 min-h-[44px] flex items-center justify-center font-black text-[13px] uppercase tracking-widest hover:bg-white/10 active:brightness-90 transition-all gap-2 rounded-[8px] leading-none">
+                            <span className="material-symbols-outlined text-base">grid_view</span> ORDER BY SKU
                         </button>
                     </motion.div>
                 </motion.div>

@@ -19,9 +19,9 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                             DevBusinc Wholesale Store
                         </h2>
                     </div>
-                    <div className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-4 space-y-1">
-                        <p>123 Logistics Way, Suite 500</p>
-                        <p>Industrial District, GA 30301</p>
+                    <div className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-4 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.5)' }}>
+                        <p>5 Fedornak Fwy</p>
+                        <p>Berkeley Township, NJ 08757</p>
                     </div>
                     <p className="text-xs leading-relaxed mb-6 max-w-sm">
                         {isLogistics

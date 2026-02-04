@@ -23,6 +23,7 @@ const defaultLinks = [
     { name: 'Wholesale Application', href: '/wholesale-application' },
     { name: 'Warehouses', href: '/warehouse-locations' },
     { name: 'LTL Rates', href: '/ltl-rates' },
+    { name: 'Support', href: '/support' },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({
@@ -61,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({
                         </span>
                     </button>
 
-                    <Link href="/" className="flex items-center gap-2 text-white hover:opacity-80 transition-opacity">
+                    <Link href="/" className="flex items-center gap-2 text-white hover:opacity-80 transition-opacity" style={{ color: '#FFFFFF !important' }}>
                         <span className="material-symbols-outlined text-3xl md:text-4xl text-teal-accent">forklift</span>
                         <h2 className="text-[14px] md:text-lg font-black leading-tight tracking-tighter uppercase" style={{ color: '#FFFFFF' }}>
                             DEVBUSINC<span className="hidden xs:inline sm:inline"> WHOLESALE</span> <span className="text-teal-accent">STORE</span>
@@ -80,6 +81,7 @@ const Navbar: React.FC<NavbarProps> = ({
                                         ? 'text-white'
                                         : 'text-white/70 hover:text-white'
                                         }`}
+                                    style={{ color: isActive ? '#FFFFFF' : 'rgba(255, 255, 255, 0.7)' }}
                                 >
                                     {link.name}
                                     {isActive && (
