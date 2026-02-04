@@ -37,9 +37,9 @@ const CatalogSidebar = () => {
             </h3>
             <div className="space-y-8">
                 <div>
-                    <h4 className="text-[10px] font-bold uppercase text-slate-400 mb-3 tracking-tighter">Availability</h4>
+                    <h4 className="text-[10px] font-bold uppercase text-[#4B5563] mb-3 tracking-tighter">Availability</h4>
                     <div className="space-y-2">
-                        <label className="flex items-center gap-2 text-xs font-medium cursor-pointer text-slate-600 hover:text-primary transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
                             <input
                                 checked={availabilityFilter.inStock}
                                 onChange={() => handleAvailabilityChange('inStock')}
@@ -48,7 +48,7 @@ const CatalogSidebar = () => {
                             />
                             In Stock
                         </label>
-                        <label className="flex items-center gap-2 text-xs font-medium cursor-pointer text-slate-600 hover:text-primary transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
                             <input
                                 checked={availabilityFilter.backorder}
                                 onChange={() => handleAvailabilityChange('backorder')}
@@ -61,9 +61,9 @@ const CatalogSidebar = () => {
                 </div>
 
                 <div>
-                    <h4 className="text-[10px] font-bold uppercase text-slate-400 mb-3 tracking-tighter">Packaging Type</h4>
+                    <h4 className="text-[10px] font-bold uppercase text-[#4B5563] mb-3 tracking-tighter">Packaging Type</h4>
                     <div className="space-y-2">
-                        <label className="flex items-center gap-2 text-xs font-medium cursor-pointer text-slate-600 hover:text-primary transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
                             <input
                                 checked={packagingFilter === 'All'}
                                 onChange={() => setPackagingFilter('All')}
@@ -73,7 +73,7 @@ const CatalogSidebar = () => {
                             />
                             All Types
                         </label>
-                        <label className="flex items-center gap-2 text-xs font-medium cursor-pointer text-slate-600 hover:text-primary transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
                             <input
                                 checked={packagingFilter === 'Pallet'}
                                 onChange={() => setPackagingFilter('Pallet')}
@@ -83,7 +83,7 @@ const CatalogSidebar = () => {
                             />
                             Full Pallet (LTL)
                         </label>
-                        <label className="flex items-center gap-2 text-xs font-medium cursor-pointer text-slate-600 hover:text-primary transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
                             <input
                                 checked={packagingFilter === 'Case'}
                                 onChange={() => setPackagingFilter('Case')}
@@ -97,7 +97,7 @@ const CatalogSidebar = () => {
                 </div>
 
                 <div>
-                    <h4 className="text-[10px] font-bold uppercase text-slate-400 mb-3 tracking-tighter">Price Per Unit: ${priceRange[0]} - ${priceRange[1]}</h4>
+                    <h4 className="text-[10px] font-bold uppercase text-[#4B5563] mb-3 tracking-tighter">Price Per Unit: ${priceRange[0]} - ${priceRange[1]}</h4>
                     <div className="space-y-3">
                         <input
                             min="0"
@@ -108,7 +108,7 @@ const CatalogSidebar = () => {
                             className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-teal-accent"
                             type="range"
                         />
-                        <div className="flex justify-between text-[10px] font-bold text-slate-600">
+                        <div className="flex justify-between text-[10px] font-bold text-[#4B5563]">
                             <span>$0.10</span>
                             <span>$50.00+</span>
                         </div>
@@ -116,10 +116,10 @@ const CatalogSidebar = () => {
                 </div>
 
                 <div>
-                    <h4 className="text-[10px] font-bold uppercase text-slate-400 mb-3 tracking-tighter">Top Brands</h4>
+                    <h4 className="text-[10px] font-bold uppercase text-[#4B5563] mb-3 tracking-tighter">Top Brands</h4>
                     <div className="space-y-2">
                         {['DevBusinc Essential', 'Pro-Sanitize', 'BulkHouse'].map(brand => (
-                            <label key={brand} className="flex items-center gap-2 text-xs font-medium cursor-pointer text-slate-600 hover:text-primary transition-colors">
+                            <label key={brand} className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
                                 <input
                                     checked={brandFilters.includes(brand)}
                                     onChange={() => handleBrandChange(brand)}

@@ -36,20 +36,20 @@ const CatalogProductCard: React.FC<Product> = (product) => {
             <div className="p-2.5 md:p-4 flex flex-col flex-1">
                 <div className="flex items-center gap-1.5 mb-1 md:mb-1.5">
                     <span className="w-1 md:w-1.5 h-1 md:h-1.5 rounded-full bg-teal-accent"></span>
-                    <span className="text-[8px] md:text-[9px] text-slate-400 font-black uppercase tracking-widest truncate">
+                    <span className="text-[8px] md:text-[9px] text-[#4B5563] font-black uppercase tracking-widest truncate">
                         {product.category}
                     </span>
                 </div>
-                <h3 className="text-[10px] md:text-xs font-black text-slate-800 line-clamp-2 min-h-[28px] md:min-h-[32px] mb-2 md:mb-3 leading-tight uppercase tracking-tight">
+                <h3 className="text-[10px] md:text-xs font-bold text-[#001A2C] line-clamp-2 min-h-[28px] md:min-h-[32px] mb-2 md:mb-3 leading-tight uppercase tracking-tight">
                     {product.name}
                 </h3>
                 <div className="mt-auto space-y-2 md:space-y-3">
                     <div className="flex items-baseline justify-between">
                         <div>
-                            <div className="text-sm md:text-lg font-black text-slate-900 leading-none">
+                            <div className="text-sm md:text-lg font-black text-[#008B8B] leading-none">
                                 ${product.casePrice.toFixed(2)}
                             </div>
-                            <div className="text-[8px] md:text-[10px] text-slate-500 font-bold mt-1 uppercase">({product.unitPrice.toFixed(2)} / unit)</div>
+                            <div className="text-[8px] md:text-[10px] text-[#4B5563] font-bold mt-1 uppercase">({product.unitPrice.toFixed(2)} / unit)</div>
                         </div>
                     </div>
                     <div className="text-[8px] md:text-[10px] font-black text-teal-accent uppercase bg-teal-50 px-1.5 py-0.5 inline-block border border-teal-100">
@@ -59,19 +59,19 @@ const CatalogProductCard: React.FC<Product> = (product) => {
                         <div className="flex items-center justify-between border border-slate-300 rounded-[8px] overflow-hidden bg-slate-50 shadow-inner focus-within:border-teal-accent transition-all h-11">
                             <button
                                 onClick={() => setQuantity(Math.max(product.minOrderQty, quantity - 1))}
-                                className="w-12 h-full flex items-center justify-center hover:bg-slate-200 text-slate-900 font-semibold transition-colors border-r border-slate-200 cursor-pointer active:brightness-90 touch-manipulation p-3"
+                                className="w-12 h-full flex items-center justify-center hover:bg-slate-200 text-[#001A2C] font-semibold transition-colors border-r border-slate-200 cursor-pointer active:brightness-90 touch-manipulation p-3"
                             >
                                 <span className="material-symbols-outlined text-base">remove</span>
                             </button>
                             <input
-                                className="flex-1 w-8 md:w-12 text-center bg-transparent border-none text-[10px] md:text-[11px] font-semibold p-0 focus:ring-0 outline-none text-slate-900 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                                className="flex-1 w-8 md:w-12 text-center bg-transparent border-none text-[10px] md:text-[11px] font-semibold p-0 focus:ring-0 outline-none text-[#001A2C] [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                 type="number"
                                 value={quantity}
                                 onChange={(e) => setQuantity(Math.max(product.minOrderQty, parseInt(e.target.value) || product.minOrderQty))}
                             />
                             <button
                                 onClick={() => setQuantity(quantity + 1)}
-                                className="w-12 h-full flex items-center justify-center hover:bg-slate-200 text-slate-900 font-semibold transition-colors border-l border-slate-200 cursor-pointer active:brightness-90 touch-manipulation p-3"
+                                className="w-12 h-full flex items-center justify-center hover:bg-slate-200 text-[#001A2C] font-semibold transition-colors border-l border-slate-200 cursor-pointer active:brightness-90 touch-manipulation p-3"
                             >
                                 <span className="material-symbols-outlined text-base">add</span>
                             </button>

@@ -8,7 +8,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false }) => {
     return (
-        <footer className={`bg-primary text-slate-400 py-12 ${padding} border-t border-slate-800`}>
+        <footer className={`bg-primary text-white/70 py-12 ${padding} border-t border-white/10`}>
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
                 <div className="md:col-span-2">
                     <div className="flex items-center gap-2 text-white mb-4">
@@ -19,7 +19,7 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                             DevBusinc Wholesale Store
                         </h2>
                     </div>
-                    <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-4 space-y-1">
+                    <div className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-4 space-y-1">
                         <p>123 Logistics Way, Suite 500</p>
                         <p>Industrial District, GA 30301</p>
                     </div>
@@ -90,7 +90,7 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                     {isLogistics && <p className="text-[10px] mt-2">orders@devbusinc.biz</p>}
                 </div>
             </div>
-            <div className="max-w-[1400px] mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-[10px] uppercase tracking-widest">
+            <div className="max-w-[1400px] mx-auto mt-12 pt-8 border-t border-white/10 text-center text-[10px] uppercase tracking-widest text-white/50">
                 © {new Date().getFullYear()} DevBusinc Wholesale Store. {isLogistics ? 'Logistics Dashboard v2.4.1' : 'A Professional Supply Chain Solution.'}
             </div>
         </footer>

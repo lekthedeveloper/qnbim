@@ -21,35 +21,35 @@ const WholesaleForm = () => {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="space-y-1.5">
-                            <label className="text-[11px] font-bold uppercase text-slate-500">Contact Name</label>
+                            <label className="text-[11px] font-bold uppercase text-[#4B5563]">Contact Name</label>
                             <input
-                                className="w-full border border-slate-200 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 outline-none"
+                                className="w-full border border-slate-300 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 outline-none text-[#001A2C] font-semibold placeholder:text-slate-400"
                                 placeholder="John Doe"
                                 type="text"
                                 required
                             />
                         </div>
                         <div className="space-y-1.5">
-                            <label className="text-[11px] font-bold uppercase text-slate-500">Company Name</label>
+                            <label className="text-[11px] font-bold uppercase text-[#4B5563]">Company Name</label>
                             <input
-                                className="w-full border border-slate-200 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 outline-none"
+                                className="w-full border border-slate-300 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 outline-none text-[#001A2C] font-semibold placeholder:text-slate-400"
                                 placeholder="Acme Logistics LLC"
                                 type="text"
                                 required
                             />
                         </div>
                         <div className="space-y-1.5">
-                            <label className="text-[11px] font-bold uppercase text-slate-500">Tax ID / EIN</label>
+                            <label className="text-[11px] font-bold uppercase text-[#4B5563]">Tax ID / EIN</label>
                             <input
-                                className="w-full border border-slate-200 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 outline-none"
+                                className="w-full border border-slate-300 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 outline-none text-[#001A2C] font-semibold placeholder:text-slate-400"
                                 placeholder="XX-XXXXXXX"
                                 type="text"
                                 required
                             />
                         </div>
                         <div className="space-y-1.5">
-                            <label className="text-[11px] font-bold uppercase text-slate-500">Business Type</label>
-                            <select className="w-full border border-slate-200 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 bg-white outline-none" required>
+                            <label className="text-[11px] font-bold uppercase text-[#4B5563]">Business Type</label>
+                            <select className="w-full border border-slate-300 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 bg-white outline-none text-[#001A2C] font-semibold" required>
                                 <option value="">Select Category</option>
                                 <option value="retail">Brick & Mortar Retail</option>
                                 <option value="ecommerce">E-commerce Vendor</option>
@@ -59,8 +59,8 @@ const WholesaleForm = () => {
                             </select>
                         </div>
                         <div className="space-y-1.5 md:col-span-2">
-                            <label className="text-[11px] font-bold uppercase text-slate-500">Estimated Monthly Volume</label>
-                            <select className="w-full border border-slate-200 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 bg-white outline-none" required>
+                            <label className="text-[11px] font-bold uppercase text-[#4B5563]">Estimated Monthly Volume</label>
+                            <select className="w-full border border-slate-300 rounded text-sm focus:ring-teal-accent focus:border-teal-accent py-2.5 px-3 bg-white outline-none text-[#001A2C] font-semibold" required>
                                 <option value="">Select Range</option>
                                 <option value="1">Under $5,000</option>
                                 <option value="2">$5,000 - $15,000</option>
@@ -91,7 +91,7 @@ const WholesaleForm = () => {
                 <div className="pt-6 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-6">
                     <label className="flex items-start gap-3 cursor-pointer">
                         <input className="mt-1 rounded text-teal-accent focus:ring-teal-accent border-slate-300" type="checkbox" required />
-                        <span className="text-[11px] text-slate-500 leading-tight">
+                        <span className="text-[11px] text-[#4B5563] font-bold leading-tight uppercase">
                             I certify that I am a business owner or authorized representative and that all information provided is accurate.
                         </span>
                     </label>

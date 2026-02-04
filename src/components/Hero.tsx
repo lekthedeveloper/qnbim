@@ -53,10 +53,10 @@ const Hero = () => {
                     className="max-w-2xl w-full"
                 >
                     <motion.span variants={itemVariants} className="inline-block bg-teal-accent text-white text-[10px] font-black px-2 py-0.5 mb-4 uppercase">Direct-to-Business Logistics</motion.span>
-                    <motion.h1 variants={itemVariants} className="text-white text-2xl md:text-5xl font-black leading-tight tracking-tight mb-4 text-left md:text-left">
+                    <motion.h1 variants={itemVariants} className="text-white text-2xl md:text-5xl font-black leading-tight tracking-tight mb-4 text-left md:text-left !text-white">
                         High-Volume Wholesale <br className="hidden md:block" />Household Essentials
                     </motion.h1>
-                    <motion.p variants={itemVariants} className="text-slate-300 text-sm md:text-lg mb-8 max-w-lg text-left md:text-left">
+                    <motion.p variants={itemVariants} className="text-white/80 text-sm md:text-lg mb-8 max-w-lg text-left md:text-left">
                         Dedicated supply chain partner for retail, property management, and hospitality. Tiered pallet pricing and nationwide LTL delivery.
                     </motion.p>
                     <motion.div variants={itemVariants} className="flex flex-col md:flex-row gap-2.5 w-full md:w-auto">

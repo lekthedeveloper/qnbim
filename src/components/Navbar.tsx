@@ -47,23 +47,23 @@ const Navbar: React.FC<NavbarProps> = ({
     const links = customLinks || defaultLinks;
 
     return (
-        <header className={`flex flex-col border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 sticky top-0 md:top-[31px] z-50 shadow-sm`}>
+        <header className={`flex flex-col border-b border-white/10 bg-primary sticky top-0 md:top-[31px] z-50 shadow-sm`}>
             {/* Main Bar */}
             <div className={`flex items-center justify-between px-5 md:px-10 py-2.5 w-full`}>
                 <div className="flex items-center gap-2 md:gap-8">
                     {/* Hamburger Button */}
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        className="md:hidden w-10 h-10 flex items-center justify-center text-slate-600 active:scale-95 transition-transform"
+                        className="md:hidden w-10 h-10 flex items-center justify-center text-white active:scale-95 transition-transform"
                     >
                         <span className="material-symbols-outlined text-2xl">
                             {isMenuOpen ? 'close' : 'menu'}
                         </span>
                     </button>
 
-                    <Link href="/" className="flex items-center gap-2 text-primary dark:text-white hover:opacity-80 transition-opacity">
+                    <Link href="/" className="flex items-center gap-2 text-white hover:opacity-80 transition-opacity">
                         <span className="material-symbols-outlined text-3xl md:text-4xl text-teal-accent">forklift</span>
-                        <h2 className="text-[14px] md:text-lg font-black leading-tight tracking-tighter uppercase italic">
+                        <h2 className="text-[14px] md:text-lg font-black leading-tight tracking-tighter uppercase" style={{ color: '#FFFFFF' }}>
                             DEVBUSINC<span className="hidden xs:inline sm:inline"> WHOLESALE</span> <span className="text-teal-accent">STORE</span>
                         </h2>
                     </Link>
@@ -77,8 +77,8 @@ const Navbar: React.FC<NavbarProps> = ({
                                     key={link.name}
                                     href={link.href}
                                     className={`relative text-[11px] font-black uppercase tracking-widest transition-all pb-1 group ${isActive
-                                        ? 'text-teal-accent'
-                                        : 'text-slate-500 hover:text-teal-accent'
+                                        ? 'text-white'
+                                        : 'text-white/70 hover:text-white'
                                         }`}
                                 >
                                     {link.name}
@@ -97,12 +97,12 @@ const Navbar: React.FC<NavbarProps> = ({
                 {/* Desktop Search */}
                 {!showAccountManager && (
                     <div className="hidden lg:flex flex-1 max-w-md mx-8 group">
-                        <div className="flex w-full rounded-sm border border-slate-200 bg-slate-50 overflow-hidden focus-within:border-teal-accent shadow-inner">
-                            <div className="flex items-center px-4 text-slate-400">
+                        <div className="flex w-full rounded-sm border border-white/20 bg-white/10 overflow-hidden focus-within:border-teal-accent shadow-inner">
+                            <div className="flex items-center px-4 text-white/50">
                                 <span className="material-symbols-outlined text-lg">search</span>
                             </div>
                             <input
-                                className="w-full bg-transparent border-none text-[11px] font-bold uppercase tracking-widest focus:ring-0 py-2.5 outline-none placeholder-slate-400"
+                                className="w-full bg-transparent border-none text-[11px] font-bold uppercase tracking-widest focus:ring-0 py-2.5 outline-none placeholder-white/40 text-white"
                                 placeholder="SKU / PRODUCT / CATEGORY"
                                 type="text"
                                 value={searchQuery}
@@ -118,7 +118,7 @@ const Navbar: React.FC<NavbarProps> = ({
                         {/* Support Center Button */}
                         <Link
                             href="/support"
-                            className="flex items-center gap-2 text-[10px] font-black px-4 md:px-6 py-2.5 md:py-3 bg-slate-900 text-white uppercase tracking-widest transition-all rounded-sm shadow-md hover:bg-teal-700 active:scale-95"
+                            className="flex items-center gap-2 text-[10px] font-black px-4 md:px-6 py-2.5 md:py-3 bg-teal-accent text-white uppercase tracking-widest transition-all rounded-sm shadow-md hover:bg-teal-600 active:scale-95"
                         >
                             <span className="material-symbols-outlined text-base">support_agent</span>
                             Support Center
@@ -129,12 +129,12 @@ const Navbar: React.FC<NavbarProps> = ({
 
             {/* Mobile Search Bar (Sticky below main nav) */}
             <div className="lg:hidden px-4 pb-3">
-                <div className="flex w-full rounded-sm border border-slate-200 bg-slate-50 overflow-hidden focus-within:border-teal-accent shadow-sm">
-                    <div className="flex items-center px-3 text-slate-400">
+                <div className="flex w-full rounded-sm border border-white/20 bg-white/10 overflow-hidden focus-within:border-teal-accent shadow-sm">
+                    <div className="flex items-center px-3 text-white/50">
                         <span className="material-symbols-outlined text-base">search</span>
                     </div>
                     <input
-                        className="w-full bg-transparent border-none text-[11px] font-bold uppercase tracking-widest focus:ring-0 py-2.5 outline-none placeholder:text-slate-400 text-center pr-10"
+                        className="w-full bg-transparent border-none text-[11px] font-bold uppercase tracking-widest focus:ring-0 py-2.5 outline-none placeholder:text-white/40 text-center pr-10 text-white"
                         placeholder="QUICK SKU LOOKUP..."
                         type="text"
                         value={searchQuery}
