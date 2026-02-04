@@ -292,7 +292,7 @@ export default function TaxExemptPage() {
                                     <span className="material-symbols-outlined text-teal-accent text-sm mt-0.5">verified</span>
                                     <div>
                                         <p className="text-[10px] font-black uppercase tracking-widest text-white mb-1">Tax ID Match</p>
-                                        <p className="text-[10px] text-slate-400 font-medium">The EIN on your W-9 must match your DevBusinc Partner profile.</p>
+                                        <p className="text-[10px] text-slate-400 font-medium">The EIN on your W-9 must match your qnbim Partner profile.</p>
                                     </div>
                                 </li>
                             </ul>

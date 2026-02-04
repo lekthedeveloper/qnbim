@@ -72,20 +72,20 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
     // Load auth state from localStorage
     useEffect(() => {
-        const storedAuth = localStorage.getItem('heidi_auth');
+        const storedAuth = localStorage.getItem('qnbim_auth');
         if (storedAuth) {
             const authData = JSON.parse(storedAuth);
             setIsAuthenticated(authData.isAuthenticated);
             setUser(authData.user);
         }
 
-        const storedAppData = localStorage.getItem('heidi_app_data');
+        const storedAppData = localStorage.getItem('qnbim_app_data');
         if (storedAppData) {
             setIsApplicationSubmitted(true);
             setApplicationData(JSON.parse(storedAppData));
         }
 
-        const storedTaxStatus = localStorage.getItem('heidi_tax_status');
+        const storedTaxStatus = localStorage.getItem('qnbim_tax_status');
         if (storedTaxStatus) {
             setInternalTaxExemptStatus(storedTaxStatus as any);
         }
@@ -141,24 +141,24 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     const login = (userData: User) => {
         setIsAuthenticated(true);
         setUser(userData);
-        localStorage.setItem('heidi_auth', JSON.stringify({ isAuthenticated: true, user: userData }));
+        localStorage.setItem('qnbim_auth', JSON.stringify({ isAuthenticated: true, user: userData }));
     };
 
     const logout = () => {
         setIsAuthenticated(false);
         setUser(null);
-        localStorage.removeItem('heidi_auth');
+        localStorage.removeItem('qnbim_auth');
     };
 
     const submitApplication = (data: any) => {
         setApplicationData(data);
         setIsApplicationSubmitted(true);
-        localStorage.setItem('heidi_app_data', JSON.stringify(data));
+        localStorage.setItem('qnbim_app_data', JSON.stringify(data));
     };
 
     const setTaxExemptStatus = (status: 'none' | 'pending' | 'verified') => {
         setInternalTaxExemptStatus(status);
-        localStorage.setItem('heidi_tax_status', status);
+        localStorage.setItem('qnbim_tax_status', status);
     };
 
     return (

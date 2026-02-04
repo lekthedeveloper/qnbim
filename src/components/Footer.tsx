@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                             {isLogistics ? 'warehouse' : 'warehouse'}
                         </span>
                         <h2 className="text-xl font-black uppercase tracking-tighter">
-                            DevBusinc Wholesale Store
+                            qnbim WHOLESALE
                         </h2>
                     </div>
                     <div className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-4 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.5)' }}>
@@ -84,14 +84,14 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                         {isLogistics ? 'Logistics Desk Support:' : 'Dedicated Account Manager Support:'}
                     </p>
                     <p className="text-white font-bold text-xs mb-1">
-                        {isLogistics ? '1-800-DEVB-LOGS' : '1-800-DEVB-B2B'}
+                        {isLogistics ? '1-800-QNBM-LOGS' : '1-800-QNBM-B2B'}
                     </p>
                     <p className="text-[10px]">Mon-Fri {isLogistics ? '7am-7pm' : '8am-6pm'} EST</p>
-                    {isLogistics && <p className="text-[10px] mt-2">orders@devbusinc.biz</p>}
+                    {isLogistics && <p className="text-[10px] mt-2">orders@qnbim.biz</p>}
                 </div>
             </div>
             <div className="max-w-[1400px] mx-auto mt-12 pt-8 border-t border-white/10 text-center text-[10px] uppercase tracking-widest text-white/50">
-                © {new Date().getFullYear()} DevBusinc Wholesale Store. {isLogistics ? 'Logistics Dashboard v2.4.1' : 'A Professional Supply Chain Solution.'}
+                © {new Date().getFullYear()} qnbim Wholesale. {isLogistics ? 'Logistics Dashboard v2.4.1' : 'A Professional Supply Chain Solution.'}
             </div>
         </footer>
     );

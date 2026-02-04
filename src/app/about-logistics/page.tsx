@@ -56,7 +56,7 @@ export default function AboutLogisticsPage() {
                             <span className="text-teal-accent font-black uppercase tracking-[0.2em] text-xs mb-4 block">Engineered for Scale</span>
                             <h1 className="text-5xl font-black uppercase tracking-tight mb-6 leading-[0.9]" style={{ color: '#FFFFFF' }}>Reliable Supply Chain Solutions</h1>
                             <p className="text-slate-300 text-lg font-medium leading-relaxed">
-                                From global sourcing to domestic last-mile delivery, DevBusinc Wholesale Store manages every touchpoint to ensure your inventory is never at risk.
+                                From global sourcing to domestic last-mile delivery, qnbim Wholesale manages every touchpoint to ensure your inventory is never at risk.
                             </p>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ export default function AboutLogisticsPage() {
                                     <h4 className="text-teal-accent text-[11px] font-bold uppercase tracking-[0.2em] mb-2">Facility Standards</h4>
                                     <h2 className="text-4xl font-black text-primary uppercase tracking-tight leading-none mb-6">Tier-1 Storage & Handling</h2>
                                     <p className="text-slate-600 leading-relaxed">
-                                        Our facilities are ISO-certified and climate-monitored. We utilize semi-automated picking systems that reduce human error to near zero, ensuring that every pallet shipped meets the high DevBusinc Wholesale Store standard.
+                                        Our facilities are ISO-certified and climate-monitored. We utilize semi-automated picking systems that reduce human error to near zero, ensuring that every pallet shipped meets the high qnbim Wholesale standard.
                                     </p>
                                 </div>
                                 <ul className="space-y-4">

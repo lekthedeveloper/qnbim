@@ -50,7 +50,7 @@ export default function WholesaleApplication() {
                                     Verified Accounts
                                 </h3>
                                 <p className="text-[11px] text-slate-500 font-bold uppercase leading-relaxed tracking-wider">
-                                    DevBusinc Wholesale Store operates as a closed distribution network. All partners must provide valid tax documentation and business credentials.
+                                    qnbim Wholesale operates as a closed distribution network. All partners must provide valid tax documentation and business credentials.
                                 </p>
                             </div>
 

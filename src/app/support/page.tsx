@@ -162,14 +162,14 @@ const SupportPage = () => {
                                         <span className="material-symbols-outlined text-teal-accent">call</span>
                                         <div>
                                             <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Toll-Free Hotline</p>
-                                            <p className="text-sm font-black tracking-widest">+1 (800) DEV-BUSA</p>
+                                            <p className="text-sm font-black tracking-widest">+1 (800) QNBM-CORP</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
                                         <span className="material-symbols-outlined text-teal-accent">mail</span>
                                         <div>
                                             <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Primary Inbox</p>
-                                            <p className="text-sm font-black tracking-tighter">support@devbusinc.com</p>
+                                            <p className="text-sm font-black tracking-tighter">support@qnbim.com</p>
                                         </div>
                                     </div>
                                     <div className="pt-6 border-t border-white/10">

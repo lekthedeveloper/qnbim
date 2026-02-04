@@ -62,10 +62,10 @@ const Navbar: React.FC<NavbarProps> = ({
                         </span>
                     </button>
 
-                    <Link href="/" className="flex items-center gap-2 text-white hover:opacity-80 transition-opacity" style={{ color: '#FFFFFF !important' }}>
+                    <Link href="/" className="flex items-center gap-2 text-white hover:opacity-80 transition-opacity" style={{ color: '#FFFFFF' }}>
                         <span className="material-symbols-outlined text-3xl md:text-4xl text-teal-accent">forklift</span>
-                        <h2 className="text-[14px] md:text-lg font-black leading-tight tracking-tighter uppercase" style={{ color: '#FFFFFF' }}>
-                            DEVBUSINC<span className="hidden xs:inline sm:inline"> WHOLESALE</span> <span className="text-teal-accent">STORE</span>
+                        <h2 className="text-[24px] md:text-[28px] font-black leading-none tracking-tighter uppercase text-white !font-sans" style={{ color: '#FFFFFF', fontWeight: 900 }}>
+                            qnbim
                         </h2>
                     </Link>
 
@@ -167,7 +167,7 @@ const Navbar: React.FC<NavbarProps> = ({
                             <div className="p-6 border-b border-slate-800 flex items-center justify-between">
                                 <div className="flex items-center gap-2">
                                     <span className="material-symbols-outlined text-2xl text-teal-accent">forklift</span>
-                                    <span className="text-white font-black uppercase italic tracking-tighter">DEVBUSINC HUB</span>
+                                    <span className="text-white font-black uppercase italic tracking-tighter">qnbim HUB</span>
                                 </div>
                                 <button onClick={() => setIsMenuOpen(false)} className="text-slate-500 hover:text-white">
                                     <span className="material-symbols-outlined">close</span>

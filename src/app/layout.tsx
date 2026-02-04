@@ -22,8 +22,8 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevBusinc Wholesale Store - B2B Supply Chain Partner",
-  description: "DevBusinc Wholesale Store - Institutional Procurement & Workflow Distribution Strategy.",
+  title: "qnbim Wholesale",
+  description: "qnbim Wholesale - Institutional Procurement & Workflow Distribution Strategy.",
 };
 
 import { CartProvider } from "@/context/CartContext";

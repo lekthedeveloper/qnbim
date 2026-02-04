@@ -118,7 +118,7 @@ const CatalogSidebar = () => {
                 <div>
                     <h4 className="text-[10px] font-bold uppercase text-[#001A2C] mb-3 tracking-tighter">Top Brands</h4>
                     <div className="space-y-2">
-                        {['DevBusinc Essential', 'Pro-Sanitize', 'BulkHouse'].map(brand => (
+                        {['qnbim Essential', 'Pro-Sanitize', 'BulkHouse'].map(brand => (
                             <label key={brand} className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
                                 <input
                                     checked={brandFilters.includes(brand)}

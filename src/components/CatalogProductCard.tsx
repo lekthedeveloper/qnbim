@@ -82,7 +82,7 @@ const CatalogProductCard: React.FC<Product> = (product) => {
                             className={`w-full bg-slate-900 text-white text-[9px] md:text-[10px] font-semibold py-2.5 md:py-3 uppercase tracking-[0.2em] hover:bg-teal-accent active:brightness-90 transition-all shadow-md flex items-center justify-center gap-2 rounded-[8px]`}
                         >
                             <span className="material-symbols-outlined text-sm">support_agent</span>
-                            <span>CONTACT SALES</span>
+                            <span>INQUIRE FOR BULK PRICE</span>
                         </motion.button>
                     </div>
                 </div>

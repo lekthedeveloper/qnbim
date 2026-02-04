@@ -27,7 +27,7 @@ export const products: Product[] = [
         packSize: '48 Rolls / Case',
         image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDFmQSXWE5_DR1AJbQ1430HyXcFs4L4JVObeMRJ4RZ9dw-zd_F9A5Zj4vRy3XO_neNgSq_bc7Qwh-XU5HLsuiybl-Vm82HLhP-p7XwajMe1KRoRMU5oXeTqPCE4QFH6FqWJWJfId5mVHgltYKxy5TOZ9UGNZiLhTBoFpg8bNi3nKaTu5bNkkLaa0ZGYSFWlOxfmsr6m1W3UMjpEtwwRVhjEsbDXQSELqt0py6O8ZhJUeMKXYWS4u7BkzLwpkCP0UhnSrTI9W0U4fgo',
         inStock: true,
-        brand: 'DevBusinc Essential',
+        brand: 'qnbim Essential',
         packagingType: 'Case'
     },
     {
@@ -42,7 +42,7 @@ export const products: Product[] = [
         packSize: '36 Rolls / Case',
         image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDFmQSXWE5_DR1AJbQ1430HyXcFs4L4JVObeMRJ4RZ9dw-zd_F9A5Zj4vRy3XO_neNgSq_bc7Qwh-XU5HLsuiybl-Vm82HLhP-p7XwajMe1KRoRMU5oXeTqPCE4QFH6FqWJWJfId5mVHgltYKxy5TOZ9UGNZiLhTBoFpg8bNi3nKaTu5bNkkLaa0ZGYSFWlOxfmsr6m1W3UMjpEtwwRVhjEsbDXQSELqt0py6O8ZhJUeMKXYWS4u7BkzLwpkCP0UhnSrTI9W0U4fgo',
         inStock: true,
-        brand: 'DevBusinc Essential',
+        brand: 'qnbim Essential',
         packagingType: 'Case'
     },
     {
@@ -87,7 +87,7 @@ export const products: Product[] = [
         packSize: '50 Boxes / Case',
         image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDFmQSXWE5_DR1AJbQ1430HyXcFs4L4JVObeMRJ4RZ9dw-zd_F9A5Zj4vRy3XO_neNgSq_bc7Qwh-XU5HLsuiybl-Vm82HLhP-p7XwajMe1KRoRMU5oXeTqPCE4QFH6FqWJWJfId5mVHgltYKxy5TOZ9UGNZiLhTBoFpg8bNi3nKaTu5bNkkLaa0ZGYSFWlOxfmsr6m1W3UMjpEtwwRVhjEsbDXQSELqt0py6O8ZhJUeMKXYWS4u7BkzLwpkCP0UhnSrTI9W0U4fgo',
         inStock: true,
-        brand: 'DevBusinc Essential',
+        brand: 'qnbim Essential',
         packagingType: 'Case'
     },
     {
@@ -102,7 +102,7 @@ export const products: Product[] = [
         packSize: '4000 ct / Case',
         image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDFmQSXWE5_DR1AJbQ1430HyXcFs4L4JVObeMRJ4RZ9dw-zd_F9A5Zj4vRy3XO_neNgSq_bc7Qwh-XU5HLsuiybl-Vm82HLhP-p7XwajMe1KRoRMU5oXeTqPCE4QFH6FqWJWJfId5mVHgltYKxy5TOZ9UGNZiLhTBoFpg8bNi3nKaTu5bNkkLaa0ZGYSFWlOxfmsr6m1W3UMjpEtwwRVhjEsbDXQSELqt0py6O8ZhJUeMKXYWS4u7BkzLwpkCP0UhnSrTI9W0U4fgo',
         inStock: true,
-        brand: 'DevBusinc Essential',
+        brand: 'qnbim Essential',
         packagingType: 'Case'
     },
     {
@@ -132,7 +132,7 @@ export const products: Product[] = [
         packSize: '144 ct / Case',
         image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA4YbtLE2-zN7OcCTYRB4Xc1GgVnNYzbwHTXuSarwQ8lYd5WdVBnWoan2W4YnRPOS63e5ER5OnnE95nFNmDqipfq71B7Gouv-VYDK-JzjkllVP-FDrYniFR3AiIa-kUh1GQsh2vodeZn8UGbGycq3qQYrFoaA7Og_XTQq5QxDkfoJJbGD5pfOKQTI1pzIxosH3O7omALvrvTllQP4NMGMEzF6Qb1812xXmlQ8Z80MqrQtHuFyGHWYeM1-7E6JGYezDNxrzzl4OI4Zw',
         inStock: true,
-        brand: 'DevBusinc Essential',
+        brand: 'qnbim Essential',
         packagingType: 'Case'
     },
     {

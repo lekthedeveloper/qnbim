@@ -8,8 +8,8 @@
   --color-sidebar-bg: #f8fafc;
   --color-navy: #001A2C;
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-ibm-plex), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-roboto-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   --radius-default: 0.125rem;
@@ -48,9 +48,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-family: var(--font-sans) !important;
+  font-weight: 800;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--color-navy);
 }

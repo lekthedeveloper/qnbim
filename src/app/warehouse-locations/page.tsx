@@ -294,7 +294,7 @@ export default function WarehouseLocationsPage() {
         doc.setFont("helvetica", "bold");
         doc.setTextColor(255, 255, 255);
         doc.setFontSize(24);
-        doc.text("DEVBUSINC WHOLESALE STORE", 20, 25);
+        doc.text("qnbim WHOLESALE", 20, 25);
 
         doc.setFontSize(10);
         doc.setTextColor(20, 184, 166); // Teal Accent
@@ -314,7 +314,7 @@ export default function WarehouseLocationsPage() {
             "4. Paperwork: Gate pass or Appointment Confirmation must be presented at the check-in window.",
             "5. Loading Protocol: Standard dock-height loading only. Hand-loading is not permitted on-site.",
             "",
-            "Issued by: DevBusinc Logistics Division",
+            "Issued by: qnbim Logistics Division",
             "Effective Date: January 2026"
         ];
 
@@ -322,7 +322,7 @@ export default function WarehouseLocationsPage() {
             doc.text(line, 20, 70 + (i * 10));
         });
 
-        doc.save("DevBusinc_Wholesale_Warehouse_Policy.pdf");
+        doc.save("qnbim_Wholesale_Warehouse_Policy.pdf");
     };
 
     const openScheduling = (warehouse: Warehouse) => {
@@ -602,7 +602,7 @@ export default function WarehouseLocationsPage() {
                                     Safety & Compliance Protocol
                                 </h4>
                                 <p className="text-sm text-slate-400 leading-relaxed font-medium">
-                                    DevBusinc Wholesale Store operates under strict institutional safety standards. Pickup appointments must be synchronized with our WMS at least 24 hours prior to arrival. All logistics partners must adhere to PPE requirements—including steel-toed boots and high-vis vests—without exception. Failures to comply will result in dock access denial.
+                                    qnbim Wholesale operates under strict institutional safety standards. Pickup appointments must be synchronized with our WMS at least 24 hours prior to arrival. All logistics partners must adhere to PPE requirements—including steel-toed boots and high-vis vests—without exception. Failures to comply will result in dock access denial.
                                 </p>
                             </div>
                             <button

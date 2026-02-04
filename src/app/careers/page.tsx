@@ -166,7 +166,7 @@ export default function CareersPage() {
                             Join the <span className="text-teal-accent italic">Supply Chain</span> Revolution
                         </h1>
                         <p className="text-slate-400 text-lg max-w-2xl leading-relaxed font-medium animate-in fade-in slide-in-from-bottom-6 duration-1000">
-                            From complex warehouse logistics to B2B field sales, DevBusinc Wholesale Store is looking for driven professionals to scale our wholesale operations.
+                            From complex warehouse logistics to B2B field sales, qnbim Wholesale is looking for driven professionals to scale our wholesale operations.
                         </p>
                     </div>
                 </section>
@@ -391,7 +391,7 @@ export default function CareersPage() {
                                     </form>
 
                                     <p className="mt-8 text-[9px] text-slate-400 font-bold uppercase tracking-widest">
-                                        DevBusinc Privacy Protocol Active &bull; No Spam Guaranteed
+                                        qnbim Privacy Protocol Active &bull; No Spam Guaranteed
                                     </p>
                                 </>
                             )}
