@@ -89,7 +89,7 @@ export default function TaxExemptionPage() {
                                 Having trouble with your documents? Our compliance specialists are here to help during standard business hours.
                             </p>
                             <div className="space-y-1">
-                                <p className="text-sm font-black italic tracking-tight">compliance@heidistore.com</p>
+                                <p className="text-sm font-black italic tracking-tight">compliance@devbusinc.com</p>
                                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Global response time: ~4 hours</p>
                             </div>
                         </div>
@@ -145,7 +145,7 @@ export default function TaxExemptionPage() {
                                             <div className="space-y-2">
                                                 <p className="text-xs font-black text-slate-900 uppercase tracking-tight">Declaration of Compliance Authenticity</p>
                                                 <p className="text-[11px] text-slate-500 leading-relaxed font-medium">
-                                                    I declare under penalty of perjury that the documentation provided is true, correct, and current. I understand that Heidi Store relies on this information for sales tax exemption purposes across state jurisdictions.
+                                                    I declare under penalty of perjury that the documentation provided is true, correct, and current. I understand that DevBusinc Wholesale Store relies on this information for sales tax exemption purposes across state jurisdictions.
                                                 </p>
                                             </div>
                                         </label>

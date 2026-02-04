@@ -56,7 +56,7 @@ export default function AboutLogisticsPage() {
                             <span className="text-teal-accent font-black uppercase tracking-[0.2em] text-xs mb-4 block">Engineered for Scale</span>
                             <h1 className="text-5xl font-black uppercase tracking-tight mb-6 leading-[0.9]">Reliable Supply Chain Solutions</h1>
                             <p className="text-slate-300 text-lg font-medium leading-relaxed">
-                                From global sourcing to domestic last-mile delivery, Heidi Store manages every touchpoint to ensure your inventory is never at risk.
+                                From global sourcing to domestic last-mile delivery, DevBusinc Wholesale Store manages every touchpoint to ensure your inventory is never at risk.
                             </p>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ export default function AboutLogisticsPage() {
                                     <h4 className="text-teal-accent text-[11px] font-bold uppercase tracking-[0.2em] mb-2">Facility Standards</h4>
                                     <h2 className="text-4xl font-black text-primary uppercase tracking-tight leading-none mb-6">Tier-1 Storage & Handling</h2>
                                     <p className="text-slate-600 leading-relaxed">
-                                        Our facilities are ISO-certified and climate-monitored. We utilize semi-automated picking systems that reduce human error to near zero, ensuring that every pallet shipped meets the high Heidi Store standard.
+                                        Our facilities are ISO-certified and climate-monitored. We utilize semi-automated picking systems that reduce human error to near zero, ensuring that every pallet shipped meets the high DevBusinc Wholesale Store standard.
                                     </p>
                                 </div>
                                 <ul className="space-y-4">
@@ -156,7 +156,7 @@ export default function AboutLogisticsPage() {
                     <h2 className="text-3xl font-black text-primary uppercase tracking-tight mb-6">Ready to scale your inventory?</h2>
                     <p className="text-slate-500 mb-10">Join 1,200+ retailers who rely on our robust supply chain for their daily operations.</p>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                        <Link href="/signup" className="w-full md:w-auto bg-teal-accent text-white px-10 py-4 font-black text-xs uppercase tracking-widest hover:bg-teal-700 transition-all">
+                        <Link href="/wholesale-application" className="w-full md:w-auto bg-teal-accent text-white px-10 py-4 font-black text-xs uppercase tracking-widest hover:bg-teal-700 transition-all">
                             Apply for Wholesale
                         </Link>
                         <button className="w-full md:w-auto bg-white border-2 border-slate-200 text-slate-800 px-10 py-[14px] font-black text-xs uppercase tracking-widest hover:bg-slate-50 transition-all">

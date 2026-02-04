@@ -294,7 +294,7 @@ export default function WarehouseLocationsPage() {
         doc.setFont("helvetica", "bold");
         doc.setTextColor(255, 255, 255);
         doc.setFontSize(24);
-        doc.text("HEIDI STORE WHOLESALE", 20, 25);
+        doc.text("DEVBUSINC WHOLESALE STORE", 20, 25);
 
         doc.setFontSize(10);
         doc.setTextColor(20, 184, 166); // Teal Accent
@@ -314,7 +314,7 @@ export default function WarehouseLocationsPage() {
             "4. Paperwork: Gate pass or Appointment Confirmation must be presented at the check-in window.",
             "5. Loading Protocol: Standard dock-height loading only. Hand-loading is not permitted on-site.",
             "",
-            "Issued by: Heidi Store Logistics Division",
+            "Issued by: DevBusinc Logistics Division",
             "Effective Date: January 2026"
         ];
 
@@ -322,7 +322,7 @@ export default function WarehouseLocationsPage() {
             doc.text(line, 20, 70 + (i * 10));
         });
 
-        doc.save("Heidi_Store_Warehouse_Policy.pdf");
+        doc.save("DevBusinc_Wholesale_Warehouse_Policy.pdf");
     };
 
     const openScheduling = (warehouse: Warehouse) => {
@@ -334,7 +334,7 @@ export default function WarehouseLocationsPage() {
         { name: 'Catalog', href: '/catalog' },
         { name: 'LTL Rates', href: '/ltl-rates' },
         { name: 'Warehouses', href: '/warehouse-locations' },
-        { name: 'Application Status', href: '/signup' },
+        { name: 'Wholesale Application', href: '/wholesale-application' },
     ];
 
     return (
@@ -602,7 +602,7 @@ export default function WarehouseLocationsPage() {
                                     Safety & Compliance Protocol
                                 </h4>
                                 <p className="text-sm text-slate-400 leading-relaxed font-medium">
-                                    Heidi Store operates under strict institutional safety standards. Pickup appointments must be synchronized with our WMS at least 24 hours prior to arrival. All logistics partners must adhere to PPE requirements—including steel-toed boots and high-vis vests—without exception. Failures to comply will result in dock access denial.
+                                    DevBusinc Wholesale Store operates under strict institutional safety standards. Pickup appointments must be synchronized with our WMS at least 24 hours prior to arrival. All logistics partners must adhere to PPE requirements—including steel-toed boots and high-vis vests—without exception. Failures to comply will result in dock access denial.
                                 </p>
                             </div>
                             <button

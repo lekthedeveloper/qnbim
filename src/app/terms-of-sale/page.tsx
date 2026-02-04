@@ -48,8 +48,8 @@ export default function TermsOfSalePage() {
                             <div className="bg-slate-50 p-6 border border-slate-200 rounded-sm">
                                 <h4 className="text-[10px] font-black text-slate-900 uppercase tracking-widest mb-3 italic">Questions?</h4>
                                 <p className="text-[11px] text-slate-500 leading-relaxed mb-4 font-medium">For clarification on these terms, contact your account manager.</p>
-                                <a className="text-[11px] font-bold text-teal-accent hover:underline uppercase tracking-wider" href="mailto:legal@heidistore.com">
-                                    legal@heidistore.com
+                                <a className="text-[11px] font-bold text-teal-accent hover:underline uppercase tracking-wider" href="mailto:legal@devbusinc.biz">
+                                    legal@devbusinc.biz
                                 </a>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ export default function TermsOfSalePage() {
                             <section id="orders" className="scroll-mt-32">
                                 <h2 className="text-xl font-black uppercase tracking-tight text-primary mb-6 border-b border-slate-100 pb-2">1. Order Acceptance & Fulfillment</h2>
                                 <p className="text-sm leading-relaxed text-slate-600 mb-6">
-                                    All orders placed through the Heidi Store Wholesale portal are subject to acceptance by Heidi Store ("the Seller"). We reserve the right to refuse service or cancel orders at our sole discretion, including but not limited to cases of inventory shortages or pricing errors.
+                                    All orders placed through the DevBusinc Wholesale Store portal are subject to acceptance by DevBusinc Wholesale Store ("the Seller"). We reserve the right to refuse service or cancel orders at our sole discretion, including but not limited to cases of inventory shortages or pricing errors.
                                 </p>
 
                                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-800 mt-8 mb-4">1.1 Minimum Order Quantity (MOQ)</h3>
@@ -101,7 +101,7 @@ export default function TermsOfSalePage() {
                             <section id="returns" className="scroll-mt-32">
                                 <h2 className="text-xl font-black uppercase tracking-tight text-primary mb-6 border-b border-slate-100 pb-2">4. Returns & Shortages</h2>
                                 <p className="text-sm leading-relaxed text-slate-600 mb-6">
-                                    Heidi Store Wholesale does not accept returns for unsold inventory or "buyer's remorse." All sales are final unless products arrive damaged or there is a verifiable fulfillment error.
+                                    DevBusinc Wholesale Store does not accept returns for unsold inventory or "buyer's remorse." All sales are final unless products arrive damaged or there is a verifiable fulfillment error.
                                 </p>
                                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-800 mt-8 mb-4">4.1 Damage Claims</h3>
                                 <p className="text-sm leading-relaxed text-slate-600 mb-6">
@@ -116,7 +116,7 @@ export default function TermsOfSalePage() {
                             <section id="liability" className="scroll-mt-32">
                                 <h2 className="text-xl font-black uppercase tracking-tight text-primary mb-6 border-b border-slate-100 pb-2">5. Limitation of Liability</h2>
                                 <p className="text-sm leading-relaxed text-slate-600 mb-6 font-medium">
-                                    IN NO EVENT SHALL HEIDI STORE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOSS OF PROFITS, REVENUE, OR DATA, INCURRED BY THE BUYER OR ANY THIRD PARTY, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+                                    IN NO EVENT SHALL DEVBUSINC WHOLESALE STORE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOSS OF PROFITS, REVENUE, OR DATA, INCURRED BY THE BUYER OR ANY THIRD PARTY, WHETHER IN AN ACTION IN CONTRACT OR TORT, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
                                 </p>
                                 <p className="text-sm leading-relaxed text-slate-600 mb-4">
                                     The Seller's total liability for any claim arising out of or relating to these Terms of Sale shall not exceed the total amount paid by the Buyer for the specific goods giving rise to the claim.

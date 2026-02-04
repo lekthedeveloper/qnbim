@@ -24,38 +24,11 @@ const QuickSkuEntry = () => {
 
     const handleQuickAdd = () => {
         if (!sku) return;
-        const result = addBySKU(sku, parseInt(qty) || 1);
-        if (result.success) {
-            setStatus('success');
-            setMessage(result.message);
-            setSku('');
-            setQty('1');
-        } else {
-            setStatus('error');
-            setMessage(result.message);
-        }
-        setTimeout(() => {
-            setStatus('idle');
-            setMessage('');
-        }, 3000);
+        router.push(`/wholesale-application?sku=${sku.toUpperCase()}&qty=${qty}`);
     };
 
     const handleCSVUpload = () => {
-        if (!isAuthenticated) {
-            router.push(`/login?redirect=csv_import&from=${pathname}`);
-            return;
-        }
-
-        setStatus('parsing');
-        setTimeout(() => {
-            handleQuickAdd();
-            setStatus('success');
-            setMessage("Bulk CSV Import Complete: 8 Items Parsed.");
-            setTimeout(() => {
-                setStatus('idle');
-                setMessage('');
-            }, 3000);
-        }, 2000);
+        router.push('/wholesale-application?mode=bulk_import');
     };
 
     return (
@@ -90,12 +63,9 @@ const QuickSkuEntry = () => {
                     </div>
                     <button
                         onClick={handleQuickAdd}
-                        disabled={status === 'parsing'}
-                        className={`w-full px-8 h-11 md:h-auto md:py-2.5 rounded-[4px] text-[11px] font-semibold uppercase tracking-widest transition-all shadow-md active:brightness-90 ${status === 'success' ? 'bg-teal-600' :
-                            status === 'error' ? 'bg-red-600' : 'bg-teal-accent text-white'
-                            }`}
+                        className="w-full px-8 h-11 md:h-auto md:py-2.5 rounded-[4px] text-[11px] font-semibold uppercase tracking-widest transition-all shadow-md active:brightness-90 bg-teal-accent text-white"
                     >
-                        {status === 'success' ? 'SKU ADDED' : status === 'error' ? 'SKU NOT FOUND' : 'ADD TO ORDER'}
+                        INQUIRE FOR BULK PRICE
                     </button>
                     <div className="w-full mt-2 pt-3 border-t border-slate-200/50">
                         <button

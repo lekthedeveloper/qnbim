@@ -61,7 +61,7 @@ const Hero = () => {
                     </motion.p>
                     <motion.div variants={itemVariants} className="flex flex-col md:flex-row gap-2.5 w-full md:w-auto">
                         <Link
-                            href="/signup"
+                            href="/wholesale-application"
                             className="w-full md:w-auto bg-teal-accent text-white px-8 py-2.5 min-h-[44px] flex items-center justify-center font-semibold text-[13px] uppercase tracking-widest hover:bg-teal-600 active:brightness-90 transition-all text-center rounded-[8px] leading-none"
                         >
                             Open a Wholesale Account

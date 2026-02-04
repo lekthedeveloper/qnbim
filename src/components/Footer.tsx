@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                             {isLogistics ? 'warehouse' : 'warehouse'}
                         </span>
                         <h2 className="text-xl font-black uppercase tracking-tighter">
-                            Heidi Store {isLogistics ? 'Wholesale' : 'Wholesale'}
+                            DevBusinc Wholesale Store
                         </h2>
                     </div>
                     <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-4 space-y-1">
@@ -64,14 +64,14 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                     <ul className="text-xs space-y-3">
                         {isLogistics ? (
                             <>
-                                <li><Link className="hover:text-teal-accent" href="/signup">Wholesale Application</Link></li>
+                                <li><Link className="hover:text-teal-accent" href="/wholesale-application">Wholesale Application</Link></li>
                                 <li><a className="hover:text-teal-accent" href="#">Terms of Carriage</a></li>
                                 <li><Link className="hover:text-teal-accent" href="/tax-exemption">Tax Exemption Help</Link></li>
                                 <li><a className="hover:text-teal-accent" href="#">Packaging Guide</a></li>
                             </>
                         ) : (
                             <>
-                                <li><Link className="hover:text-teal-accent" href="/signup">Wholesale Application</Link></li>
+                                <li><Link className="hover:text-teal-accent" href="/wholesale-application">Wholesale Application</Link></li>
                                 <li><Link className="hover:text-teal-accent" href="/ltl-rates">LTL Rate Calculator</Link></li>
                                 <li><Link className="hover:text-teal-accent" href="/tax-exemption">Tax Exemption Help</Link></li>
                             </>
@@ -84,14 +84,14 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                         {isLogistics ? 'Logistics Desk Support:' : 'Dedicated Account Manager Support:'}
                     </p>
                     <p className="text-white font-bold text-xs mb-1">
-                        {isLogistics ? '1-800-HEIDI-LOGS' : '1-800-HEIDI-B2B'}
+                        {isLogistics ? '1-800-DEVB-LOGS' : '1-800-DEVB-B2B'}
                     </p>
                     <p className="text-[10px]">Mon-Fri {isLogistics ? '7am-7pm' : '8am-6pm'} EST</p>
-                    {isLogistics && <p className="text-[10px] mt-2">orders@heidistore.biz</p>}
+                    {isLogistics && <p className="text-[10px] mt-2">orders@devbusinc.biz</p>}
                 </div>
             </div>
             <div className="max-w-[1400px] mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-[10px] uppercase tracking-widest">
-                © {new Date().getFullYear()} Heidi Store Wholesale Distribution. {isLogistics ? 'Logistics Dashboard v2.4.1' : 'A Professional Supply Chain Solution.'}
+                © {new Date().getFullYear()} DevBusinc Wholesale Store. {isLogistics ? 'Logistics Dashboard v2.4.1' : 'A Professional Supply Chain Solution.'}
             </div>
         </footer>
     );

@@ -39,14 +39,8 @@ const Navbar: React.FC<NavbarProps> = ({
 
     const defaultLinks = [
         { name: 'Catalog', href: '/catalog' },
-        {
-            name: 'Dashboard',
-            href: isAuthenticated ? '/dashboard' : `/login?redirect=dashboard&from=/dashboard`
-        },
-        {
-            name: 'My Quotes',
-            href: isAuthenticated ? '/my-quotes' : `/login?redirect=quotes&from=/my-quotes`
-        },
+        { name: 'Wholesale Application', href: '/wholesale-application' },
+        { name: 'Warehouses', href: '/warehouse-locations' },
         { name: 'LTL Rates', href: '/ltl-rates' },
     ];
 
@@ -69,8 +63,8 @@ const Navbar: React.FC<NavbarProps> = ({
 
                     <Link href="/" className="flex items-center gap-2 text-primary dark:text-white hover:opacity-80 transition-opacity">
                         <span className="material-symbols-outlined text-3xl md:text-4xl text-teal-accent">forklift</span>
-                        <h2 className="text-[16px] md:text-xl font-black leading-tight tracking-tighter uppercase italic">
-                            Heidi<span className="hidden xs:inline sm:inline"> Store</span> <span className="text-teal-accent">Wholesale</span>
+                        <h2 className="text-[14px] md:text-lg font-black leading-tight tracking-tighter uppercase italic">
+                            DEVBUSINC<span className="hidden xs:inline sm:inline"> WHOLESALE</span> <span className="text-teal-accent">STORE</span>
                         </h2>
                     </Link>
 
@@ -171,7 +165,7 @@ const Navbar: React.FC<NavbarProps> = ({
                             <div className="p-6 border-b border-slate-800 flex items-center justify-between">
                                 <div className="flex items-center gap-2">
                                     <span className="material-symbols-outlined text-2xl text-teal-accent">forklift</span>
-                                    <span className="text-white font-black uppercase italic tracking-tighter">HEIDI HUB</span>
+                                    <span className="text-white font-black uppercase italic tracking-tighter">DEVBUSINC HUB</span>
                                 </div>
                                 <button onClick={() => setIsMenuOpen(false)} className="text-slate-500 hover:text-white">
                                     <span className="material-symbols-outlined">close</span>

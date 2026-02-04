@@ -12,7 +12,7 @@ export default function DiscountsPage() {
             name: "Tier 1: Standard",
             volume: "1-10 Cases",
             pricing: "Market Rate",
-            shipping: "Calculated at Checkout",
+            shipping: "Calculated on Invoice",
             benefits: ["Basic Commercial Access", "Standard LTL Rates", "Digital Invoicing"],
             active: false
         },
@@ -95,10 +95,10 @@ export default function DiscountsPage() {
                                 </ul>
 
                                 <Link
-                                    href="/signup"
+                                    href="/wholesale-application"
                                     className={`block w-full text-center py-4 text-[10px] font-black uppercase tracking-widest transition-all rounded-sm ${tier.name.includes('Business')
-                                            ? 'bg-primary text-white hover:bg-[#001A2C] shadow-lg shadow-primary/20'
-                                            : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                                        ? 'bg-primary text-white hover:bg-[#001A2C] shadow-lg shadow-primary/20'
+                                        : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                                         }`}
                                 >
                                     Activate Tier Access

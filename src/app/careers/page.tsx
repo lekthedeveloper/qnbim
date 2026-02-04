@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 // Mock Job Data
 const MOCK_JOBS = [
     {
-        id: 'HS-WH-001',
+        id: 'DB-WH-001',
         title: 'Warehouse Fulfillment Lead',
         type: 'Full-time',
         department: 'Warehouse',
@@ -17,7 +17,7 @@ const MOCK_JOBS = [
         deptColor: 'bg-blue-50 text-blue-700'
     },
     {
-        id: 'HS-LOG-002',
+        id: 'DB-LOG-002',
         title: 'Supply Chain Analyst',
         type: 'Full-time',
         department: 'Logistics',
@@ -25,7 +25,7 @@ const MOCK_JOBS = [
         deptColor: 'bg-purple-50 text-purple-700'
     },
     {
-        id: 'HS-SAL-003',
+        id: 'DB-SAL-003',
         title: 'B2B Account Executive',
         type: 'Commission',
         department: 'Sales',
@@ -33,7 +33,7 @@ const MOCK_JOBS = [
         deptColor: 'bg-teal-50 text-teal-700'
     },
     {
-        id: 'HS-LOG-004',
+        id: 'DB-LOG-004',
         title: 'LTL Dispatch Coordinator',
         type: 'Full-time',
         department: 'Logistics',
@@ -41,7 +41,7 @@ const MOCK_JOBS = [
         deptColor: 'bg-purple-50 text-purple-700'
     },
     {
-        id: 'HS-WH-005',
+        id: 'DB-WH-005',
         title: 'Heavy Equipment Mechanic',
         type: 'Full-time',
         department: 'Warehouse',
@@ -49,7 +49,7 @@ const MOCK_JOBS = [
         deptColor: 'bg-blue-50 text-blue-700'
     },
     {
-        id: 'HS-SAL-006',
+        id: 'DB-SAL-006',
         title: 'Regional Sales Director',
         type: 'Full-time',
         department: 'Sales',
@@ -57,7 +57,7 @@ const MOCK_JOBS = [
         deptColor: 'bg-teal-50 text-teal-700'
     },
     {
-        id: 'HS-CORP-007',
+        id: 'DB-CORP-007',
         title: 'Corporate Finance Manager',
         type: 'Full-time',
         department: 'Corporate',
@@ -65,7 +65,7 @@ const MOCK_JOBS = [
         deptColor: 'bg-slate-50 text-slate-700'
     },
     {
-        id: 'HS-LOG-008',
+        id: 'DB-LOG-008',
         title: 'Freight Procurement Specialist',
         type: 'Full-time',
         department: 'Logistics',
@@ -166,7 +166,7 @@ export default function CareersPage() {
                             Join the <span className="text-teal-accent italic">Supply Chain</span> Revolution
                         </h1>
                         <p className="text-slate-400 text-lg max-w-2xl leading-relaxed font-medium animate-in fade-in slide-in-from-bottom-6 duration-1000">
-                            From complex warehouse logistics to B2B field sales, Heidi Store is looking for driven professionals to scale our wholesale operations.
+                            From complex warehouse logistics to B2B field sales, DevBusinc Wholesale Store is looking for driven professionals to scale our wholesale operations.
                         </p>
                     </div>
                 </section>
@@ -215,8 +215,8 @@ export default function CareersPage() {
                                         key={dept}
                                         onClick={() => setActiveDepartment(dept)}
                                         className={`px-4 py-2.5 text-[10px] font-black uppercase tracking-widest rounded-sm transition-all shadow-sm ${activeDepartment === dept
-                                                ? 'bg-teal-accent text-white shadow-teal-accent/20'
-                                                : 'bg-slate-50 text-slate-500 hover:bg-slate-100 border border-slate-200'
+                                            ? 'bg-teal-accent text-white shadow-teal-accent/20'
+                                            : 'bg-slate-50 text-slate-500 hover:bg-slate-100 border border-slate-200'
                                             }`}
                                     >
                                         {dept === 'All' ? 'All Positions' : dept}
@@ -391,7 +391,7 @@ export default function CareersPage() {
                                     </form>
 
                                     <p className="mt-8 text-[9px] text-slate-400 font-bold uppercase tracking-widest">
-                                        Heidi Store Privacy Protocol Active &bull; No Spam Guaranteed
+                                        DevBusinc Privacy Protocol Active &bull; No Spam Guaranteed
                                     </p>
                                 </>
                             )}

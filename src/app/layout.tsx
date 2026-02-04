@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Heidi Store - B2B Wholesale Home",
-  description: "High-Volume Wholesale Household Essentials. Dedicated supply chain partner for retail, property management, and hospitality.",
+  title: "DevBusinc Wholesale Store - B2B Supply Chain Partner",
+  description: "DevBusinc Wholesale Store - Institutional Procurement & Workflow Distribution Strategy.",
 };
 
 import { CartProvider } from "@/context/CartContext";

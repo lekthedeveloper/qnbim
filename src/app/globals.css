@@ -60,7 +60,9 @@ body {
 [class*="agent-bar"],
 [class*="assistance-bubble"],
 .vercel-toolbar,
-#nextjs-proxy-bar {
+#nextjs-proxy-bar,
+.nextjs-static-indicator-wrapper,
+#nextjs-dev-overlay {
   display: none !important;
   visibility: hidden !important;
   pointer-events: none !important;
