@@ -56,7 +56,7 @@ export default function CartPage() {
                         <div className="bg-white border border-slate-200 shadow-xl shadow-slate-200/50 rounded-sm">
                             <table className="w-full text-left border-collapse min-w-[800px]">
                                 <thead className="bg-slate-900 text-white border-b border-slate-800">
-                                    <tr>
+                                    <tr style={{ color: '#FFFFFF' }}>
                                         <th className="p-5 text-[10px] font-black uppercase tracking-[0.2em]">Product Details</th>
                                         <th className="p-5 text-[10px] font-black uppercase tracking-[0.2em]">SKU</th>
                                         <th className="p-5 text-[10px] font-black uppercase tracking-[0.2em]">Pack Size</th>

@@ -14,7 +14,7 @@ export default function DashboardPage() {
         return (
             <div className="min-h-screen flex flex-col items-center justify-center bg-slate-900 text-white p-6 text-center">
                 <span className="material-symbols-outlined text-6xl text-teal-accent mb-4 animate-pulse">lock</span>
-                <h1 className="text-2xl font-black uppercase tracking-widest mb-2">Unauthorized Access</h1>
+                <h1 className="text-2xl font-black uppercase tracking-widest mb-2" style={{ color: '#FFFFFF' }}>Unauthorized Access</h1>
                 <p className="text-slate-400 text-xs uppercase font-bold tracking-tighter mb-8 max-w-md">
                     The requested logistics endpoint requires an active B2B Tier 1 Wholesale authentication token.
                 </p>
