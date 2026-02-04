@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                             {isLogistics ? 'warehouse' : 'warehouse'}
                         </span>
                         <h2 className="text-xl font-black uppercase tracking-tighter">
-                            qnbim WHOLESALE
+                            qnbim WHOLESALE STORE
                         </h2>
                     </div>
                     <div className="text-[10px] text-white/50 font-bold uppercase tracking-widest mb-4 space-y-1" style={{ color: 'rgba(255, 255, 255, 0.5)' }}>
