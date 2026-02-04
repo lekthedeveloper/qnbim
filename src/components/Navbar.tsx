@@ -64,8 +64,8 @@ const Navbar: React.FC<NavbarProps> = ({
 
                     <Link href="/" className="flex items-center gap-2 text-white hover:opacity-80 transition-opacity" style={{ color: '#FFFFFF' }}>
                         <span className="material-symbols-outlined text-3xl md:text-4xl text-teal-accent">forklift</span>
-                        <h2 className="text-[20px] md:text-[26px] font-black leading-none tracking-tighter text-white !font-sans flex items-baseline gap-1" style={{ color: '#FFFFFF', fontWeight: 900, fontFamily: 'var(--font-inter), sans-serif' }}>
-                            <span className="lowercase">qnbim</span>
+                        <h2 className="text-[20px] md:text-[26px] font-black leading-none tracking-tighter text-white !font-sans flex items-baseline gap-1" style={{ color: '#FFFFFF', fontWeight: 900 }}>
+                            <span className="uppercase">QNBIM</span>
                             <span className="uppercase font-medium opacity-70 text-[0.6em] tracking-[0.2em] whitespace-nowrap">wholesale store</span>
                         </h2>
                     </Link>
