@@ -117,7 +117,7 @@ export default function DiscountsPage() {
                                 <div className="w-12 h-12 bg-teal-accent/20 border border-teal-accent/30 rounded-sm flex items-center justify-center">
                                     <span className="material-symbols-outlined text-teal-accent text-2xl">grid_view</span>
                                 </div>
-                                <h2 className="text-3xl font-black text-white uppercase tracking-tighter">Pallet Optimization</h2>
+                                <h2 className="text-3xl font-black uppercase tracking-tighter" style={{ color: '#FFFFFF' }}>Pallet Optimization</h2>
                             </div>
                             <p className="text-slate-400 text-sm font-medium leading-relaxed mb-10">
                                 Why aim for Tier 3? Full pallet orders (approx. 50-60 cases depending on SKU weight) utilize maximum cube space in LTL trucks. This density allows our freight carriers to offer lower rates, which we pass directly to you. A full pallet reduces "landed cost-per-unit" by **20%** compared to shipping individual cases.
@@ -135,8 +135,10 @@ export default function DiscountsPage() {
                         </div>
                         <div className="bg-teal-accent/10 border-l border-slate-800 p-16 flex flex-col items-center justify-center text-center">
                             <span className="material-symbols-outlined text-7xl text-teal-accent mb-8 animate-pulse">container</span>
-                            <h3 className="text-xl font-black text-white uppercase tracking-tight mb-4 leading-tight">Need Even More? <br /> Load-Scale Procurement</h3>
-                            <p className="text-slate-400 text-xs font-medium max-w-xs mb-10 leading-relaxed">
+                            <h3 className="text-xl font-black uppercase tracking-tight mb-4 leading-tight" style={{ color: '#FFFFFF' }}>
+                                NEED EVEN MORE? <br /> LOAD-SCALE PROCUREMENT
+                            </h3>
+                            <p className="text-white/60 text-xs font-medium max-w-xs mb-10 leading-relaxed uppercase tracking-widest">
                                 For container loads (24+ pallets) or direct factory shipments, we provide custom FTL (Full Truckload) rate cards and master distributor pricing.
                             </p>
                             <button className="bg-white text-primary px-10 py-5 text-xs font-black uppercase tracking-widest hover:bg-slate-100 transition-all rounded-sm shadow-xl flex items-center gap-3">

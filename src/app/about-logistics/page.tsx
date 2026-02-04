@@ -54,7 +54,7 @@ export default function AboutLogisticsPage() {
                     <div className="relative max-w-6xl mx-auto w-full px-6 text-white">
                         <div className="max-w-2xl">
                             <span className="text-teal-accent font-black uppercase tracking-[0.2em] text-xs mb-4 block">Engineered for Scale</span>
-                            <h1 className="text-5xl font-black uppercase tracking-tight mb-6 leading-[0.9]">Reliable Supply Chain Solutions</h1>
+                            <h1 className="text-5xl font-black uppercase tracking-tight mb-6 leading-[0.9]" style={{ color: '#FFFFFF' }}>Reliable Supply Chain Solutions</h1>
                             <p className="text-slate-300 text-lg font-medium leading-relaxed">
                                 From global sourcing to domestic last-mile delivery, DevBusinc Wholesale Store manages every touchpoint to ensure your inventory is never at risk.
                             </p>

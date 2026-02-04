@@ -162,7 +162,7 @@ export default function CareersPage() {
                     <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
                     <div className="max-w-6xl mx-auto relative z-10">
                         <span className="text-teal-accent text-xs font-black tracking-widest uppercase mb-4 block animate-in fade-in slide-in-from-bottom-2">Building the Future of Commerce</span>
-                        <h1 className="text-6xl font-black text-white uppercase tracking-tighter mb-6 max-w-4xl leading-[0.9] animate-in fade-in slide-in-from-bottom-4 duration-700">
+                        <h1 className="text-6xl font-black text-white uppercase tracking-tighter mb-6 max-w-4xl leading-[0.9] animate-in fade-in slide-in-from-bottom-4 duration-700" style={{ color: '#FFFFFF' }}>
                             Join the <span className="text-teal-accent italic">Supply Chain</span> Revolution
                         </h1>
                         <p className="text-slate-400 text-lg max-w-2xl leading-relaxed font-medium animate-in fade-in slide-in-from-bottom-6 duration-1000">

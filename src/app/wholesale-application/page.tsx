@@ -30,7 +30,7 @@ export default function WholesaleApplication() {
                                 <span className="h-px w-8 bg-teal-accent"></span>
                                 <span className="text-teal-accent text-[11px] font-black uppercase tracking-[0.3em]">Institutional Access</span>
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-black text-white uppercase italic tracking-tighter">
+                            <h1 className="text-4xl md:text-5xl font-black text-white uppercase italic tracking-tighter" style={{ color: '#FFFFFF' }}>
                                 Wholesale <span className="text-teal-accent">Procurement</span> Application
                             </h1>
                             <p className="text-slate-400 text-sm max-w-2xl font-medium leading-relaxed uppercase tracking-wider">
