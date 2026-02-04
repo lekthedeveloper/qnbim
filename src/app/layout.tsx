@@ -14,7 +14,6 @@ export const metadata: Metadata = {
 
 import { CartProvider } from "@/context/CartContext";
 import PageTransition from "@/components/PageTransition";
-import MobilePalletBar from "@/components/MobilePalletBar";
 
 export default function RootLayout({
   children,
@@ -34,7 +33,6 @@ export default function RootLayout({
           <PageTransition>
             {children}
           </PageTransition>
-          <MobilePalletBar />
         </CartProvider>
       </body>
     </html>

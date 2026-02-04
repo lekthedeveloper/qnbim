@@ -3,17 +3,16 @@
 import React from 'react';
 import { useCart } from '@/context/CartContext';
 import { Product } from '@/data/products';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 const ProductCard: React.FC<Product> = (product) => {
     const { addToCart } = useCart();
+    const router = useRouter();
     const [quantity, setQuantity] = React.useState(product.minOrderQty);
-    const [added, setAdded] = React.useState(false);
 
-    const handleAddToCart = () => {
-        addToCart(product, quantity);
-        setAdded(true);
-        setTimeout(() => setAdded(false), 2000);
+    const handleContactSales = () => {
+        router.push('/wholesale-application');
     };
 
     return (
@@ -69,20 +68,11 @@ const ProductCard: React.FC<Product> = (product) => {
                         </div>
                         <motion.button
                             whileTap={{ scale: 0.95 }}
-                            onClick={handleAddToCart}
-                            className={`w-full ${added ? 'bg-teal-600' : 'bg-slate-900'} text-white text-[10px] font-black py-2.5 uppercase tracking-widest hover:bg-teal-accent transition-all shadow-md flex items-center justify-center gap-1.5`}
+                            onClick={handleContactSales}
+                            className={`w-full bg-slate-900 text-white text-[10px] font-black py-2.5 uppercase tracking-widest hover:bg-teal-accent transition-all shadow-md flex items-center justify-center gap-1.5`}
                         >
-                            {added ? (
-                                <>
-                                    <span className="material-symbols-outlined text-sm">check_circle</span>
-                                    SUCCESS
-                                </>
-                            ) : (
-                                <>
-                                    <span className="material-symbols-outlined text-sm">add_shopping_cart</span>
-                                    ADD TO ORDER
-                                </>
-                            )}
+                            <span className="material-symbols-outlined text-sm">support_agent</span>
+                            CONTACT SALES
                         </motion.button>
                     </div>
                 </div>

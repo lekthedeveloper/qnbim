@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
         <footer className={`bg-primary text-slate-400 py-12 ${padding} border-t border-slate-800`}>
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
                 <div className="md:col-span-2">
-                    <div className="flex items-center gap-2 text-white mb-6">
+                    <div className="flex items-center gap-2 text-white mb-4">
                         <span className="material-symbols-outlined text-2xl text-teal-accent">
                             {isLogistics ? 'warehouse' : 'warehouse'}
                         </span>
@@ -19,9 +19,13 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                             Heidi Store {isLogistics ? 'Wholesale' : 'Wholesale'}
                         </h2>
                     </div>
+                    <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-4 space-y-1">
+                        <p>123 Logistics Way, Suite 500</p>
+                        <p>Industrial District, GA 30301</p>
+                    </div>
                     <p className="text-xs leading-relaxed mb-6 max-w-sm">
                         {isLogistics
-                            ? 'Supply chain logistics and wholesale distribution. Proprietary freight management system for high-volume B2B accounts.'
+                            ? 'Supply chain logistics and workflow studio distribution. Proprietary freight management system for high-volume B2B accounts.'
                             : 'Supply chain logistics and wholesale distribution of daily household essentials. Servicing commercial accounts since 2012.'}
                     </p>
                     <div className="flex gap-4">

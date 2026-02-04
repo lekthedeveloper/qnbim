@@ -30,25 +30,6 @@ const TopBar: React.FC<TopBarProps> = ({ padding = 'px-10', leftContent }) => {
                 )}
             </div>
             <div className="flex gap-4 md:gap-6 items-center">
-                {isAuthenticated && (
-                    <>
-                        <Link
-                            href="/application-status"
-                            className="flex items-center gap-1.5 hover:text-teal-accent transition-all group"
-                        >
-                            <span className="material-symbols-outlined text-sm text-teal-accent group-hover:scale-110 transition-transform">verified</span>
-                            <span className="hidden sm:inline">Application Status</span>
-                        </Link>
-                        <div className="hidden sm:block w-px h-3 bg-slate-700"></div>
-                        <Link className="hover:text-teal-accent transition-colors flex items-center gap-1" href="/tax-exempt">
-                            <span className={`material-symbols-outlined text-sm ${taxExemptStatus === 'pending' ? 'text-amber-500 animate-pulse' : 'text-teal-accent'}`}>
-                                {taxExemptStatus === 'pending' ? 'pending_actions' : 'upload_file'}
-                            </span>
-                            <span className="hidden sm:inline">{taxExemptStatus === 'pending' ? 'Audit Pending' : 'Tax Exempt?'}</span>
-                        </Link>
-                        <div className="hidden sm:block w-px h-3 bg-slate-700"></div>
-                    </>
-                )}
                 <Link className="hover:text-teal-accent transition-colors underline decoration-teal-accent whitespace-nowrap" href="/discounts">
                     <span className="hidden sm:inline">Volume Discounts Guide</span>
                     <span className="sm:hidden">DISCOUNTS</span>

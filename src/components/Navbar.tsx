@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import CartDrawer from './CartDrawer';
 import { useCart } from '@/context/CartContext';
 
 interface NavLink {
@@ -26,9 +25,8 @@ const Navbar: React.FC<NavbarProps> = ({
     customLinks
 }) => {
     const pathname = usePathname();
-    const [isCartOpen, setIsCartOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const { subtotal, searchQuery, setSearchQuery, isAuthenticated, logout, user } = useCart();
+    const { searchQuery, setSearchQuery, isAuthenticated } = useCart();
     const router = useRouter();
 
     const handleSearchKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -123,36 +121,14 @@ const Navbar: React.FC<NavbarProps> = ({
 
                 <div className="flex items-center gap-2 md:gap-3">
                     <div className="flex items-center gap-2">
-                        {/* Compact Cart Button */}
-                        <motion.button
-                            whileTap={{ scale: 0.95 }}
-                            onClick={() => setIsCartOpen(true)}
-                            className="flex items-center gap-2 text-[10px] font-black px-3 md:px-5 py-2 md:py-2.5 bg-teal-accent text-white uppercase tracking-widest transition-all rounded-sm shadow-md hover:shadow-lg"
+                        {/* Support Center Button */}
+                        <Link
+                            href="/support"
+                            className="flex items-center gap-2 text-[10px] font-black px-4 md:px-6 py-2.5 md:py-3 bg-slate-900 text-white uppercase tracking-widest transition-all rounded-sm shadow-md hover:bg-teal-700 active:scale-95"
                         >
-                            <span className="material-symbols-outlined text-lg">shopping_cart</span>
-                            <span className="hidden xs:inline">${subtotal.toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
-                        </motion.button>
-
-                        {/* Portal / Manager (Desktop) */}
-                        <div className="hidden md:flex items-center gap-2">
-                            {isAuthenticated ? (
-                                <Link
-                                    href="/dashboard"
-                                    className="flex items-center gap-2 text-[10px] font-black px-4 py-2.5 bg-slate-900 text-white uppercase tracking-widest rounded-sm"
-                                >
-                                    <span className="material-symbols-outlined text-base">dashboard</span>
-                                    Portal
-                                </Link>
-                            ) : (
-                                <Link
-                                    href="/login"
-                                    className="flex items-center gap-2 text-[10px] font-black px-4 py-2.5 bg-slate-100 text-slate-900 border border-slate-200 uppercase tracking-widest rounded-sm"
-                                >
-                                    <span className="material-symbols-outlined text-base">lock</span>
-                                    Log In
-                                </Link>
-                            )}
-                        </div>
+                            <span className="material-symbols-outlined text-base">support_agent</span>
+                            Support Center
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -216,30 +192,15 @@ const Navbar: React.FC<NavbarProps> = ({
                                     </Link>
                                 ))}
 
-                                {/* Mobile Portal Links */}
+                                {/* Mobile Support Link */}
                                 <div className="pt-8 space-y-3">
-                                    {isAuthenticated ? (
-                                        <>
-                                            <div className="bg-slate-800/50 p-4 rounded-sm border border-slate-700">
-                                                <p className="text-[10px] text-teal-accent font-black uppercase tracking-widest mb-1 italic">{user?.tier || 'Tier 1'} Member</p>
-                                                <p className="text-white font-black uppercase text-[11px] truncate">{user?.name}</p>
-                                            </div>
-                                            <button
-                                                onClick={() => { logout(); setIsMenuOpen(false); }}
-                                                className="w-full py-4 text-center text-red-400 text-[10px] font-black uppercase tracking-[0.2em] border border-red-900/30 rounded-sm"
-                                            >
-                                                Sign Out of System
-                                            </button>
-                                        </>
-                                    ) : (
-                                        <Link
-                                            href="/login"
-                                            onClick={() => setIsMenuOpen(false)}
-                                            className="w-full block py-4 bg-teal-accent text-center text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-sm shadow-lg shadow-teal-900/20"
-                                        >
-                                            Secure Access Login
-                                        </Link>
-                                    )}
+                                    <Link
+                                        href="/support"
+                                        onClick={() => setIsMenuOpen(false)}
+                                        className="w-full block py-4 bg-teal-accent text-center text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-sm shadow-lg shadow-teal-900/20"
+                                    >
+                                        Support center access
+                                    </Link>
                                 </div>
                             </div>
 
@@ -252,8 +213,6 @@ const Navbar: React.FC<NavbarProps> = ({
                     </>
                 )}
             </AnimatePresence>
-
-            <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
         </header>
     );
 };

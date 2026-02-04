@@ -25,42 +25,22 @@ const QuickBulkAdd = () => {
     const handleAdd = () => {
         if (!sku || !quantity || quantity <= 0) return;
 
-        const result = addBySKU(sku, Number(quantity));
-        if (result.success) {
-            setStatus('success');
-            setMessage(result.message);
-            setSku('');
-            setQuantity('');
-        } else {
-            setStatus('error');
-            setMessage(result.message);
-        }
+        setStatus('success');
+        setMessage("SKU Found. Redirecting to Wholesale Application...");
         setTimeout(() => {
-            setStatus('idle');
-            setMessage('');
-        }, 3000);
+            router.push('/wholesale-application');
+        }, 1500);
     };
 
     const handleCSVImport = () => {
-        if (!isAuthenticated) {
-            router.push(`/login?redirect=csv_import&from=${pathname}`);
-            return;
-        }
-
         setStatus('parsing');
         setTimeout(() => {
-            // Import 3 random items
-            const randomIndices = Array.from({ length: 3 }, () => Math.floor(Math.random() * products.length));
-            randomIndices.forEach(idx => {
-                addToCart(products[idx], Math.floor(Math.random() * 5) + 1);
-            });
             setStatus('success');
-            setMessage("Bulk Import Successful: 14 Cases added to pallet.");
+            setMessage("CSV Validation Complete. Redirecting...");
             setTimeout(() => {
-                setStatus('idle');
-                setMessage('');
-            }, 3000);
-        }, 2000);
+                router.push('/wholesale-application');
+            }, 1000);
+        }, 1500);
     };
 
     return (
@@ -91,7 +71,7 @@ const QuickBulkAdd = () => {
                             status === 'error' ? 'bg-red-600' : 'bg-teal-accent hover:bg-teal-400 text-slate-900'
                             }`}
                     >
-                        {status === 'success' ? 'ADDED' : status === 'parsing' ? 'PARSING...' : status === 'error' ? 'FAILED' : 'ADD TO ORDER'}
+                        {status === 'success' ? 'REDIRECTING...' : status === 'parsing' ? 'PARSING...' : status === 'error' ? 'FAILED' : 'CONTACT SALES'}
                     </button>
 
                     {message && (

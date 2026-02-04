@@ -3,17 +3,16 @@
 import React from 'react';
 import { useCart } from '@/context/CartContext';
 import { Product } from '@/data/products';
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 const CatalogProductCard: React.FC<Product> = (product) => {
     const { addToCart } = useCart();
+    const router = useRouter();
     const [quantity, setQuantity] = React.useState(product.minOrderQty);
-    const [added, setAdded] = React.useState(false);
 
-    const handleAddToCart = () => {
-        addToCart(product, quantity);
-        setAdded(true);
-        setTimeout(() => setAdded(false), 2000);
+    const handleContactSales = () => {
+        router.push('/wholesale-application');
     };
 
     return (
@@ -79,15 +78,11 @@ const CatalogProductCard: React.FC<Product> = (product) => {
                         </div>
                         <motion.button
                             whileTap={{ scale: 0.95 }}
-                            onClick={handleAddToCart}
-                            className={`w-full ${added ? 'bg-teal-600' : 'bg-slate-900'} text-white text-[9px] md:text-[10px] font-semibold py-2.5 md:py-3 uppercase tracking-[0.2em] hover:bg-teal-accent active:brightness-90 transition-all shadow-md flex items-center justify-center gap-2 rounded-[8px]`}
+                            onClick={handleContactSales}
+                            className={`w-full bg-slate-900 text-white text-[9px] md:text-[10px] font-semibold py-2.5 md:py-3 uppercase tracking-[0.2em] hover:bg-teal-accent active:brightness-90 transition-all shadow-md flex items-center justify-center gap-2 rounded-[8px]`}
                         >
-                            {added ? (
-                                <span className="material-symbols-outlined text-sm">check_circle</span>
-                            ) : (
-                                <span className="material-symbols-outlined text-sm">add_shopping_cart</span>
-                            )}
-                            <span>{added ? 'SUCCESS' : 'ADD TO ORDER'}</span>
+                            <span className="material-symbols-outlined text-sm">support_agent</span>
+                            <span>CONTACT SALES</span>
                         </motion.button>
                     </div>
                 </div>
