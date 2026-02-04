@@ -37,22 +37,22 @@ const CatalogSidebar = () => {
             </h3>
             <div className="space-y-8">
                 <div>
-                    <h4 className="text-[10px] font-bold uppercase text-[#001A2C] mb-3 tracking-tighter">Availability</h4>
+                    <h4 className="text-[10px] font-bold uppercase text-[#0f172a] mb-3 tracking-tighter">Availability</h4>
                     <div className="space-y-2">
-                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#0f172a] hover:text-cobalt transition-colors">
                             <input
                                 checked={availabilityFilter.inStock}
                                 onChange={() => handleAvailabilityChange('inStock')}
-                                className="rounded-sm border-slate-300 text-teal-accent focus:ring-teal-accent h-3.5 w-3.5"
+                                className="rounded-sm border-slate-300 text-cobalt focus:ring-cobalt h-3.5 w-3.5"
                                 type="checkbox"
                             />
                             In Stock
                         </label>
-                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#0f172a] hover:text-cobalt transition-colors">
                             <input
                                 checked={availabilityFilter.backorder}
                                 onChange={() => handleAvailabilityChange('backorder')}
-                                className="rounded-sm border-slate-300 text-teal-accent focus:ring-teal-accent h-3.5 w-3.5"
+                                className="rounded-sm border-slate-300 text-cobalt focus:ring-cobalt h-3.5 w-3.5"
                                 type="checkbox"
                             />
                             Backorder
@@ -61,33 +61,33 @@ const CatalogSidebar = () => {
                 </div>
 
                 <div>
-                    <h4 className="text-[10px] font-bold uppercase text-[#001A2C] mb-3 tracking-tighter">Packaging Type</h4>
+                    <h4 className="text-[10px] font-bold uppercase text-[#0f172a] mb-3 tracking-tighter">Packaging Type</h4>
                     <div className="space-y-2">
-                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#0f172a] hover:text-cobalt transition-colors">
                             <input
                                 checked={packagingFilter === 'All'}
                                 onChange={() => setPackagingFilter('All')}
-                                className="border-slate-300 text-teal-accent focus:ring-teal-accent h-3.5 w-3.5"
+                                className="border-slate-300 text-cobalt focus:ring-cobalt h-3.5 w-3.5"
                                 name="pkg"
                                 type="radio"
                             />
                             All Types
                         </label>
-                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#0f172a] hover:text-cobalt transition-colors">
                             <input
                                 checked={packagingFilter === 'Pallet'}
                                 onChange={() => setPackagingFilter('Pallet')}
-                                className="border-slate-300 text-teal-accent focus:ring-teal-accent h-3.5 w-3.5"
+                                className="border-slate-300 text-cobalt focus:ring-cobalt h-3.5 w-3.5"
                                 name="pkg"
                                 type="radio"
                             />
                             Full Pallet (LTL)
                         </label>
-                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
+                        <label className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#0f172a] hover:text-cobalt transition-colors">
                             <input
                                 checked={packagingFilter === 'Case'}
                                 onChange={() => setPackagingFilter('Case')}
-                                className="border-slate-300 text-teal-accent focus:ring-teal-accent h-3.5 w-3.5"
+                                className="border-slate-300 text-cobalt focus:ring-cobalt h-3.5 w-3.5"
                                 name="pkg"
                                 type="radio"
                             />
@@ -97,7 +97,7 @@ const CatalogSidebar = () => {
                 </div>
 
                 <div>
-                    <h4 className="text-[10px] font-bold uppercase text-[#001A2C] mb-3 tracking-tighter">Price Per Unit: ${priceRange[0]} - ${priceRange[1]}</h4>
+                    <h4 className="text-[10px] font-bold uppercase text-[#0f172a] mb-3 tracking-tighter">Price Per Unit: ${priceRange[0]} - ${priceRange[1]}</h4>
                     <div className="space-y-3">
                         <input
                             min="0"
@@ -105,10 +105,10 @@ const CatalogSidebar = () => {
                             step="0.1"
                             value={priceRange[1]}
                             onChange={(e) => setPriceRange([priceRange[0], parseFloat(e.target.value)])}
-                            className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-teal-accent"
+                            className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-cobalt"
                             type="range"
                         />
-                        <div className="flex justify-between text-[10px] font-bold text-[#001A2C]">
+                        <div className="flex justify-between text-[10px] font-bold text-[#0f172a]">
                             <span>$0.10</span>
                             <span>$50.00+</span>
                         </div>
@@ -116,14 +116,14 @@ const CatalogSidebar = () => {
                 </div>
 
                 <div>
-                    <h4 className="text-[10px] font-bold uppercase text-[#001A2C] mb-3 tracking-tighter">Top Brands</h4>
+                    <h4 className="text-[10px] font-bold uppercase text-[#0f172a] mb-3 tracking-tighter">Top Brands</h4>
                     <div className="space-y-2">
                         {['qnbim Essential', 'Pro-Sanitize', 'BulkHouse'].map(brand => (
-                            <label key={brand} className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#001A2C] hover:text-industrial-teal transition-colors">
+                            <label key={brand} className="flex items-center gap-2 text-xs font-bold cursor-pointer text-[#0f172a] hover:text-cobalt transition-colors">
                                 <input
                                     checked={brandFilters.includes(brand)}
                                     onChange={() => handleBrandChange(brand)}
-                                    className="rounded-sm border-slate-300 text-teal-accent focus:ring-teal-accent h-3.5 w-3.5"
+                                    className="rounded-sm border-slate-300 text-cobalt focus:ring-cobalt h-3.5 w-3.5"
                                     type="checkbox"
                                 />
                                 {brand}

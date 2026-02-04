@@ -41,10 +41,10 @@ export default function DiscountsPage() {
 
             <main className="flex-1 max-w-6xl mx-auto w-full px-6 py-20 relative z-10">
                 <div className="mb-16 text-center max-w-3xl mx-auto">
-                    <div className="inline-block bg-teal-accent/10 text-teal-accent text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest mb-6 border border-teal-accent/20">
+                    <div className="inline-block bg-cobalt/10 text-cobalt text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest mb-6 border border-cobalt/20">
                         Institutional Pricing Matrix
                     </div>
-                    <h1 className="text-5xl font-black text-[#001A2C] uppercase tracking-tight mb-6 leading-none">Wholesale Volume Discounts</h1>
+                    <h1 className="text-5xl font-black text-[#0f172a] uppercase tracking-tight mb-6 leading-none">Wholesale Volume Discounts</h1>
                     <p className="text-slate-600 text-sm font-medium leading-relaxed italic">
                         "Maximize margins through tiered inventory acquisition. Our logistics engine calculates pallet density to reduce your landed cost-per-unit by up to 20% on full-load orders."
                     </p>
@@ -53,10 +53,10 @@ export default function DiscountsPage() {
                 {/* Pricing Tiers Table */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
                     {tiers.map((tier, idx) => (
-                        <div key={idx} className={`relative bg-white border rounded-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${tier.name.includes('Business') ? 'border-teal-accent border-2 z-10 shadow-xl' : 'border-slate-200'
+                        <div key={idx} className={`relative bg-white border rounded-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${tier.name.includes('Business') ? 'border-cobalt border-2 z-10 shadow-xl' : 'border-slate-200'
                             }`}>
                             {tier.name.includes('Business') && (
-                                <div className="absolute top-0 right-10 transform -translate-y-1/2 bg-teal-accent text-white text-[9px] font-black px-4 py-1 rounded-full uppercase tracking-[0.2em]">
+                                <div className="absolute top-0 right-10 transform -translate-y-1/2 bg-cobalt text-white text-[9px] font-black px-4 py-1 rounded-full uppercase tracking-[0.2em]">
                                     Most Efficient Tier
                                 </div>
                             )}
@@ -67,7 +67,7 @@ export default function DiscountsPage() {
                                 <div className="space-y-6 mb-10 pb-10 border-b border-slate-100">
                                     <div className="flex items-center gap-3">
                                         <div className="w-8 h-8 bg-slate-50 rounded-sm flex items-center justify-center border border-slate-100">
-                                            <span className="material-symbols-outlined text-sm text-teal-accent">payments</span>
+                                            <span className="material-symbols-outlined text-sm text-cobalt">payments</span>
                                         </div>
                                         <div>
                                             <p className="text-[9px] text-slate-400 font-bold uppercase tracking-widest leading-none mb-1">Price Delta</p>
@@ -76,7 +76,7 @@ export default function DiscountsPage() {
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <div className="w-8 h-8 bg-slate-50 rounded-sm flex items-center justify-center border border-slate-100">
-                                            <span className="material-symbols-outlined text-sm text-teal-accent">local_shipping</span>
+                                            <span className="material-symbols-outlined text-sm text-cobalt">local_shipping</span>
                                         </div>
                                         <div>
                                             <p className="text-[9px] text-slate-400 font-bold uppercase tracking-widest leading-none mb-1">Logistic Freight</p>
@@ -88,7 +88,7 @@ export default function DiscountsPage() {
                                 <ul className="space-y-4 mb-10">
                                     {tier.benefits.map((benefit, bIdx) => (
                                         <li key={bIdx} className="flex items-start gap-3">
-                                            <span className="material-symbols-outlined text-teal-accent text-sm mt-0.5">verified_user</span>
+                                            <span className="material-symbols-outlined text-cobalt text-sm mt-0.5">verified_user</span>
                                             <span className="text-[11px] text-slate-500 font-bold uppercase tracking-tight">{benefit}</span>
                                         </li>
                                     ))}
@@ -97,7 +97,7 @@ export default function DiscountsPage() {
                                 <Link
                                     href="/wholesale-application"
                                     className={`block w-full text-center py-4 text-[10px] font-black uppercase tracking-widest transition-all rounded-sm ${tier.name.includes('Business')
-                                        ? 'bg-primary text-white hover:bg-[#001A2C] shadow-lg shadow-primary/20'
+                                        ? 'bg-primary text-white hover:bg-[#0f172a] shadow-lg shadow-primary/20'
                                         : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                                         }`}
                                 >
@@ -109,13 +109,13 @@ export default function DiscountsPage() {
                 </div>
 
                 {/* Pallet Optimization Section */}
-                <div className="bg-[#001A2C] rounded-sm overflow-hidden shadow-2xl border border-slate-800 relative group">
+                <div className="bg-[#0f172a] rounded-sm overflow-hidden shadow-2xl border border-slate-800 relative group">
                     <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 relative z-10">
                         <div className="p-16 flex flex-col justify-center">
                             <div className="flex items-center gap-4 mb-8">
-                                <div className="w-12 h-12 bg-teal-accent/20 border border-teal-accent/30 rounded-sm flex items-center justify-center">
-                                    <span className="material-symbols-outlined text-teal-accent text-2xl">grid_view</span>
+                                <div className="w-12 h-12 bg-cobalt/20 border border-cobalt/30 rounded-sm flex items-center justify-center">
+                                    <span className="material-symbols-outlined text-cobalt text-2xl">grid_view</span>
                                 </div>
                                 <h2 className="text-3xl font-black uppercase tracking-tighter" style={{ color: '#FFFFFF' }}>Pallet Optimization</h2>
                             </div>
@@ -125,16 +125,16 @@ export default function DiscountsPage() {
                             <div className="grid grid-cols-2 gap-8 mb-10">
                                 <div className="bg-slate-800/50 p-6 rounded-sm border border-slate-700">
                                     <p className="text-2xl font-black text-white tracking-tighter">20%</p>
-                                    <p className="text-[9px] text-teal-accent font-black uppercase tracking-widest mt-1">Landed Cost Reduction</p>
+                                    <p className="text-[9px] text-cobalt font-black uppercase tracking-widest mt-1">Landed Cost Reduction</p>
                                 </div>
                                 <div className="bg-slate-800/50 p-6 rounded-sm border border-slate-700">
                                     <p className="text-2xl font-black text-white tracking-tighter">100%</p>
-                                    <p className="text-[9px] text-teal-accent font-black uppercase tracking-widest mt-1">Freight Efficiency</p>
+                                    <p className="text-[9px] text-cobalt font-black uppercase tracking-widest mt-1">Freight Efficiency</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-teal-accent/10 border-l border-slate-800 p-16 flex flex-col items-center justify-center text-center">
-                            <span className="material-symbols-outlined text-7xl text-teal-accent mb-8 animate-pulse">container</span>
+                        <div className="bg-cobalt/10 border-l border-slate-800 p-16 flex flex-col items-center justify-center text-center">
+                            <span className="material-symbols-outlined text-7xl text-cobalt mb-8 animate-pulse">container</span>
                             <h3 className="text-xl font-black uppercase tracking-tight mb-4 leading-tight" style={{ color: '#FFFFFF' }}>
                                 NEED EVEN MORE? <br /> LOAD-SCALE PROCUREMENT
                             </h3>

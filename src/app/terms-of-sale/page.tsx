@@ -38,7 +38,7 @@ export default function TermsOfSalePage() {
                                 {sidebarLinks.map((link, idx) => (
                                     <a
                                         key={idx}
-                                        className="block py-2 text-xs font-bold uppercase tracking-wider text-slate-500 hover:text-teal-accent transition-colors border-l-2 border-transparent hover:border-teal-accent pl-4"
+                                        className="block py-2 text-xs font-bold uppercase tracking-wider text-slate-500 hover:text-cobalt transition-colors border-l-2 border-transparent hover:border-cobalt pl-4"
                                         href={link.href}
                                     >
                                         {link.name}
@@ -48,7 +48,7 @@ export default function TermsOfSalePage() {
                             <div className="bg-slate-50 p-6 border border-slate-200 rounded-sm">
                                 <h4 className="text-[10px] font-black text-slate-900 uppercase tracking-widest mb-3 italic">Questions?</h4>
                                 <p className="text-[11px] text-slate-500 leading-relaxed mb-4 font-medium">For clarification on these terms, contact your account manager.</p>
-                                <a className="text-[11px] font-bold text-teal-accent hover:underline uppercase tracking-wider" href="mailto:legal@qnbim.biz">
+                                <a className="text-[11px] font-bold text-cobalt hover:underline uppercase tracking-wider" href="mailto:legal@qnbim.biz">
                                     legal@qnbim.biz
                                 </a>
                             </div>

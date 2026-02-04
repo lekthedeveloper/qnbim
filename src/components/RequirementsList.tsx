@@ -25,7 +25,7 @@ const RequirementsList = () => {
             <ul className="space-y-6">
                 {requirements.map((req, idx) => (
                     <li key={idx} className="flex gap-3">
-                        <span className="material-symbols-outlined text-teal-accent">{req.icon}</span>
+                        <span className="material-symbols-outlined text-cobalt">{req.icon}</span>
                         <div>
                             <p className="text-xs font-bold text-slate-800 uppercase">{req.title}</p>
                             <p className="text-[11px] text-slate-500 mt-1">{req.desc}</p>
@@ -33,8 +33,8 @@ const RequirementsList = () => {
                     </li>
                 ))}
             </ul>
-            <div className="mt-12 p-4 bg-teal-50 border border-teal-100 rounded">
-                <p className="text-[11px] text-teal-800 font-medium leading-relaxed italic">
+            <div className="mt-12 p-4 bg-blue-50 border border-blue-100 rounded">
+                <p className="text-[11px] text-blue-800 font-medium leading-relaxed italic">
                     "Approval usually takes 1-2 business days. Once verified, you will receive an invitation to set up your wholesale portal password."
                 </p>
             </div>

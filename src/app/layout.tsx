@@ -24,6 +24,9 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   title: "qnbim Wholesale",
   description: "qnbim Wholesale - Institutional Procurement & Workflow Distribution Strategy.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 import { CartProvider } from "@/context/CartContext";
@@ -42,7 +45,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${inter.variable} ${ibmPlexSans.variable} ${robotoMono.variable} font-sans antialiased text-[#001A2C]`}>
+      <body className={`${inter.variable} ${ibmPlexSans.variable} ${robotoMono.variable} font-sans antialiased text-[#0f172a]`}>
         <CartProvider>
           <PageTransition>
             {children}

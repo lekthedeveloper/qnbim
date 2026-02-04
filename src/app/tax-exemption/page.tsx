@@ -25,12 +25,12 @@ export default function TaxExemptionPage() {
 
                     <div className="mt-12 flex items-center justify-center gap-4">
                         <div className="flex flex-col items-center">
-                            <div className="w-12 h-12 rounded-full bg-teal-accent text-white flex items-center justify-center ring-4 ring-teal-50 shadow-lg shadow-teal-900/10">
+                            <div className="w-12 h-12 rounded-full bg-cobalt text-white flex items-center justify-center ring-4 ring-blue-50 shadow-lg shadow-royal/10">
                                 <span className="material-symbols-outlined">how_to_reg</span>
                             </div>
-                            <span className="text-[10px] font-black uppercase mt-3 tracking-widest text-teal-accent">Application</span>
+                            <span className="text-[10px] font-black uppercase mt-3 tracking-widest text-cobalt">Application</span>
                         </div>
-                        <div className="h-[2px] w-20 bg-teal-accent"></div>
+                        <div className="h-[2px] w-20 bg-cobalt"></div>
                         <div className="flex flex-col items-center">
                             <div className="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center ring-4 ring-amber-50 shadow-lg shadow-amber-900/10">
                                 <span className="material-symbols-outlined">description</span>
@@ -49,27 +49,27 @@ export default function TaxExemptionPage() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                     <div className="space-y-8">
-                        <div className="bg-white border border-slate-200 p-8 rounded-sm shadow-sm transition-all hover:border-teal-accent/20">
+                        <div className="bg-white border border-slate-200 p-8 rounded-sm shadow-sm transition-all hover:border-cobalt/20">
                             <h3 className="text-xs font-black uppercase tracking-[0.2em] text-slate-900 mb-6 flex items-center gap-3">
-                                <span className="material-symbols-outlined text-teal-accent text-xl">info</span> Filing Instructions
+                                <span className="material-symbols-outlined text-cobalt text-xl">info</span> Filing Instructions
                             </h3>
                             <ul className="space-y-6">
                                 <li className="flex gap-4">
-                                    <span className="text-xs font-black text-teal-accent bg-teal-50 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0">01</span>
+                                    <span className="text-xs font-black text-cobalt bg-blue-50 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0">01</span>
                                     <p className="text-[11px] text-slate-600 leading-relaxed font-medium">
                                         <span className="font-black text-slate-900 uppercase tracking-tighter block mb-1">Resale Certificate</span>
                                         Upload a signed certificate for each state where you have nexus. PDF is preferred for data audit integrity.
                                     </p>
                                 </li>
                                 <li className="flex gap-4">
-                                    <span className="text-xs font-black text-teal-accent bg-teal-50 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0">02</span>
+                                    <span className="text-xs font-black text-cobalt bg-blue-50 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0">02</span>
                                     <p className="text-[11px] text-slate-600 leading-relaxed font-medium">
                                         <span className="font-black text-slate-900 uppercase tracking-tighter block mb-1">W-9 Form</span>
                                         Ensure the W-9 reflects the legal entity name and EIN used for your wholesale account registration.
                                     </p>
                                 </li>
                                 <li className="flex gap-4">
-                                    <span className="text-xs font-black text-teal-accent bg-teal-50 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0">03</span>
+                                    <span className="text-xs font-black text-cobalt bg-blue-50 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0">03</span>
                                     <p className="text-[11px] text-slate-600 leading-relaxed font-medium">
                                         <span className="font-black text-slate-900 uppercase tracking-tighter block mb-1">Audit Review</span>
                                         Our compliance team typically reviews documents within 24-48 business hours. You will receive an automated alert upon status change.
@@ -77,14 +77,14 @@ export default function TaxExemptionPage() {
                                 </li>
                             </ul>
                             <div className="mt-8 pt-8 border-t border-slate-100 italic">
-                                <a className="text-[11px] font-black text-teal-accent flex items-center gap-2 hover:underline uppercase tracking-widest" href="#">
+                                <a className="text-[11px] font-black text-cobalt flex items-center gap-2 hover:underline uppercase tracking-widest" href="#">
                                     <span className="material-symbols-outlined text-base">download</span> Download W-9 Template
                                 </a>
                             </div>
                         </div>
 
                         <div className="bg-primary text-white p-8 rounded-sm shadow-xl shadow-primary/10">
-                            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-teal-accent mb-3 italic">Support Contact</p>
+                            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-cobalt mb-3 italic">Support Contact</p>
                             <p className="text-xs text-slate-300 leading-relaxed font-medium mb-6">
                                 Having trouble with your documents? Our compliance specialists are here to help during standard business hours.
                             </p>
@@ -102,13 +102,13 @@ export default function TaxExemptionPage() {
                                     <div className="space-y-6">
                                         <div className="flex justify-between items-end border-b border-slate-100 pb-2">
                                             <h2 className="text-xs font-black uppercase tracking-[0.2em] text-slate-900 flex items-center gap-3">
-                                                <span className="w-10 h-[2px] bg-teal-accent"></span> 1. Resale Certificate
+                                                <span className="w-10 h-[2px] bg-cobalt"></span> 1. Resale Certificate
                                             </h2>
                                             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Crucial</span>
                                         </div>
-                                        <div className="border-2 border-dashed border-slate-200 rounded-sm p-16 flex flex-col items-center justify-center bg-slate-50 hover:border-teal-accent hover:bg-teal-50/20 transition-all cursor-pointer group">
+                                        <div className="border-2 border-dashed border-slate-200 rounded-sm p-16 flex flex-col items-center justify-center bg-slate-50 hover:border-cobalt hover:bg-blue-50/20 transition-all cursor-pointer group">
                                             <div className="w-20 h-20 rounded-full bg-white shadow-md flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                                                <span className="material-symbols-outlined text-4xl text-slate-300 group-hover:text-teal-accent transition-colors">upload_file</span>
+                                                <span className="material-symbols-outlined text-4xl text-slate-300 group-hover:text-cobalt transition-colors">upload_file</span>
                                             </div>
                                             <p className="text-sm font-black text-slate-900 uppercase tracking-tight">Drop Resale Certificate here</p>
                                             <p className="text-[11px] text-slate-500 mt-2 font-medium">or click to browse local secure storage</p>
@@ -122,13 +122,13 @@ export default function TaxExemptionPage() {
                                     <div className="space-y-6">
                                         <div className="flex justify-between items-end border-b border-slate-100 pb-2">
                                             <h2 className="text-xs font-black uppercase tracking-[0.2em] text-slate-900 flex items-center gap-3">
-                                                <span className="w-10 h-[2px] bg-teal-accent"></span> 2. Request for Taxpayer ID (W-9)
+                                                <span className="w-10 h-[2px] bg-cobalt"></span> 2. Request for Taxpayer ID (W-9)
                                             </h2>
                                             <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Crucial</span>
                                         </div>
-                                        <div className="border-2 border-dashed border-slate-200 rounded-sm p-16 flex flex-col items-center justify-center bg-slate-50 hover:border-teal-accent hover:bg-teal-50/20 transition-all cursor-pointer group">
+                                        <div className="border-2 border-dashed border-slate-200 rounded-sm p-16 flex flex-col items-center justify-center bg-slate-50 hover:border-cobalt hover:bg-blue-50/20 transition-all cursor-pointer group">
                                             <div className="w-20 h-20 rounded-full bg-white shadow-md flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                                                <span className="material-symbols-outlined text-4xl text-slate-300 group-hover:text-teal-accent transition-colors">assignment</span>
+                                                <span className="material-symbols-outlined text-4xl text-slate-300 group-hover:text-cobalt transition-colors">assignment</span>
                                             </div>
                                             <p className="text-sm font-black text-slate-900 uppercase tracking-tight">Drop signed W-9 Form here</p>
                                             <p className="text-[11px] text-slate-500 mt-2 font-medium">Ensure the form is physically or digitally signed</p>
@@ -141,7 +141,7 @@ export default function TaxExemptionPage() {
 
                                     <div className="p-8 bg-slate-50 border border-slate-100 rounded-sm">
                                         <label className="flex items-start gap-5 cursor-pointer">
-                                            <input className="mt-1.5 w-5 h-5 rounded text-teal-accent focus:ring-teal-accent border-slate-300 transition-all" type="checkbox" id="tax-auth" />
+                                            <input className="mt-1.5 w-5 h-5 rounded text-cobalt focus:ring-cobalt border-slate-300 transition-all" type="checkbox" id="tax-auth" />
                                             <div className="space-y-2">
                                                 <p className="text-xs font-black text-slate-900 uppercase tracking-tight">Declaration of Compliance Authenticity</p>
                                                 <p className="text-[11px] text-slate-500 leading-relaxed font-medium">
@@ -155,7 +155,7 @@ export default function TaxExemptionPage() {
                                         <button className="w-full md:w-auto text-slate-400 font-black text-xs uppercase tracking-widest px-10 py-5 hover:text-slate-900 transition-colors">
                                             Save for Later
                                         </button>
-                                        <button className="w-full md:w-auto bg-teal-accent text-white px-14 py-5 font-black text-xs uppercase tracking-[0.3em] hover:bg-teal-700 transition-all shadow-xl shadow-teal-900/20 flex items-center justify-center gap-3 active:scale-[0.98]" type="submit">
+                                        <button className="w-full md:w-auto bg-cobalt text-white px-14 py-5 font-black text-xs uppercase tracking-[0.3em] hover:bg-royal transition-all shadow-xl shadow-royal/20 flex items-center justify-center gap-3 active:scale-[0.98]" type="submit">
                                             <span className="material-symbols-outlined text-xl">verified_user</span>
                                             Submit for Review
                                         </button>

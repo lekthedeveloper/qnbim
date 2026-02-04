@@ -32,7 +32,7 @@ export default function CartPage() {
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                     <div>
                         <nav className="flex text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">
-                            <Link className="hover:text-teal-accent" href="/catalog">Catalog</Link>
+                            <Link className="hover:text-cobalt" href="/catalog">Catalog</Link>
                             <span className="mx-2">/</span>
                             <span className="text-slate-600">Cart</span>
                         </nav>
@@ -73,7 +73,7 @@ export default function CartPage() {
                                             <td colSpan={8} className="p-20 text-center">
                                                 <span className="material-symbols-outlined text-6xl text-slate-200 mb-4 block">shopping_cart_off</span>
                                                 <p className="text-sm font-black text-slate-400 uppercase tracking-widest">Your warehouse cart is empty</p>
-                                                <Link href="/catalog" className="inline-block mt-4 text-xs font-black text-teal-accent uppercase tracking-widest hover:underline">Start Procurement</Link>
+                                                <Link href="/catalog" className="inline-block mt-4 text-xs font-black text-cobalt uppercase tracking-widest hover:underline">Start Procurement</Link>
                                             </td>
                                         </tr>
                                     ) : (
@@ -81,13 +81,13 @@ export default function CartPage() {
                                             <tr key={item.id} className="hover:bg-slate-50/80 transition-all group">
                                                 <td className="p-5">
                                                     <div className="flex items-center gap-5">
-                                                        <div className="w-20 h-20 bg-slate-50 border border-slate-200 p-1 flex-shrink-0 group-hover:border-teal-accent/30 transition-colors">
+                                                        <div className="w-20 h-20 bg-slate-50 border border-slate-200 p-1 flex-shrink-0 group-hover:border-cobalt/30 transition-colors">
                                                             <div className="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" style={{ backgroundImage: `url('${item.image}')` }}></div>
                                                         </div>
                                                         <div className="min-w-0">
-                                                            <div className="text-sm font-black text-slate-900 leading-tight uppercase tracking-tight group-hover:text-teal-accent transition-colors">{item.name}</div>
+                                                            <div className="text-sm font-black text-slate-900 leading-tight uppercase tracking-tight group-hover:text-cobalt transition-colors">{item.name}</div>
                                                             <div className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mt-1 flex items-center gap-2">
-                                                                <span className="w-1.5 h-1.5 rounded-full bg-teal-accent"></span> {item.category}
+                                                                <span className="w-1.5 h-1.5 rounded-full bg-cobalt"></span> {item.category}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -135,7 +135,7 @@ export default function CartPage() {
                                     <tr>
                                         <td className="p-6" colSpan={6}></td>
                                         <td className="p-6 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400 text-right">Items Subtotal</td>
-                                        <td className="p-6 text-xl font-black text-teal-accent text-right italic tracking-tighter">
+                                        <td className="p-6 text-xl font-black text-cobalt text-right italic tracking-tighter">
                                             ${subtotal.toLocaleString('en-US', { minimumFractionDigits: 2 })}
                                         </td>
                                     </tr>
@@ -143,7 +143,7 @@ export default function CartPage() {
                             </table>
                         </div>
                         <div className="mt-8 flex justify-between items-center bg-white p-6 border border-slate-200 rounded-sm shadow-sm">
-                            <Link href="/catalog" className="flex items-center gap-3 text-[11px] font-black text-slate-500 hover:text-teal-accent uppercase tracking-[0.2em] transition-all group">
+                            <Link href="/catalog" className="flex items-center gap-3 text-[11px] font-black text-slate-500 hover:text-cobalt uppercase tracking-[0.2em] transition-all group">
                                 <span className="material-symbols-outlined text-base group-hover:-translate-x-1 transition-transform">arrow_back</span> Return to Catalog
                             </Link>
                             <div className="flex gap-6">
@@ -165,7 +165,7 @@ export default function CartPage() {
                                 <h3 className="text-xs font-black uppercase tracking-[0.2em] flex items-center gap-2 text-primary">
                                     <span className="material-symbols-outlined text-lg">analytics</span> Order Financials
                                 </h3>
-                                <div className="px-2 py-0.5 bg-teal-accent text-white text-[9px] font-black uppercase tracking-widest italic animate-pulse">Live Quote</div>
+                                <div className="px-2 py-0.5 bg-cobalt text-white text-[9px] font-black uppercase tracking-widest italic animate-pulse">Live Quote</div>
                             </div>
 
                             <div className="p-8 space-y-6">
@@ -175,7 +175,7 @@ export default function CartPage() {
                                         <span className="text-slate-900">${subtotal.toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
                                     </div>
                                     {bulkDiscount > 0 && (
-                                        <div className="flex justify-between text-[11px] font-black text-teal-accent uppercase tracking-widest italic">
+                                        <div className="flex justify-between text-[11px] font-black text-cobalt uppercase tracking-widest italic">
                                             <span>Volume Discount (5%)</span>
                                             <span>-${bulkDiscount.toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
                                         </div>
@@ -193,9 +193,9 @@ export default function CartPage() {
                                         <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest block mb-1 leading-none">Total Weight</span>
                                         <span className="text-xs font-black text-slate-900 uppercase">{totalWeight.toLocaleString()} lbs</span>
                                     </div>
-                                    <div className="p-3 bg-teal-50 border border-teal-100 rounded-sm">
-                                        <span className="text-[9px] font-black text-teal-accent uppercase tracking-widest block mb-1 leading-none">Tax Status</span>
-                                        <span className="text-[10px] font-black text-teal-700 uppercase flex items-center gap-1">EXEMPT <span className="material-symbols-outlined text-xs">verified</span></span>
+                                    <div className="p-3 bg-blue-50 border border-blue-100 rounded-sm">
+                                        <span className="text-[9px] font-black text-cobalt uppercase tracking-widest block mb-1 leading-none">Tax Status</span>
+                                        <span className="text-[10px] font-black text-royal uppercase flex items-center gap-1">EXEMPT <span className="material-symbols-outlined text-xs">verified</span></span>
                                     </div>
                                 </div>
 
@@ -207,7 +207,7 @@ export default function CartPage() {
                                     </div>
                                     <div className="h-2 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
                                         <div
-                                            className={`h-full transition-all duration-500 ${palletUtilization > 90 ? 'bg-amber-500' : 'bg-teal-accent'}`}
+                                            className={`h-full transition-all duration-500 ${palletUtilization > 90 ? 'bg-amber-500' : 'bg-cobalt'}`}
                                             style={{ width: `${palletUtilization}%` }}
                                         ></div>
                                     </div>
@@ -224,7 +224,7 @@ export default function CartPage() {
                             </div>
 
                             <div className="p-8 bg-slate-50 border-t border-slate-100 space-y-4">
-                                <button className="w-full bg-teal-accent text-white py-5 font-black text-xs uppercase tracking-[0.3em] hover:bg-teal-700 transition-all shadow-xl shadow-teal-900/20 flex items-center justify-center gap-3 active:scale-[0.98]">
+                                <button className="w-full bg-cobalt text-white py-5 font-black text-xs uppercase tracking-[0.3em] hover:bg-royal transition-all shadow-xl shadow-royal/20 flex items-center justify-center gap-3 active:scale-[0.98]">
                                     Logistics & Shipping <span className="material-symbols-outlined text-base">local_shipping</span>
                                 </button>
                                 <button className="w-full bg-white border-2 border-slate-200 text-slate-900 py-5 font-black text-xs uppercase tracking-[0.3em] hover:border-primary transition-all flex items-center justify-center gap-3">
@@ -239,21 +239,21 @@ export default function CartPage() {
                             </div>
                         </div>
 
-                        <div className="bg-teal- accent-gradient p-6 rounded-sm shadow-lg border border-teal-100 relative overflow-hidden group">
+                        <div className="bg-blue- accent-gradient p-6 rounded-sm shadow-lg border border-blue-100 relative overflow-hidden group">
                             <div className="absolute top-0 right-0 opacity-10 translate-x-4 -translate-y-4 transition-transform group-hover:scale-110">
-                                <span className="material-symbols-outlined text-7xl text-teal-accent">workspace_premium</span>
+                                <span className="material-symbols-outlined text-7xl text-cobalt">workspace_premium</span>
                             </div>
                             <div className="relative z-10">
-                                <h4 className="text-[11px] font-black text-teal-900 uppercase tracking-widest flex items-center gap-2 mb-2">
-                                    <span className="material-symbols-outlined text-lg text-teal-accent">stars</span> Specialized Pricing
+                                <h4 className="text-[11px] font-black text-royal uppercase tracking-widest flex items-center gap-2 mb-2">
+                                    <span className="material-symbols-outlined text-lg text-cobalt">stars</span> Specialized Pricing
                                 </h4>
-                                <p className="text-[10px] font-bold text-teal-800 leading-relaxed uppercase italic">
+                                <p className="text-[10px] font-bold text-blue-800 leading-relaxed uppercase italic">
                                     Platinum Tier Opportunity
                                 </p>
-                                <div className="mt-3 w-full bg-teal-200/50 h-1.5 rounded-full overflow-hidden">
-                                    <div className="bg-teal-accent h-full w-[72%]"></div>
+                                <div className="mt-3 w-full bg-blue-200/50 h-1.5 rounded-full overflow-hidden">
+                                    <div className="bg-cobalt h-full w-[72%]"></div>
                                 </div>
-                                <p className="text-[9px] font-medium text-teal-700 mt-3 normal-case">
+                                <p className="text-[9px] font-medium text-royal mt-3 normal-case">
                                     Adding <span className="font-black">14 more cases</span> of Bath Tissue triggers the 10% Platinum Volume Discount on this entire order.
                                 </p>
                             </div>
@@ -263,28 +263,28 @@ export default function CartPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto mt-20 border-t border-slate-200 pt-16 mb-20">
                     <div className="flex flex-col gap-4 text-center md:text-left">
-                        <span className="material-symbols-outlined text-4xl text-teal-accent self-center md:self-start">local_shipping</span>
+                        <span className="material-symbols-outlined text-4xl text-cobalt self-center md:self-start">local_shipping</span>
                         <div>
                             <h4 className="font-black text-slate-900 text-xs uppercase tracking-widest mb-2">Nationwide LTL</h4>
                             <p className="text-[11px] text-slate-500 leading-relaxed font-medium">Real-time freight orchestration for full and partial pallets with nationwide dock-to-dock coverage.</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 text-center md:text-left">
-                        <span className="material-symbols-outlined text-4xl text-teal-accent self-center md:self-start">inventory_2</span>
+                        <span className="material-symbols-outlined text-4xl text-cobalt self-center md:self-start">inventory_2</span>
                         <div>
                             <h4 className="font-black text-slate-900 text-xs uppercase tracking-widest mb-2">Enterprise Stocking</h4>
                             <p className="text-[11px] text-slate-500 leading-relaxed font-medium">Reliable multi-hub supply chains designed for high-volume retail and industrial procurement cycles.</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 text-center md:text-left">
-                        <span className="material-symbols-outlined text-4xl text-teal-accent self-center md:self-start">receipt_long</span>
+                        <span className="material-symbols-outlined text-4xl text-cobalt self-center md:self-start">receipt_long</span>
                         <div>
                             <h4 className="font-black text-slate-900 text-xs uppercase tracking-widest mb-2">B2B Fiscal Control</h4>
                             <p className="text-[11px] text-slate-500 leading-relaxed font-medium">Net-30 payment facilitation and integrated tax-exempt processing for verified business entities.</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 text-center md:text-left">
-                        <span className="material-symbols-outlined text-4xl text-teal-accent self-center md:self-start">support_agent</span>
+                        <span className="material-symbols-outlined text-4xl text-cobalt self-center md:self-start">support_agent</span>
                         <div>
                             <h4 className="font-black text-slate-900 text-xs uppercase tracking-widest mb-2">Strategic Support</h4>
                             <p className="text-[11px] text-slate-500 leading-relaxed font-medium">Direct access to dedicated logistics managers for custom quoting and long-term contract pricing.</p>

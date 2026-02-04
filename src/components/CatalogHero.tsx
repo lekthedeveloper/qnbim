@@ -17,7 +17,7 @@ const CatalogHero = () => {
                         B2B pallet-tier pricing for retailers and hospitality chains. Managed logistics & LTL nationwide.
                     </p>
                     <div className="flex gap-3">
-                        <button className="bg-teal-accent text-white px-6 py-2.5 font-black text-[11px] uppercase tracking-widest hover:bg-teal-600 transition-colors rounded-[4px]">
+                        <button className="bg-cobalt text-white px-6 py-2.5 font-black text-[11px] uppercase tracking-widest hover:bg-royal transition-colors rounded-[4px]">
                             OPEN ACCOUNT
                         </button>
                         <button className="bg-white/10 text-white border border-white/20 px-6 py-2.5 font-black text-[11px] uppercase tracking-widest hover:bg-white/20 transition-colors flex items-center gap-2 rounded-[4px]">

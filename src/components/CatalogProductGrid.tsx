@@ -73,7 +73,7 @@ const CatalogProductGrid = () => {
                     </span>
                 </div>
                 <div className="flex gap-2 md:gap-3">
-                    <select className="flex-1 md:flex-none text-[10px] md:text-[11px] font-black uppercase border-slate-300 rounded-[8px] py-1.5 px-3 focus:ring-teal-accent outline-none bg-white">
+                    <select className="flex-1 md:flex-none text-[10px] md:text-[11px] font-black uppercase border-slate-300 rounded-[8px] py-1.5 px-3 focus:ring-cobalt outline-none bg-white">
                         <option>Sort by Case Price</option>
                         <option>Popularity</option>
                         <option>SKU Alpha</option>

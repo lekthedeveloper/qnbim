@@ -1,11 +1,11 @@
 import React from 'react';
 
 const quotes = [
-    { id: "#QT-2026-8891", date: "Jan 12, 2026", totalItems: "12 Cases (4 SKUs)", status: "Approved", totalAmount: "$2,840.00", statusColor: "teal" },
+    { id: "#QT-2026-8891", date: "Jan 12, 2026", totalItems: "12 Cases (4 SKUs)", status: "Approved", totalAmount: "$2,840.00", statusColor: "blue" },
     { id: "#QT-2026-8885", date: "Jan 08, 2026", totalItems: "40 Cases (2 SKUs)", status: "Pending", totalAmount: "$12,450.00", statusColor: "amber" },
     { id: "#QT-2026-8742", date: "Dec 15, 2025", totalItems: "5 Pallets (15 SKUs)", status: "Expired", totalAmount: "$34,200.00", statusColor: "slate" },
-    { id: "#QT-2026-8660", date: "Dec 08, 2025", totalItems: "22 Cases (1 SKU)", status: "Approved", totalAmount: "$4,520.00", statusColor: "teal" },
-    { id: "#QT-2026-8551", date: "Nov 28, 2025", totalItems: "8 Cases (3 SKUs)", status: "Approved", totalAmount: "$1,250.80", statusColor: "teal" },
+    { id: "#QT-2026-8660", date: "Dec 08, 2025", totalItems: "22 Cases (1 SKU)", status: "Approved", totalAmount: "$4,520.00", statusColor: "blue" },
+    { id: "#QT-2026-8551", date: "Nov 28, 2025", totalItems: "8 Cases (3 SKUs)", status: "Approved", totalAmount: "$1,250.80", statusColor: "blue" },
 ];
 
 const QuotesTable = () => {
@@ -32,11 +32,11 @@ const QuotesTable = () => {
                                 <td className="py-4 px-6 text-sm text-slate-700 border-b border-slate-200 bg-white">{quote.totalItems}</td>
                                 <td className="py-4 px-6 text-sm text-slate-700 border-b border-slate-200 bg-white">
                                     <span className={`inline-flex items-center gap-1.5 px-2 py-1 rounded-sm text-[10px] font-black uppercase
-                    ${quote.statusColor === 'teal' ? 'bg-teal-100 text-teal-800' :
+                    ${quote.statusColor === 'blue' ? 'bg-blue-100 text-blue-800' :
                                             quote.statusColor === 'amber' ? 'bg-amber-100 text-amber-800' :
                                                 'bg-slate-100 text-slate-600'}`}>
                                         <span className={`w-1.5 h-1.5 rounded-full 
-                       ${quote.statusColor === 'teal' ? 'bg-teal-600' :
+                       ${quote.statusColor === 'blue' ? 'bg-royal' :
                                                 quote.statusColor === 'amber' ? 'bg-amber-600 animate-pulse' :
                                                     'bg-slate-400'}`}></span>
                                         {quote.status}
@@ -46,7 +46,7 @@ const QuotesTable = () => {
                                 <td className="py-2 px-6 border-b border-slate-200 bg-white text-center">
                                     <div className="flex justify-center gap-2">
                                         {quote.status === 'Approved' && (
-                                            <button className="bg-teal-accent text-white px-3 py-1.5 text-[10px] font-black uppercase tracking-wider hover:bg-teal-700 transition-colors">Convert to Order</button>
+                                            <button className="bg-cobalt text-white px-3 py-1.5 text-[10px] font-black uppercase tracking-wider hover:bg-royal transition-colors">Convert to Order</button>
                                         )}
                                         {quote.status === 'Pending' && (
                                             <button className="bg-slate-200 text-slate-400 px-3 py-1.5 text-[10px] font-black uppercase tracking-wider cursor-not-allowed" disabled>Convert to Order</button>
@@ -71,7 +71,7 @@ const QuotesTable = () => {
                             <div className="flex items-center justify-between">
                                 <span className="text-[13px] font-black text-primary italic uppercase tracking-tight">{quote.id}</span>
                                 <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-sm text-[8px] font-black uppercase
-                                    ${quote.statusColor === 'teal' ? 'bg-teal-100 text-teal-800' :
+                                    ${quote.statusColor === 'blue' ? 'bg-blue-100 text-blue-800' :
                                         quote.statusColor === 'amber' ? 'bg-amber-100 text-amber-800' :
                                             'bg-slate-100 text-slate-600'}`}>
                                     {quote.status}
@@ -93,7 +93,7 @@ const QuotesTable = () => {
                             </div>
                             <div className="flex gap-2">
                                 {quote.status === 'Approved' && (
-                                    <button className="flex-1 bg-teal-accent text-white h-11 text-[9px] font-black uppercase tracking-[0.2em] shadow-sm rounded-[8px] active:scale-[0.98] transition-transform">Convert to Order</button>
+                                    <button className="flex-1 bg-cobalt text-white h-11 text-[9px] font-black uppercase tracking-[0.2em] shadow-sm rounded-[8px] active:scale-[0.98] transition-transform">Convert to Order</button>
                                 )}
                                 {quote.status === 'Pending' && (
                                     <button className="flex-1 bg-slate-100 text-slate-400 h-11 text-[9px] font-black uppercase tracking-[0.2em] rounded-[8px] cursor-not-allowed" disabled>Awaiting Audit</button>

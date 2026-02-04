@@ -6,15 +6,15 @@ import TopBar from '@/components/TopBar';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-const QuoteCard = ({ carrier, type, price, oldPrice, time, stats, icon, iconColor = "text-teal-accent" }: any) => (
-    <div className="bg-white/5 border border-white/10 p-5 rounded-sm hover:border-teal-accent/50 transition-all cursor-pointer group hover:bg-white/[0.08]">
+const QuoteCard = ({ carrier, type, price, oldPrice, time, stats, icon, iconColor = "text-cobalt" }: any) => (
+    <div className="bg-white/5 border border-white/10 p-5 rounded-sm hover:border-cobalt/50 transition-all cursor-pointer group hover:bg-white/[0.08]">
         <div className="flex justify-between items-start mb-4">
             <div>
                 <h4 className="text-white font-black text-sm uppercase tracking-tight">{carrier}</h4>
                 <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">{type}</span>
             </div>
             <div className="text-right">
-                <div className="text-teal-accent font-black text-xl leading-none">${price}</div>
+                <div className="text-cobalt font-black text-xl leading-none">${price}</div>
                 {oldPrice && <span className="text-[10px] text-slate-500 line-through font-bold">${oldPrice}</span>}
             </div>
         </div>
@@ -105,21 +105,21 @@ export default function LtlRatesPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                     <div className="lg:col-span-2 space-y-8">
                         <div className="bg-white border border-slate-200 p-8 shadow-sm rounded-sm">
-                            <h2 className="text-xs font-black uppercase tracking-[0.2em] text-teal-accent mb-8 flex items-center gap-4">
-                                <span className="w-10 h-10 rounded-full bg-teal-50 text-teal-accent flex items-center justify-center border border-teal-100 font-black text-sm">01</span>
+                            <h2 className="text-xs font-black uppercase tracking-[0.2em] text-cobalt mb-8 flex items-center gap-4">
+                                <span className="w-10 h-10 rounded-full bg-blue-50 text-cobalt flex items-center justify-center border border-blue-100 font-black text-sm">01</span>
                                 Shipment Configuration
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                 <div className="space-y-2">
                                     <label className="text-[11px] font-black uppercase text-slate-400 flex justify-between tracking-widest">
                                         Pallet Count
-                                        <span className="text-teal-accent font-black tracking-tighter">48" x 40" Std</span>
+                                        <span className="text-cobalt font-black tracking-tighter">48" x 40" Std</span>
                                     </label>
                                     <div className="relative">
                                         <input
                                             value={pallets}
                                             onChange={(e) => setPallets(Math.min(26, Math.max(1, parseInt(e.target.value) || 1)))}
-                                            className="w-full border-slate-200 border rounded-sm text-sm focus:ring-1 focus:ring-teal-accent focus:border-teal-accent py-4 pl-5 pr-16 font-black text-primary outline-none transition-all"
+                                            className="w-full border-slate-200 border rounded-sm text-sm focus:ring-1 focus:ring-cobalt focus:border-cobalt py-4 pl-5 pr-16 font-black text-primary outline-none transition-all"
                                             max="26" min="1" placeholder="0" type="number"
                                         />
                                         <span className="absolute right-5 top-1/2 -translate-y-1/2 text-slate-400 text-[10px] font-black tracking-widest uppercase">Pallets</span>
@@ -132,7 +132,7 @@ export default function LtlRatesPage() {
                                     <select
                                         value={fclass}
                                         onChange={(e) => setFclass(e.target.value)}
-                                        className="w-full border-slate-200 border rounded-sm text-sm focus:ring-1 focus:ring-teal-accent focus:border-teal-accent py-4 font-black text-primary outline-none bg-white px-5"
+                                        className="w-full border-slate-200 border rounded-sm text-sm focus:ring-1 focus:ring-cobalt focus:border-cobalt py-4 font-black text-primary outline-none bg-white px-5"
                                     >
                                         <option value="50">Class 50 - Standard</option>
                                         <option value="60">Class 60</option>
@@ -150,7 +150,7 @@ export default function LtlRatesPage() {
                                         <input
                                             value={weight}
                                             onChange={(e) => setWeight(Math.max(0, parseInt(e.target.value) || 0))}
-                                            className="w-full border-slate-200 border rounded-sm text-sm focus:ring-1 focus:ring-teal-accent focus:border-teal-accent py-4 pl-5 pr-16 font-black text-primary outline-none transition-all"
+                                            className="w-full border-slate-200 border rounded-sm text-sm focus:ring-1 focus:ring-cobalt focus:border-cobalt py-4 pl-5 pr-16 font-black text-primary outline-none transition-all"
                                             placeholder="0" type="number"
                                         />
                                         <span className="absolute right-5 top-1/2 -translate-y-1/2 text-slate-400 text-[10px] font-black tracking-widest uppercase">LBS</span>
@@ -163,7 +163,7 @@ export default function LtlRatesPage() {
                                         <input
                                             value={zip}
                                             onChange={(e) => setZip(e.target.value)}
-                                            className="w-full border-slate-200 border rounded-sm text-sm focus:ring-1 focus:ring-teal-accent focus:border-teal-accent py-4 pl-14 font-black text-primary outline-none uppercase transition-all tracking-widest"
+                                            className="w-full border-slate-200 border rounded-sm text-sm focus:ring-1 focus:ring-cobalt focus:border-cobalt py-4 pl-14 font-black text-primary outline-none uppercase transition-all tracking-widest"
                                             placeholder="XXXXX" type="text"
                                         />
                                         <span className="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">location_on</span>
@@ -173,8 +173,8 @@ export default function LtlRatesPage() {
                         </div>
 
                         <div className="bg-white border border-slate-200 p-8 shadow-sm rounded-sm">
-                            <h2 className="text-xs font-black uppercase tracking-[0.2em] text-teal-accent mb-8 flex items-center gap-4">
-                                <span className="w-10 h-10 rounded-full bg-teal-50 text-teal-accent flex items-center justify-center border border-teal-100 font-black text-sm">02</span>
+                            <h2 className="text-xs font-black uppercase tracking-[0.2em] text-cobalt mb-8 flex items-center gap-4">
+                                <span className="w-10 h-10 rounded-full bg-blue-50 text-cobalt flex items-center justify-center border border-blue-100 font-black text-sm">02</span>
                                 Delivery Options
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -184,11 +184,11 @@ export default function LtlRatesPage() {
                                     { label: 'Appointment Required', desc: 'Driver must call before arrival', icon: 'call' },
                                     { label: 'Limited Access', desc: 'Schools, military, or construction', icon: 'security' },
                                 ].map((opt) => (
-                                    <label key={opt.label} className="flex items-center gap-4 p-5 border border-slate-100 rounded-sm hover:bg-slate-50 cursor-pointer transition-all group hover:border-teal-accent/20">
+                                    <label key={opt.label} className="flex items-center gap-4 p-5 border border-slate-100 rounded-sm hover:bg-slate-50 cursor-pointer transition-all group hover:border-cobalt/20">
                                         <input
                                             checked={options.includes(opt.label)}
                                             onChange={() => toggleOption(opt.label)}
-                                            className="mb-0.5 rounded text-teal-accent focus:ring-teal-accent border-slate-300 w-5 h-5"
+                                            className="mb-0.5 rounded text-cobalt focus:ring-cobalt border-slate-300 w-5 h-5"
                                             type="checkbox"
                                         />
                                         <div className="flex flex-col">
@@ -202,12 +202,12 @@ export default function LtlRatesPage() {
                             </div>
                         </div>
 
-                        <div className="p-6 bg-primary rounded-sm flex items-start gap-5 text-white/90 border-l-4 border-teal-accent shadow-lg shadow-primary/20">
-                            <span className="material-symbols-outlined text-teal-accent text-3xl">info</span>
+                        <div className="p-6 bg-primary rounded-sm flex items-start gap-5 text-white/90 border-l-4 border-cobalt shadow-lg shadow-primary/20">
+                            <span className="material-symbols-outlined text-cobalt text-3xl">info</span>
                             <div>
                                 <p className="text-[11px] font-black uppercase text-white mb-2 tracking-widest">Origin Details (Fixed Center)</p>
                                 <p className="text-[11px] leading-relaxed font-medium">
-                                    All shipments currently originate from <span className="text-teal-accent font-bold">qnbim Main Distribution Center, NJ 08757</span>. To request quotes from our West Coast or Midwest hubs, please contact your account manager.
+                                    All shipments currently originate from <span className="text-cobalt font-bold">qnbim Main Distribution Center, NJ 08757</span>. To request quotes from our West Coast or Midwest hubs, please contact your account manager.
                                 </p>
                             </div>
                         </div>
@@ -216,9 +216,9 @@ export default function LtlRatesPage() {
                     <div className="lg:col-span-1">
                         <div className="bg-primary rounded-sm overflow-hidden flex flex-col h-full sticky top-28 shadow-2xl border border-white/5">
                             <div className="p-6 border-b border-white/10 flex justify-between items-center bg-slate-900/50">
-                                <h3 className="text-xs font-black uppercase tracking-widest text-teal-accent italic">Real-time Quotes</h3>
+                                <h3 className="text-xs font-black uppercase tracking-widest text-cobalt italic">Real-time Quotes</h3>
                                 <span className="flex items-center gap-2 text-[10px] font-black text-slate-400 tracking-widest uppercase">
-                                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Live API Data
+                                    <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span> Live API Data
                                 </span>
                             </div>
 
@@ -239,7 +239,7 @@ export default function LtlRatesPage() {
                                         <span className="text-sm font-black text-white uppercase">{weight.toLocaleString()} LBS</span>
                                     </div>
                                 </div>
-                                <button className="w-full bg-teal-accent text-white py-5 font-black text-xs uppercase tracking-[0.3em] hover:bg-teal-700 transition-all shadow-xl shadow-teal-900/20 active:scale-[0.98]">
+                                <button className="w-full bg-cobalt text-white py-5 font-black text-xs uppercase tracking-[0.3em] hover:bg-royal transition-all shadow-xl shadow-royal/20 active:scale-[0.98]">
                                     Proceed to Booking
                                 </button>
                                 <p className="text-[10px] text-slate-500 mt-5 text-center uppercase tracking-tighter font-medium px-4">

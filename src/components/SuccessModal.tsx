@@ -37,10 +37,10 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose, title, mes
                         className="relative bg-white w-full max-w-md shadow-2xl overflow-hidden border border-slate-200 rounded-sm"
                     >
                         {/* Status Bar */}
-                        <div className="h-1.5 bg-teal-accent w-full" />
+                        <div className="h-1.5 bg-cobalt w-full" />
 
                         <div className="p-8 text-center">
-                            <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-teal-50 text-teal-accent">
+                            <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-50 text-cobalt">
                                 <motion.span
                                     initial={{ scale: 0 }}
                                     animate={{ scale: 1 }}
@@ -77,7 +77,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose, title, mes
 
                         {/* Footer Graphic */}
                         <div className="bg-slate-50 p-4 border-t border-slate-100 flex items-center justify-center gap-3">
-                            <span className="material-symbols-outlined text-teal-accent text-sm">verified</span>
+                            <span className="material-symbols-outlined text-cobalt text-sm">verified</span>
                             <span className="text-[10px] text-slate-400 font-black uppercase tracking-widest italic">
                                 Institutional Protocol Verified
                             </span>

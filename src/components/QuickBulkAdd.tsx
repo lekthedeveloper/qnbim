@@ -47,18 +47,18 @@ const QuickBulkAdd = () => {
         <div className="bg-primary text-white py-5 px-5 md:px-10 border-b border-slate-700 shadow-2xl relative z-10">
             <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row md:items-center gap-4">
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2">
-                    <span className="material-symbols-outlined text-teal-accent text-lg">bolt</span> Quick SKU Procurement:
+                    <span className="material-symbols-outlined text-cobalt text-lg">bolt</span> Quick SKU Procurement:
                 </span>
                 <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto relative">
                     <input
-                        className={`bg-slate-900 border-slate-700 rounded-sm text-[11px] font-black h-11 md:h-auto md:py-2.5 px-4 w-full md:w-56 focus:border-teal-accent outline-none border uppercase tracking-wider placeholder:text-slate-600 transition-all ${status === 'error' ? 'border-red-500' : ''}`}
+                        className={`bg-slate-900 border-slate-700 rounded-sm text-[11px] font-black h-11 md:h-auto md:py-2.5 px-4 w-full md:w-56 focus:border-cobalt outline-none border uppercase tracking-wider placeholder:text-slate-600 transition-all ${status === 'error' ? 'border-red-500' : ''}`}
                         placeholder="ENTER SKU (E.G. HT-1021)"
                         type="text"
                         value={sku}
                         onChange={(e) => setSku(e.target.value)}
                     />
                     <input
-                        className="bg-slate-900 border-slate-700 rounded-sm text-[11px] font-black h-11 md:h-auto md:py-2.5 px-4 w-full md:w-20 focus:border-teal-accent outline-none border placeholder:text-slate-600 transition-all lg:w-24"
+                        className="bg-slate-900 border-slate-700 rounded-sm text-[11px] font-black h-11 md:h-auto md:py-2.5 px-4 w-full md:w-20 focus:border-cobalt outline-none border placeholder:text-slate-600 transition-all lg:w-24"
                         placeholder="QTY"
                         type="number"
                         value={quantity}
@@ -67,15 +67,15 @@ const QuickBulkAdd = () => {
                     <button
                         onClick={handleAdd}
                         disabled={status === 'success' || status === 'parsing'}
-                        className={`w-full md:w-auto px-6 h-11 md:h-auto md:py-2.5 text-[10px] font-black uppercase tracking-[0.15em] transition-all shadow-lg active:scale-95 ${status === 'success' ? 'bg-teal-600' :
-                            status === 'error' ? 'bg-red-600' : 'bg-teal-accent hover:bg-teal-400 text-slate-900'
+                        className={`w-full md:w-auto px-6 h-11 md:h-auto md:py-2.5 text-[10px] font-black uppercase tracking-[0.15em] transition-all shadow-lg active:scale-95 ${status === 'success' ? 'bg-royal' :
+                            status === 'error' ? 'bg-red-600' : 'bg-cobalt hover:bg-royal text-white'
                             }`}
                     >
                         {status === 'success' ? 'REDIRECTING...' : status === 'parsing' ? 'PARSING...' : status === 'error' ? 'FAILED' : 'CONTACT SALES'}
                     </button>
 
                     {message && (
-                        <div className={`absolute -bottom-8 left-0 text-[10px] md:text-[9px] font-black uppercase tracking-widest ${status === 'error' ? 'text-red-400' : 'text-teal-400'}`}>
+                        <div className={`absolute -bottom-8 left-0 text-[10px] md:text-[9px] font-black uppercase tracking-widest ${status === 'error' ? 'text-red-400' : 'text-blue-400'}`}>
                             {message}
                         </div>
                     )}

@@ -22,7 +22,7 @@ const NodeActionOverlay: React.FC<NodeActionOverlayProps> = ({ onEdit, onDelete,
                     onEdit?.();
                 }}
                 onMouseDown={(e) => e.stopPropagation()}
-                className="nodrag w-6 h-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-teal-500/80 transition-colors shadow-lg"
+                className="nodrag w-6 h-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-cobalt/80 transition-colors shadow-lg"
                 title="Edit Node"
             >
                 <Pencil size={12} strokeWidth={3} />

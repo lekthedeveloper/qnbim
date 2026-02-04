@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
                 <div className="md:col-span-2">
                     <div className="flex items-center gap-2 text-white mb-4">
-                        <span className="material-symbols-outlined text-2xl text-teal-accent">
+                        <span className="material-symbols-outlined text-2xl text-cobalt">
                             {isLogistics ? 'warehouse' : 'warehouse'}
                         </span>
                         <h2 className="text-xl font-black uppercase tracking-tighter">
@@ -44,17 +44,17 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                     <ul className="text-xs space-y-3">
                         {isLogistics ? (
                             <>
-                                <li><a className="hover:text-teal-accent" href="#">LTL Rate Calculator</a></li>
-                                <li><a className="hover:text-teal-accent" href="#">Track Shipment</a></li>
-                                <li><a className="hover:text-teal-accent" href="#">Warehouse Status</a></li>
-                                <li><a className="hover:text-teal-accent" href="#">Freight Claims</a></li>
+                                <li><a className="hover:text-cobalt" href="#">LTL Rate Calculator</a></li>
+                                <li><a className="hover:text-cobalt" href="#">Track Shipment</a></li>
+                                <li><a className="hover:text-cobalt" href="#">Warehouse Status</a></li>
+                                <li><a className="hover:text-cobalt" href="#">Freight Claims</a></li>
                             </>
                         ) : (
                             <>
-                                <li><Link className="hover:text-teal-accent" href="/about-logistics">About Our Logistics</Link></li>
-                                <li><Link className="hover:text-teal-accent" href="/warehouse-locations">Warehouse Locations</Link></li>
-                                <li><Link className="hover:text-teal-accent" href="/careers">Careers</Link></li>
-                                <li><Link className="hover:text-teal-accent" href="/terms-of-sale">Terms of Sale</Link></li>
+                                <li><Link className="hover:text-cobalt" href="/about-logistics">About Our Logistics</Link></li>
+                                <li><Link className="hover:text-cobalt" href="/warehouse-locations">Warehouse Locations</Link></li>
+                                <li><Link className="hover:text-cobalt" href="/careers">Careers</Link></li>
+                                <li><Link className="hover:text-cobalt" href="/terms-of-sale">Terms of Sale</Link></li>
                             </>
                         )}
                     </ul>
@@ -64,16 +64,16 @@ const Footer: React.FC<FooterProps> = ({ padding = 'px-10', isLogistics = false 
                     <ul className="text-xs space-y-3">
                         {isLogistics ? (
                             <>
-                                <li><Link className="hover:text-teal-accent" href="/wholesale-application">Wholesale Application</Link></li>
-                                <li><a className="hover:text-teal-accent" href="#">Terms of Carriage</a></li>
-                                <li><Link className="hover:text-teal-accent" href="/tax-exemption">Tax Exemption Help</Link></li>
-                                <li><a className="hover:text-teal-accent" href="#">Packaging Guide</a></li>
+                                <li><Link className="hover:text-cobalt" href="/wholesale-application">Wholesale Application</Link></li>
+                                <li><a className="hover:text-cobalt" href="#">Terms of Carriage</a></li>
+                                <li><Link className="hover:text-cobalt" href="/tax-exemption">Tax Exemption Help</Link></li>
+                                <li><a className="hover:text-cobalt" href="#">Packaging Guide</a></li>
                             </>
                         ) : (
                             <>
-                                <li><Link className="hover:text-teal-accent" href="/wholesale-application">Wholesale Application</Link></li>
-                                <li><Link className="hover:text-teal-accent" href="/ltl-rates">LTL Rate Calculator</Link></li>
-                                <li><Link className="hover:text-teal-accent" href="/tax-exemption">Tax Exemption Help</Link></li>
+                                <li><Link className="hover:text-cobalt" href="/wholesale-application">Wholesale Application</Link></li>
+                                <li><Link className="hover:text-cobalt" href="/ltl-rates">LTL Rate Calculator</Link></li>
+                                <li><Link className="hover:text-cobalt" href="/tax-exemption">Tax Exemption Help</Link></li>
                             </>
                         )}
                     </ul>

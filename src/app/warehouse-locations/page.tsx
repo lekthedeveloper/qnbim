@@ -89,7 +89,7 @@ const SchedulingModal = ({
                                 <h3 className="text-white font-black uppercase tracking-tight text-lg md:text-xl">
                                     {warehouse.dockPickup ? 'Schedule Dock Pickup' : 'Schedule Logistics Consult'}
                                 </h3>
-                                <p className="text-teal-accent text-[10px] font-black uppercase tracking-widest mt-1">
+                                <p className="text-cobalt text-[10px] font-black uppercase tracking-widest mt-1">
                                     Facility: {warehouse.code} | {warehouse.city}, {warehouse.state}
                                 </p>
                             </div>
@@ -111,7 +111,7 @@ const SchedulingModal = ({
                                                 { icon: 'emergency_home', text: 'ID REQUIRED AT GATE' }
                                             ].map((rule, idx) => (
                                                 <li key={idx} className="flex items-center gap-2 text-[10px] font-black text-slate-700">
-                                                    <span className="material-symbols-outlined text-sm text-teal-accent">{rule.icon}</span>
+                                                    <span className="material-symbols-outlined text-sm text-cobalt">{rule.icon}</span>
                                                     {rule.text}
                                                 </li>
                                             ))}
@@ -132,7 +132,7 @@ const SchedulingModal = ({
                                     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-6">
                                         <div>
                                             <h4 className="text-[11px] font-black uppercase text-slate-900 mb-4 tracking-widest flex items-center gap-2">
-                                                <span className="material-symbols-outlined text-sm text-teal-accent">calendar_month</span> 1. Select Operation Date
+                                                <span className="material-symbols-outlined text-sm text-cobalt">calendar_month</span> 1. Select Operation Date
                                             </h4>
                                             <div className="grid grid-cols-7 gap-1 md:gap-2">
                                                 {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map(d => (
@@ -148,8 +148,8 @@ const SchedulingModal = ({
                                                             onClick={() => setSelectedDate(day)}
                                                             className={`aspect-square md:h-10 text-[11px] font-black rounded-sm border transition-all flex items-center justify-center
                                                                 ${isWeekend ? 'bg-slate-50 text-slate-200 border-transparent cursor-not-allowed' :
-                                                                    selectedDate === day ? 'bg-teal-accent text-white border-teal-600 shadow-md' :
-                                                                        'bg-white text-slate-900 border-slate-200 hover:border-teal-accent'}`}
+                                                                    selectedDate === day ? 'bg-cobalt text-white border-royal shadow-md' :
+                                                                        'bg-white text-slate-900 border-slate-200 hover:border-cobalt'}`}
                                                         >
                                                             {day}
                                                         </button>
@@ -160,7 +160,7 @@ const SchedulingModal = ({
 
                                         <div>
                                             <h4 className="text-[11px] font-black uppercase text-slate-900 mb-4 tracking-widest flex items-center gap-2">
-                                                <span className="material-symbols-outlined text-sm text-teal-accent">schedule</span> 2. Allocation Window
+                                                <span className="material-symbols-outlined text-sm text-cobalt">schedule</span> 2. Allocation Window
                                             </h4>
                                             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                                                 {timeSlots.map(time => (
@@ -169,7 +169,7 @@ const SchedulingModal = ({
                                                         onClick={() => setSelectedTime(time)}
                                                         className={`py-2 px-3 text-[10px] font-black rounded-sm border transition-all uppercase tracking-tight
                                                             ${selectedTime === time ? 'bg-slate-900 text-white border-slate-900 shadow-lg' :
-                                                                'bg-slate-50 text-slate-600 border-slate-200 hover:border-teal-accent hover:text-teal-accent'}`}
+                                                                'bg-slate-50 text-slate-600 border-slate-200 hover:border-cobalt hover:text-cobalt'}`}
                                                     >
                                                         {time}
                                                     </button>
@@ -180,7 +180,7 @@ const SchedulingModal = ({
                                         <button
                                             disabled={!selectedDate || !selectedTime}
                                             onClick={() => setStep('contact')}
-                                            className="w-full bg-teal-accent text-white py-4 text-[11px] font-black uppercase tracking-[0.2em] rounded-sm disabled:opacity-50 shadow-xl shadow-teal-900/10 active:scale-[0.98] transition-all"
+                                            className="w-full bg-cobalt text-white py-4 text-[11px] font-black uppercase tracking-[0.2em] rounded-sm disabled:opacity-50 shadow-xl shadow-royal/10 active:scale-[0.98] transition-all"
                                         >
                                             Establish Identity Protocol
                                         </button>
@@ -191,13 +191,13 @@ const SchedulingModal = ({
                                     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
                                         <div className="bg-slate-50 p-4 border border-slate-200 flex items-center justify-between">
                                             <div className="flex items-center gap-3">
-                                                <span className="material-symbols-outlined text-teal-accent">calendar_today</span>
+                                                <span className="material-symbols-outlined text-cobalt">calendar_today</span>
                                                 <div>
                                                     <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Appointment</p>
                                                     <p className="text-xs font-black text-slate-900 uppercase">Feb {selectedDate}, 2026 @ {selectedTime}</p>
                                                 </div>
                                             </div>
-                                            <button onClick={() => setStep('datetime')} className="text-[10px] font-black text-teal-600 uppercase hover:underline">Change</button>
+                                            <button onClick={() => setStep('datetime')} className="text-[10px] font-black text-royal uppercase hover:underline">Change</button>
                                         </div>
 
                                         <div className="space-y-4">
@@ -206,7 +206,7 @@ const SchedulingModal = ({
                                                 <input
                                                     value={email}
                                                     onChange={(e) => setEmail(e.target.value)}
-                                                    className="w-full border border-slate-200 p-3 text-sm focus:ring-teal-accent focus:border-teal-accent outline-none text-[#001A2C] font-semibold"
+                                                    className="w-full border border-slate-200 p-3 text-sm focus:ring-cobalt focus:border-cobalt outline-none text-[#0f172a] font-semibold"
                                                     placeholder="ops@yourcompany.com"
                                                 />
                                             </div>
@@ -215,7 +215,7 @@ const SchedulingModal = ({
                                                 <input
                                                     value={phone}
                                                     onChange={(e) => setPhone(e.target.value)}
-                                                    className="w-full border border-slate-200 p-3 text-sm focus:ring-teal-accent focus:border-teal-accent outline-none text-[#001A2C] font-semibold"
+                                                    className="w-full border border-slate-200 p-3 text-sm focus:ring-cobalt focus:border-cobalt outline-none text-[#0f172a] font-semibold"
                                                     placeholder="(XXX) XXX-XXXX"
                                                 />
                                             </div>
@@ -224,7 +224,7 @@ const SchedulingModal = ({
                                         <button
                                             disabled={!email || !phone}
                                             onClick={handleConfirm}
-                                            className="w-full bg-teal-accent text-white py-4 font-black text-xs uppercase tracking-widest disabled:opacity-30 transition-all hover:bg-teal-700 shadow-xl shadow-teal-900/10"
+                                            className="w-full bg-cobalt text-white py-4 font-black text-xs uppercase tracking-widest disabled:opacity-30 transition-all hover:bg-royal shadow-xl shadow-royal/10"
                                         >
                                             Confirm Appointment
                                         </button>
@@ -237,7 +237,7 @@ const SchedulingModal = ({
                                         animate={{ scale: 1, opacity: 1 }}
                                         className="py-10 text-center space-y-6"
                                     >
-                                        <div className="inline-flex h-20 w-20 items-center justify-center rounded-full bg-teal-50 text-teal-accent">
+                                        <div className="inline-flex h-20 w-20 items-center justify-center rounded-full bg-blue-50 text-cobalt">
                                             <span className="material-symbols-outlined text-5xl">check_circle</span>
                                         </div>
                                         <div className="space-y-2">
@@ -297,7 +297,7 @@ export default function WarehouseLocationsPage() {
         doc.text("qnbim WHOLESALE", 20, 25);
 
         doc.setFontSize(10);
-        doc.setTextColor(20, 184, 166); // Teal Accent
+        doc.setTextColor(20, 184, 166); // Blue Accent
         doc.text("LOGISTICS & SAFETY PROTOCOL v2.1", 20, 32);
 
         // Content
@@ -353,7 +353,7 @@ export default function WarehouseLocationsPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     className="text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-3 md:mb-4 leading-none"
                                 >
-                                    Logistics & <span className="text-teal-accent">Distribution Hubs</span>
+                                    Logistics & <span className="text-cobalt">Distribution Hubs</span>
                                 </motion.h1>
                                 <motion.p
                                     initial={{ opacity: 0, y: 20 }}
@@ -375,7 +375,7 @@ export default function WarehouseLocationsPage() {
                                 </div>
                                 <div className="text-center">
                                     <p className="text-[9px] md:text-[10px] font-bold text-slate-500 uppercase tracking-widest">On-Time</p>
-                                    <p className="text-xl md:text-2xl font-black text-teal-accent"><CountUp end={99.8} suffix="%" /></p>
+                                    <p className="text-xl md:text-2xl font-black text-cobalt"><CountUp end={99.8} suffix="%" /></p>
                                 </div>
                             </div>
                         </div>
@@ -405,12 +405,12 @@ export default function WarehouseLocationsPage() {
                                         <motion.span
                                             animate={{ scale: [1, 1.5, 1], opacity: [0.6, 0.2, 0.6] }}
                                             transition={{ duration: 2, repeat: Infinity }}
-                                            className="absolute inset-0 bg-teal-accent rounded-full -m-2 block"
+                                            className="absolute inset-0 bg-cobalt rounded-full -m-2 block"
                                         />
                                         <motion.span
                                             whileHover={{ scale: 1.2 }}
                                             className={`relative block h-2 md:h-3 w-2 md:w-3 rounded-full cursor-pointer shadow-lg transition-colors
-                                                ${hoveredMarker === w.id ? 'bg-white' : 'bg-teal-accent'}`}
+                                                ${hoveredMarker === w.id ? 'bg-white' : 'bg-cobalt'}`}
                                         />
 
                                         {/* Tooltip */}
@@ -420,9 +420,9 @@ export default function WarehouseLocationsPage() {
                                                     initial={{ opacity: 0, y: -10, x: '-50%' }}
                                                     animate={{ opacity: 1, y: 0, x: '-50%' }}
                                                     exit={{ opacity: 0, y: -10, x: '-50%' }}
-                                                    className="absolute bottom-6 left-1/2 bg-white text-slate-900 px-4 py-2 border border-teal-500 shadow-2xl z-50 rounded-sm pointer-events-none"
+                                                    className="absolute bottom-6 left-1/2 bg-white text-slate-900 px-4 py-2 border border-cobalt shadow-2xl z-50 rounded-sm pointer-events-none"
                                                 >
-                                                    <p className="text-[10px] font-black uppercase tracking-widest text-teal-600 leading-none mb-1">{w.code}</p>
+                                                    <p className="text-[10px] font-black uppercase tracking-widest text-royal leading-none mb-1">{w.code}</p>
                                                     <p className="text-xs font-black uppercase whitespace-nowrap">{w.name}</p>
                                                     <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-white"></div>
                                                 </motion.div>
@@ -437,7 +437,7 @@ export default function WarehouseLocationsPage() {
                                 <h4 className="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2 md:mb-3 italic">Map Legend</h4>
                                 <div className="space-y-2 md:space-y-3">
                                     <div className="flex items-center gap-2">
-                                        <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full bg-teal-accent"></span>
+                                        <span className="w-2 md:w-2.5 h-2 md:h-2.5 rounded-full bg-cobalt"></span>
                                         <span className="text-[9px] md:text-[10px] text-white font-black uppercase tracking-widest">Active Hub</span>
                                     </div>
                                     <div className="flex items-center gap-2">
@@ -458,7 +458,7 @@ export default function WarehouseLocationsPage() {
                             <input
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
-                                className="w-full pl-11 md:pl-12 pr-4 py-3 md:py-4 bg-slate-50 border border-slate-200 rounded-[8px] text-[13px] md:text-sm focus:ring-teal-accent focus:border-teal-accent outline-none text-[#001A2C] font-black placeholder:text-slate-400 placeholder:font-bold"
+                                className="w-full pl-11 md:pl-12 pr-4 py-3 md:py-4 bg-slate-50 border border-slate-200 rounded-[8px] text-[13px] md:text-sm focus:ring-cobalt focus:border-cobalt outline-none text-[#0f172a] font-black placeholder:text-slate-400 placeholder:font-bold"
                                 placeholder="CITY OR ZIP CODE..."
                                 type="text"
                             />
@@ -469,14 +469,14 @@ export default function WarehouseLocationsPage() {
                                 <div
                                     onClick={() => setDockOnly(!dockOnly)}
                                     className={`w-12 h-6 rounded-full relative cursor-pointer transition-colors
-                                        ${dockOnly ? 'bg-teal-accent' : 'bg-slate-200'}`}
+                                        ${dockOnly ? 'bg-cobalt' : 'bg-slate-200'}`}
                                 >
                                     <motion.div
                                         animate={{ x: dockOnly ? 24 : 0 }}
                                         className="absolute top-1 left-1 w-4 h-4 bg-white rounded-full shadow-sm"
                                     />
                                 </div>
-                                <span className="text-[10px] md:text-[11px] font-black text-[#001A2C] uppercase tracking-widest">Dock Pickup Only</span>
+                                <span className="text-[10px] md:text-[11px] font-black text-[#0f172a] uppercase tracking-widest">Dock Pickup Only</span>
                             </div>
                         </div>
 
@@ -500,7 +500,7 @@ export default function WarehouseLocationsPage() {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     key={loc.id}
-                                    className="bg-white border border-slate-200 rounded-[8px] flex flex-col lg:flex-row overflow-hidden hover:border-teal-accent transition-all group shadow-sm hover:shadow-xl"
+                                    className="bg-white border border-slate-200 rounded-[8px] flex flex-col lg:flex-row overflow-hidden hover:border-cobalt transition-all group shadow-sm hover:shadow-xl"
                                 >
                                     <div className="lg:w-1/4 bg-slate-50 p-6 md:p-8 flex flex-row lg:flex-col justify-between items-center lg:items-start border-b lg:border-b-0 lg:border-r border-slate-200 relative">
                                         <div>
@@ -509,7 +509,7 @@ export default function WarehouseLocationsPage() {
                                         </div>
                                         <div className="lg:mt-8">
                                             {loc.dockPickup ? (
-                                                <div className="flex items-center gap-2 text-teal-600 bg-teal-50 px-2.5 md:px-3 py-1.5 md:py-2 rounded-[8px] border border-teal-100 shadow-sm">
+                                                <div className="flex items-center gap-2 text-royal bg-blue-50 px-2.5 md:px-3 py-1.5 md:py-2 rounded-[8px] border border-blue-100 shadow-sm">
                                                     <span className="material-symbols-outlined text-sm md:text-base">local_shipping</span>
                                                     <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest leading-none">Dock Active</span>
                                                 </div>
@@ -541,7 +541,7 @@ export default function WarehouseLocationsPage() {
                                             <div className="space-y-2.5">
                                                 <div className="flex justify-between items-center text-[10px] md:text-[11px] border-b border-slate-200/50 pb-2">
                                                     <span className="font-bold text-slate-500 uppercase">Dock:</span>
-                                                    <span className={`font-black uppercase ${loc.dockPickup ? 'text-teal-600' : 'text-slate-400'}`}>
+                                                    <span className={`font-black uppercase ${loc.dockPickup ? 'text-royal' : 'text-slate-400'}`}>
                                                         {loc.dockPickup ? 'ENABLED' : 'RESTRICTED'}
                                                     </span>
                                                 </div>
@@ -567,7 +567,7 @@ export default function WarehouseLocationsPage() {
                                             <button
                                                 onClick={() => openScheduling(loc)}
                                                 className={`w-full lg:w-48 py-3.5 md:py-4 font-black text-[10px] uppercase tracking-[0.2em] transition-all shadow-md active:scale-[0.98] rounded-[8px]
-                                                    ${loc.dockPickup ? 'bg-teal-accent text-white hover:bg-teal-700' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
+                                                    ${loc.dockPickup ? 'bg-cobalt text-white hover:bg-royal' : 'bg-slate-900 text-white hover:bg-slate-800'}`}
                                             >
                                                 {loc.dockPickup ? 'Schedule Pickup' : 'General Inquiry'}
                                             </button>
@@ -582,7 +582,7 @@ export default function WarehouseLocationsPage() {
                                 className="flex flex-col items-center justify-center py-32 border-2 border-dashed border-slate-200 rounded-sm"
                             >
                                 <span className="material-symbols-outlined text-6xl text-slate-200 mb-4">location_off</span>
-                                <h3 className="text-sm font-black text-[#001A2C] uppercase tracking-[0.2em]">No Facilities Found in Protocol</h3>
+                                <h3 className="text-sm font-black text-[#0f172a] uppercase tracking-[0.2em]">No Facilities Found in Protocol</h3>
                                 <p className="text-[10px] text-slate-400 mt-2 uppercase font-bold">Try adjusting your zip code or searching by state code</p>
                             </motion.div>
                         )}
@@ -591,14 +591,14 @@ export default function WarehouseLocationsPage() {
 
                 {/* Guidelines Banner */}
                 <section className="max-w-7xl mx-auto mt-20 px-6 md:px-10">
-                    <div className="bg-slate-900 text-white p-12 rounded-[8px] shadow-2xl relative overflow-hidden border-l-8 border-teal-accent">
+                    <div className="bg-slate-900 text-white p-12 rounded-[8px] shadow-2xl relative overflow-hidden border-l-8 border-cobalt">
                         <div className="absolute top-0 right-0 p-8 opacity-10">
                             <span className="material-symbols-outlined text-[120px]">verified_user</span>
                         </div>
                         <div className="relative z-10 flex flex-col lg:flex-row gap-12 items-center justify-between">
                             <div className="max-w-3xl">
                                 <h4 className="font-black uppercase tracking-[0.2em] text-xl mb-4 flex items-center gap-3">
-                                    <span className="w-8 h-1 bg-teal-accent"></span>
+                                    <span className="w-8 h-1 bg-cobalt"></span>
                                     Safety & Compliance Protocol
                                 </h4>
                                 <p className="text-sm text-slate-400 leading-relaxed font-medium">
@@ -607,7 +607,7 @@ export default function WarehouseLocationsPage() {
                             </div>
                             <button
                                 onClick={handleDownloadPDF}
-                                className="whitespace-nowrap bg-teal-accent text-white px-12 py-5 font-black text-xs uppercase tracking-[0.2em] hover:bg-teal-700 transition-all shadow-xl shadow-teal-900/20 active:scale-95 flex items-center gap-3 rounded-[8px]"
+                                className="whitespace-nowrap bg-cobalt text-white px-12 py-5 font-black text-xs uppercase tracking-[0.2em] hover:bg-royal transition-all shadow-xl shadow-royal/20 active:scale-95 flex items-center gap-3 rounded-[8px]"
                             >
                                 <span className="material-symbols-outlined">description</span>
                                 Download Protocol PDF

@@ -63,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     </button>
 
                     <Link href="/" className="flex items-center gap-2 text-white hover:opacity-80 transition-opacity" style={{ color: '#FFFFFF' }}>
-                        <span className="material-symbols-outlined text-3xl md:text-4xl text-teal-accent">forklift</span>
+                        <span className="material-symbols-outlined text-3xl md:text-4xl text-cobalt">forklift</span>
                         <h2 className="text-[20px] md:text-[26px] font-black leading-none tracking-tighter text-white !font-sans flex items-baseline gap-1" style={{ color: '#FFFFFF', fontWeight: 900 }}>
                             <span className="uppercase">QNBIM</span>
                             <span className="uppercase font-medium opacity-70 text-[0.6em] tracking-[0.2em] whitespace-nowrap">wholesale store</span>
@@ -88,7 +88,7 @@ const Navbar: React.FC<NavbarProps> = ({
                                     {isActive && (
                                         <motion.div
                                             layoutId="navUnderline"
-                                            className="absolute bottom-0 left-0 right-0 h-0.5 bg-teal-accent"
+                                            className="absolute bottom-0 left-0 right-0 h-0.5 bg-cobalt"
                                         />
                                     )}
                                 </Link>
@@ -100,7 +100,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 {/* Desktop Search */}
                 {!showAccountManager && (
                     <div className="hidden lg:flex flex-1 max-w-md mx-8 group">
-                        <div className="flex w-full rounded-sm border border-white/20 bg-white/10 overflow-hidden focus-within:border-teal-accent shadow-inner">
+                        <div className="flex w-full rounded-sm border border-white/20 bg-white/10 overflow-hidden focus-within:border-cobalt shadow-inner">
                             <div className="flex items-center px-4 text-white/50">
                                 <span className="material-symbols-outlined text-lg">search</span>
                             </div>
@@ -121,7 +121,7 @@ const Navbar: React.FC<NavbarProps> = ({
                         {/* Support Center Button */}
                         <Link
                             href="/support"
-                            className="flex items-center gap-2 text-[10px] font-black px-4 md:px-6 py-2.5 md:py-3 bg-teal-accent text-white uppercase tracking-widest transition-all rounded-sm shadow-md hover:bg-teal-600 active:scale-95"
+                            className="flex items-center gap-2 text-[10px] font-black px-4 md:px-6 py-2.5 md:py-3 bg-cobalt text-white uppercase tracking-widest transition-all rounded-sm shadow-md hover:bg-royal active:scale-95"
                         >
                             <span className="material-symbols-outlined text-base">support_agent</span>
                             Support Center
@@ -132,7 +132,7 @@ const Navbar: React.FC<NavbarProps> = ({
 
             {/* Mobile Search Bar (Sticky below main nav) */}
             <div className="lg:hidden px-4 pb-3">
-                <div className="flex w-full rounded-sm border border-white/20 bg-white/10 overflow-hidden focus-within:border-teal-accent shadow-sm">
+                <div className="flex w-full rounded-sm border border-white/20 bg-white/10 overflow-hidden focus-within:border-cobalt shadow-sm">
                     <div className="flex items-center px-3 text-white/50">
                         <span className="material-symbols-outlined text-base">search</span>
                     </div>
@@ -167,7 +167,7 @@ const Navbar: React.FC<NavbarProps> = ({
                         >
                             <div className="p-6 border-b border-slate-800 flex items-center justify-between">
                                 <div className="flex items-center gap-2">
-                                    <span className="material-symbols-outlined text-2xl text-teal-accent">forklift</span>
+                                    <span className="material-symbols-outlined text-2xl text-cobalt">forklift</span>
                                     <span className="text-white font-black uppercase italic tracking-tighter">qnbim HUB</span>
                                 </div>
                                 <button onClick={() => setIsMenuOpen(false)} className="text-slate-500 hover:text-white">
@@ -181,7 +181,7 @@ const Navbar: React.FC<NavbarProps> = ({
                                         key={link.name}
                                         href={link.href}
                                         onClick={() => setIsMenuOpen(false)}
-                                        className={`flex items-center justify-between py-4 border-b border-slate-800/50 text-xs font-black uppercase tracking-widest ${pathname === link.href ? 'text-teal-accent' : 'text-slate-400'
+                                        className={`flex items-center justify-between py-4 border-b border-slate-800/50 text-xs font-black uppercase tracking-widest ${pathname === link.href ? 'text-cobalt' : 'text-slate-400'
                                             }`}
                                     >
                                         {link.name}
@@ -194,7 +194,7 @@ const Navbar: React.FC<NavbarProps> = ({
                                     <Link
                                         href="/support"
                                         onClick={() => setIsMenuOpen(false)}
-                                        className="w-full block py-4 bg-teal-accent text-center text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-sm shadow-lg shadow-teal-900/20"
+                                        className="w-full block py-4 bg-cobalt text-center text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-sm shadow-lg shadow-royal/20"
                                     >
                                         Support center access
                                     </Link>

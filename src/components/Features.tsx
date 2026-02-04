@@ -5,7 +5,7 @@ const Features = () => {
         <div className="bg-slate-100 border-t border-slate-200 px-10 py-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
                 <div className="flex gap-4 items-start">
-                    <span className="material-symbols-outlined text-4xl text-teal-accent">local_shipping</span>
+                    <span className="material-symbols-outlined text-4xl text-cobalt">local_shipping</span>
                     <div>
                         <h4 className="font-black text-xs uppercase mb-2">Pallet Shipping</h4>
                         <p className="text-xs text-slate-500 leading-relaxed">
@@ -14,7 +14,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="flex gap-4 items-start">
-                    <span className="material-symbols-outlined text-4xl text-teal-accent">receipt_long</span>
+                    <span className="material-symbols-outlined text-4xl text-cobalt">receipt_long</span>
                     <div>
                         <h4 className="font-black text-xs uppercase mb-2">B2B Invoicing</h4>
                         <p className="text-xs text-slate-500 leading-relaxed">
@@ -23,7 +23,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="flex gap-4 items-start">
-                    <span className="material-symbols-outlined text-4xl text-teal-accent">precision_manufacturing</span>
+                    <span className="material-symbols-outlined text-4xl text-cobalt">precision_manufacturing</span>
                     <div>
                         <h4 className="font-black text-xs uppercase mb-2">Direct Sourcing</h4>
                         <p className="text-xs text-slate-500 leading-relaxed">

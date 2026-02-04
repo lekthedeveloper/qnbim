@@ -38,13 +38,13 @@ const QuickSkuEntry = () => {
                     <span className="material-symbols-outlined text-9xl">barcode_scanner</span>
                 </div>
                 <h3 className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] mb-4 md:mb-6 flex items-center gap-2 text-primary">
-                    <span className="material-symbols-outlined text-teal-accent text-sm md:text-base">bolt</span> Quick SKU Procurement
+                    <span className="material-symbols-outlined text-cobalt text-sm md:text-base">bolt</span> Quick SKU Procurement
                 </h3>
                 <div className="flex flex-col gap-3">
                     <div className="w-full">
                         <label className="block text-[9px] font-bold text-slate-400 uppercase tracking-tighter mb-1 px-1">Product SKU</label>
                         <input
-                            className={`w-full bg-[#00263E] md:bg-white border rounded-[4px] px-4 h-11 md:h-auto md:py-2.5 text-sm font-semibold uppercase tracking-widest focus:ring-1 focus:ring-teal-accent outline-none transition-all text-white md:text-slate-900 placeholder:text-slate-400 md:placeholder:text-slate-400 ${status === 'error' ? 'border-red-500' : 'border-slate-600 md:border-slate-300'}`}
+                            className={`w-full bg-[#00263E] md:bg-white border rounded-[4px] px-4 h-11 md:h-auto md:py-2.5 text-sm font-semibold uppercase tracking-widest focus:ring-1 focus:ring-cobalt outline-none transition-all text-white md:text-slate-900 placeholder:text-slate-400 md:placeholder:text-slate-400 ${status === 'error' ? 'border-red-500' : 'border-slate-600 md:border-slate-300'}`}
                             placeholder="ENTER SKU (E.G. HT-1021)"
                             type="text"
                             value={sku}
@@ -54,7 +54,7 @@ const QuickSkuEntry = () => {
                     <div className="w-full">
                         <label className="block text-[9px] font-bold text-slate-400 uppercase tracking-tighter mb-1 px-1">Quantity</label>
                         <input
-                            className="w-full bg-[#00263E] md:bg-white border border-slate-600 md:border-slate-300 rounded-[4px] px-4 h-11 md:h-auto md:py-2.5 text-sm font-semibold focus:ring-1 focus:ring-teal-accent outline-none transition-all text-white md:text-slate-900 placeholder:text-slate-400 md:placeholder:text-slate-400"
+                            className="w-full bg-[#00263E] md:bg-white border border-slate-600 md:border-slate-300 rounded-[4px] px-4 h-11 md:h-auto md:py-2.5 text-sm font-semibold focus:ring-1 focus:ring-cobalt outline-none transition-all text-white md:text-slate-900 placeholder:text-slate-400 md:placeholder:text-slate-400"
                             placeholder="QTY"
                             type="number"
                             value={qty}
@@ -63,7 +63,7 @@ const QuickSkuEntry = () => {
                     </div>
                     <button
                         onClick={handleQuickAdd}
-                        className="w-full px-8 h-11 md:h-auto md:py-2.5 rounded-[4px] text-[11px] font-semibold uppercase tracking-widest transition-all shadow-md active:brightness-90 bg-teal-accent text-white"
+                        className="w-full px-8 h-11 md:h-auto md:py-2.5 rounded-[4px] text-[11px] font-semibold uppercase tracking-widest transition-all shadow-md active:brightness-90 bg-cobalt text-white"
                     >
                         INQUIRE FOR BULK PRICE
                     </button>
@@ -79,7 +79,7 @@ const QuickSkuEntry = () => {
                             {status === 'parsing' ? 'Parsing CSV...' : 'Bulk CSV Upload'}
                         </button>
                         {message && (
-                            <div className={`mt-2 text-[8px] font-black uppercase tracking-widest text-center ${status === 'error' ? 'text-red-500' : 'text-teal-600'}`}>
+                            <div className={`mt-2 text-[8px] font-black uppercase tracking-widest text-center ${status === 'error' ? 'text-red-500' : 'text-royal'}`}>
                                 {message}
                             </div>
                         )}

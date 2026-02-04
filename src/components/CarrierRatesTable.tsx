@@ -55,18 +55,18 @@ const CarrierRatesTable = () => {
                                 <motion.tr
                                     key={idx}
                                     variants={itemVariants}
-                                    className={`hover:bg-slate-50 transition-colors ${rate.bestValue ? 'bg-teal-50/30' : ''}`}
+                                    className={`hover:bg-slate-50 transition-colors ${rate.bestValue ? 'bg-blue-50/30' : ''}`}
                                 >
                                     <td className="px-6 py-4">
                                         <div className="flex items-center gap-3">
-                                            <div className={`w-10 h-10 ${rate.bestValue ? 'bg-teal-100' : 'bg-slate-100'} rounded flex items-center justify-center`}>
-                                                <span className={`material-symbols-outlined ${rate.bestValue ? 'text-teal-600' : 'text-slate-400'}`}>
+                                            <div className={`w-10 h-10 ${rate.bestValue ? 'bg-blue-100' : 'bg-slate-100'} rounded flex items-center justify-center`}>
+                                                <span className={`material-symbols-outlined ${rate.bestValue ? 'text-royal' : 'text-slate-400'}`}>
                                                     {rate.bestValue ? 'bolt' : 'local_shipping'}
                                                 </span>
                                             </div>
                                             <div>
                                                 <p className="text-sm font-black text-slate-900 leading-tight">{rate.carrier}</p>
-                                                <p className={`text-[10px] uppercase font-bold ${rate.bestValue ? 'text-teal-600 italic' : 'text-slate-400'}`}>
+                                                <p className={`text-[10px] uppercase font-bold ${rate.bestValue ? 'text-royal italic' : 'text-slate-400'}`}>
                                                     {rate.bestValue ? 'Best Value' : rate.type}
                                                 </p>
                                             </div>
@@ -84,7 +84,7 @@ const CarrierRatesTable = () => {
                                     <td className="px-6 py-4 text-right">
                                         <motion.button
                                             whileTap={{ scale: 0.95 }}
-                                            className={`${rate.carrier === 'Old Dominion' || rate.carrier === 'Estes Express' ? 'bg-slate-900' : 'bg-teal-accent'} text-white px-4 py-1.5 text-[10px] font-black uppercase tracking-wider hover:opacity-80 transition-opacity`}
+                                            className={`${rate.carrier === 'Old Dominion' || rate.carrier === 'Estes Express' ? 'bg-slate-900' : 'bg-cobalt'} text-white px-4 py-1.5 text-[10px] font-black uppercase tracking-wider hover:opacity-80 transition-opacity`}
                                         >
                                             Select
                                         </motion.button>
@@ -97,11 +97,11 @@ const CarrierRatesTable = () => {
                     {/* Mobile Stacked Cards */}
                     <div className="md:hidden divide-y divide-slate-100">
                         {rates.map((rate, idx) => (
-                            <div key={idx} className={`p-5 space-y-4 ${rate.bestValue ? 'bg-teal-50/20' : ''}`}>
+                            <div key={idx} className={`p-5 space-y-4 ${rate.bestValue ? 'bg-blue-50/20' : ''}`}>
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-3">
-                                        <div className={`w-10 h-10 ${rate.bestValue ? 'bg-teal-100' : 'bg-slate-100'} rounded-[8px] flex items-center justify-center`}>
-                                            <span className={`material-symbols-outlined ${rate.bestValue ? 'text-teal-600' : 'text-slate-400'}`}>
+                                        <div className={`w-10 h-10 ${rate.bestValue ? 'bg-blue-100' : 'bg-slate-100'} rounded-[8px] flex items-center justify-center`}>
+                                            <span className={`material-symbols-outlined ${rate.bestValue ? 'text-royal' : 'text-slate-400'}`}>
                                                 {rate.bestValue ? 'bolt' : 'local_shipping'}
                                             </span>
                                         </div>
@@ -111,7 +111,7 @@ const CarrierRatesTable = () => {
                                         </div>
                                     </div>
                                     {rate.bestValue && (
-                                        <span className="bg-teal-100 text-teal-600 text-[9px] font-black uppercase px-2 py-0.5 rounded-sm italic tracking-widest animate-pulse">
+                                        <span className="bg-blue-100 text-royal text-[9px] font-black uppercase px-2 py-0.5 rounded-sm italic tracking-widest animate-pulse">
                                             BEST VAL
                                         </span>
                                     )}
@@ -133,7 +133,7 @@ const CarrierRatesTable = () => {
                                     </div>
                                     <motion.button
                                         whileTap={{ scale: 0.95 }}
-                                        className={`px-8 py-3 h-11 ${rate.carrier === 'Old Dominion' || rate.carrier === 'Estes Express' ? 'bg-slate-900' : 'bg-teal-accent'} text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-[8px]`}
+                                        className={`px-8 py-3 h-11 ${rate.carrier === 'Old Dominion' || rate.carrier === 'Estes Express' ? 'bg-slate-900' : 'bg-cobalt'} text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-[8px]`}
                                     >
                                         SELECT
                                     </motion.button>
@@ -148,15 +148,15 @@ const CarrierRatesTable = () => {
                     <h4 className="text-[10px] font-black uppercase text-slate-400 mb-2">Estimated Costs Include:</h4>
                     <ul className="text-[11px] text-slate-600 space-y-1">
                         <li className="flex items-center gap-2">
-                            <span className="material-symbols-outlined text-[14px] text-teal-accent">check_circle</span>
+                            <span className="material-symbols-outlined text-[14px] text-cobalt">check_circle</span>
                             Fuel Surcharges (FSC)
                         </li>
                         <li className="flex items-center gap-2">
-                            <span className="material-symbols-outlined text-[14px] text-teal-accent">check_circle</span>
+                            <span className="material-symbols-outlined text-[14px] text-cobalt">check_circle</span>
                             Selected Accessorial Fees
                         </li>
                         <li className="flex items-center gap-2">
-                            <span className="material-symbols-outlined text-[14px] text-teal-accent">check_circle</span>
+                            <span className="material-symbols-outlined text-[14px] text-cobalt">check_circle</span>
                             Terminal Handling Fees
                         </li>
                     </ul>

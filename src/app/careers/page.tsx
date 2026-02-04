@@ -30,7 +30,7 @@ const MOCK_JOBS = [
         type: 'Commission',
         department: 'Sales',
         location: 'Remote',
-        deptColor: 'bg-teal-50 text-teal-700'
+        deptColor: 'bg-blue-50 text-royal'
     },
     {
         id: 'DB-LOG-004',
@@ -54,7 +54,7 @@ const MOCK_JOBS = [
         type: 'Full-time',
         department: 'Sales',
         location: 'Remote',
-        deptColor: 'bg-teal-50 text-teal-700'
+        deptColor: 'bg-blue-50 text-royal'
     },
     {
         id: 'DB-CORP-007',
@@ -161,9 +161,9 @@ export default function CareersPage() {
                 <section className="bg-primary py-24 px-10 relative overflow-hidden">
                     <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
                     <div className="max-w-6xl mx-auto relative z-10">
-                        <span className="text-teal-accent text-xs font-black tracking-widest uppercase mb-4 block animate-in fade-in slide-in-from-bottom-2">Building the Future of Commerce</span>
+                        <span className="text-cobalt text-xs font-black tracking-widest uppercase mb-4 block animate-in fade-in slide-in-from-bottom-2">Building the Future of Commerce</span>
                         <h1 className="text-6xl font-black text-white uppercase tracking-tighter mb-6 max-w-4xl leading-[0.9] animate-in fade-in slide-in-from-bottom-4 duration-700" style={{ color: '#FFFFFF' }}>
-                            Join the <span className="text-teal-accent italic">Supply Chain</span> Revolution
+                            Join the <span className="text-cobalt italic">Supply Chain</span> Revolution
                         </h1>
                         <p className="text-slate-400 text-lg max-w-2xl leading-relaxed font-medium animate-in fade-in slide-in-from-bottom-6 duration-1000">
                             From complex warehouse logistics to B2B field sales, qnbim Wholesale is looking for driven professionals to scale our wholesale operations.
@@ -177,14 +177,14 @@ export default function CareersPage() {
                     <aside className="lg:col-span-1 space-y-6">
                         <div id="benefits" className="bg-white border border-slate-200 p-8 shadow-xl rounded-sm">
                             <h3 className="text-[11px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8 flex items-center gap-2">
-                                <span className="w-1.5 h-4 bg-teal-accent block"></span> Employee Benefits
+                                <span className="w-1.5 h-4 bg-cobalt block"></span> Employee Benefits
                             </h3>
                             <ul className="space-y-8">
                                 {BENEFITS.map((benefit, idx) => (
                                     <li key={idx} className="group">
                                         <div className="flex items-center gap-4 mb-2">
-                                            <div className="w-10 h-10 bg-slate-50 rounded-sm border border-slate-100 flex items-center justify-center group-hover:bg-teal-accent group-hover:border-teal-accent transition-all duration-300">
-                                                <span className="material-symbols-outlined text-teal-accent text-xl group-hover:text-white transition-colors">{benefit.icon}</span>
+                                            <div className="w-10 h-10 bg-slate-50 rounded-sm border border-slate-100 flex items-center justify-center group-hover:bg-cobalt group-hover:border-cobalt transition-all duration-300">
+                                                <span className="material-symbols-outlined text-cobalt text-xl group-hover:text-white transition-colors">{benefit.icon}</span>
                                             </div>
                                             <p className="text-xs font-black text-slate-800 uppercase tracking-tight">{benefit.title}</p>
                                         </div>
@@ -197,8 +197,8 @@ export default function CareersPage() {
                         </div>
 
                         <div className="bg-primary p-8 rounded-sm shadow-2xl text-white relative overflow-hidden group">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-teal-accent/5 -mr-16 -mt-16 rounded-full group-hover:scale-150 transition-transform duration-1000"></div>
-                            <p className="text-[10px] font-black uppercase tracking-widest text-teal-accent mb-4 relative z-10">Our Mission</p>
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-cobalt/5 -mr-16 -mt-16 rounded-full group-hover:scale-150 transition-transform duration-1000"></div>
+                            <p className="text-[10px] font-black uppercase tracking-widest text-cobalt mb-4 relative z-10">Our Mission</p>
                             <p className="text-sm italic leading-relaxed opacity-90 font-black relative z-10">
                                 "To create the most efficient, transparent, and resilient wholesale distribution network in the industry."
                             </p>
@@ -215,7 +215,7 @@ export default function CareersPage() {
                                         key={dept}
                                         onClick={() => setActiveDepartment(dept)}
                                         className={`px-4 py-2.5 text-[10px] font-black uppercase tracking-widest rounded-sm transition-all shadow-sm ${activeDepartment === dept
-                                            ? 'bg-teal-accent text-white shadow-teal-accent/20'
+                                            ? 'bg-cobalt text-white shadow-cobalt/20'
                                             : 'bg-slate-50 text-slate-500 hover:bg-slate-100 border border-slate-200'
                                             }`}
                                     >
@@ -224,9 +224,9 @@ export default function CareersPage() {
                                 ))}
                             </div>
                             <div className="relative w-full md:w-80 group">
-                                <span className={`material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-sm transition-colors ${searchTerm ? 'text-teal-accent' : 'text-slate-400'}`}>search</span>
+                                <span className={`material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-sm transition-colors ${searchTerm ? 'text-cobalt' : 'text-slate-400'}`}>search</span>
                                 <input
-                                    className="w-full pl-11 pr-4 py-3 text-sm font-black text-primary bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-teal-accent/20 focus:border-teal-accent outline-none transition-all placeholder:text-slate-300 placeholder:font-bold"
+                                    className="w-full pl-11 pr-4 py-3 text-sm font-black text-primary bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-cobalt/20 focus:border-cobalt outline-none transition-all placeholder:text-slate-300 placeholder:font-bold"
                                     placeholder="Search by title or location..."
                                     type="text"
                                     value={searchTerm}
@@ -250,9 +250,9 @@ export default function CareersPage() {
                                     <tbody className="divide-y divide-slate-100">
                                         {filteredJobs.length > 0 ? (
                                             filteredJobs.map((job) => (
-                                                <tr key={job.id} className="hover:bg-teal-50/30 transition-all group cursor-default">
+                                                <tr key={job.id} className="hover:bg-blue-50/30 transition-all group cursor-default">
                                                     <td className="px-8 py-6">
-                                                        <p className="text-sm font-black text-slate-900 group-hover:text-teal-accent transition-colors mb-1">{job.title}</p>
+                                                        <p className="text-sm font-black text-slate-900 group-hover:text-cobalt transition-colors mb-1">{job.title}</p>
                                                         <div className="flex items-center gap-2">
                                                             <span className="text-[9px] font-black text-slate-400 bg-slate-50 px-2 py-0.5 border border-slate-100 uppercase tracking-tighter">{job.id}</span>
                                                             <span className="text-[10px] text-slate-400 uppercase font-black tracking-tight">{job.type}</span>
@@ -272,7 +272,7 @@ export default function CareersPage() {
                                                     <td className="px-8 py-6 text-right">
                                                         <button
                                                             onClick={() => handleViewDetails(job)}
-                                                            className="bg-primary text-white text-[9px] font-black uppercase tracking-widest px-4 py-2 hover:bg-teal-accent transition-all rounded-sm shadow-md active:scale-95"
+                                                            className="bg-primary text-white text-[9px] font-black uppercase tracking-widest px-4 py-2 hover:bg-cobalt transition-all rounded-sm shadow-md active:scale-95"
                                                         >
                                                             View Details
                                                         </button>
@@ -285,7 +285,7 @@ export default function CareersPage() {
                                                     <span className="material-symbols-outlined text-4xl text-slate-200 mb-4 block">search_off</span>
                                                     <p className="text-sm font-black text-slate-400 uppercase tracking-widest leading-loose">
                                                         No open positions match your criteria. <br />
-                                                        <span className="text-teal-accent underline cursor-pointer" onClick={() => { setSearchTerm(''); setActiveDepartment('All'); }}>Reset filters</span> or join our talent pipeline below.
+                                                        <span className="text-cobalt underline cursor-pointer" onClick={() => { setSearchTerm(''); setActiveDepartment('All'); }}>Reset filters</span> or join our talent pipeline below.
                                                     </p>
                                                 </td>
                                             </tr>
@@ -301,7 +301,7 @@ export default function CareersPage() {
                                     <button className="w-9 h-9 flex items-center justify-center border border-slate-200 bg-white text-slate-400 cursor-not-allowed rounded-sm">
                                         <span className="material-symbols-outlined text-sm">chevron_left</span>
                                     </button>
-                                    <button className="w-9 h-9 flex items-center justify-center border border-slate-300 bg-white text-slate-900 hover:border-teal-accent hover:bg-teal-accent hover:text-white transition-all rounded-sm shadow-sm">
+                                    <button className="w-9 h-9 flex items-center justify-center border border-slate-300 bg-white text-slate-900 hover:border-cobalt hover:bg-cobalt hover:text-white transition-all rounded-sm shadow-sm">
                                         <span className="material-symbols-outlined text-sm">chevron_right</span>
                                     </button>
                                 </div>
@@ -309,15 +309,15 @@ export default function CareersPage() {
                         </div>
 
                         {/* General Application CTA */}
-                        <div className="bg-white border-2 border-dashed border-slate-200 p-12 text-center rounded-sm group hover:border-teal-accent/50 transition-all shadow-lg hover:shadow-2xl">
-                            <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-slate-100 group-hover:bg-teal-accent group-hover:border-teal-accent transition-all duration-500">
+                        <div className="bg-white border-2 border-dashed border-slate-200 p-12 text-center rounded-sm group hover:border-cobalt/50 transition-all shadow-lg hover:shadow-2xl">
+                            <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-slate-100 group-hover:bg-cobalt group-hover:border-cobalt transition-all duration-500">
                                 <span className="material-symbols-outlined text-3xl text-slate-300 group-hover:text-white transition-colors">rocket_launch</span>
                             </div>
                             <h4 className="text-slate-900 font-black uppercase tracking-tight text-2xl mb-3">Don't see your ideal role?</h4>
                             <p className="text-slate-500 text-xs mb-8 max-w-sm mx-auto font-bold uppercase tracking-widest leading-relaxed">
                                 Our network is constantly expanding. Send us your resume for future opportunities in logistics or B2B sales.
                             </p>
-                            <button className="bg-primary text-white px-12 py-5 font-black text-[10px] uppercase tracking-widest hover:bg-teal-accent transition-all shadow-xl shadow-primary/20 rounded-sm active:scale-95">
+                            <button className="bg-primary text-white px-12 py-5 font-black text-[10px] uppercase tracking-widest hover:bg-cobalt transition-all shadow-xl shadow-primary/20 rounded-sm active:scale-95">
                                 General Application
                             </button>
                         </div>
@@ -343,8 +343,8 @@ export default function CareersPage() {
                         <div className="p-12 text-center">
                             {isEmailSubmitted ? (
                                 <div className="animate-in fade-in zoom-in duration-500">
-                                    <div className="w-20 h-20 bg-teal-50 rounded-full flex items-center justify-center mx-auto mb-6">
-                                        <span className="material-symbols-outlined text-4xl text-teal-600">mark_email_read</span>
+                                    <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                                        <span className="material-symbols-outlined text-4xl text-royal">mark_email_read</span>
                                     </div>
                                     <h3 className="text-2xl font-black text-slate-900 uppercase tracking-tighter mb-2">Priority Listed</h3>
                                     <p className="text-slate-500 text-xs font-bold uppercase tracking-widest leading-relaxed max-w-xs mx-auto">
@@ -352,7 +352,7 @@ export default function CareersPage() {
                                     </p>
                                     <button
                                         onClick={() => setIsModalOpen(false)}
-                                        className="mt-10 bg-slate-900 text-white px-10 py-4 text-[10px] font-black uppercase tracking-widest rounded-sm hover:bg-teal-accent transition-all"
+                                        className="mt-10 bg-slate-900 text-white px-10 py-4 text-[10px] font-black uppercase tracking-widest rounded-sm hover:bg-cobalt transition-all"
                                     >
                                         Return to Listings
                                     </button>
